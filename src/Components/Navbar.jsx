@@ -1,25 +1,32 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/Logo.png";
-import { LuMenu } from "react-icons/lu";
-import { LuX } from "react-icons/lu";
+import { LuMenu, LuX } from "react-icons/lu";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  // Close the menu when the location changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
   return (
     <nav className="bg-[#343434] h-[130px] relative z-10">
       <div className="h-full mx-auto px-[20px] lg:px-[200px] flex justify-between items-center">
         <div className="flex items-center">
+          <Link to="/">
           <img
             className="h-[60px] mt-[1px] object-contain"
             src={Logo}
             alt="SolverSilver"
           />
+          </Link>
         </div>
         {/* Hamburger Button */}
         <div className="md:hidden">
@@ -40,7 +47,7 @@ function Navbar() {
           <Link to="/about" className="hover:text-white">About</Link>
           <div className="dropdown dropdown-hover">
             <Link
-              to="/services"
+              
               className="m-1 cursor-pointer hover:text-white"
             >
               Services
