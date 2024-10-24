@@ -65,7 +65,7 @@ function Home() {
         </div>
         <div className="lg:w-1/2 animate__animated animate__fadeInRight">
           <h1 className="font-sans font-semibold text-3xl sm:text-4xl leading-snug text-[#343434] mb-4">
-            Why choose me for your Graphics and Website projects?
+            Why choose me for your Graphics/Website projects?
           </h1>
           <p className="text-[#343434] text-base sm:text-lg mb-6">
             I collaborate with clients who aim for perfection! Lifetime Customer Service is my specialty. I guide clients 
