@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-[#343434] h-[130px]">
+    <nav className="bg-[#343434] h-[130px] relative z-10">
       <div className="h-full mx-auto px-[20px] lg:px-[200px] flex justify-between items-center">
         <div className="flex items-center">
           <img
@@ -47,8 +47,11 @@ function Navbar() {
             </Link>
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-[#525252] rounded-box z-[1] w-40 text-[#D9B592] p-3 shadow"
+              className="dropdown-content dropdown-hover menu bg-[#525252] rounded-box z-[1] w-40 text-[#D9B592] p-3 shadow"
             >
+              <li>
+                <Link to="/services" className="hover:text-white">All Services</Link>
+              </li>
               <li>
                 <Link to="/graphics" className="hover:text-white">Graphics</Link>
               </li>
@@ -74,7 +77,7 @@ function Navbar() {
             <li>
               <details className="dropdown dropdown-right">
                 <summary className="block">Services</summary>
-                <ul className="menu dropdown-content bg-[#525252] rounded-box z-[1] w-40 p-1 shadow ml-3">
+                <ul className="menu dropdown-content bg-[#525252] rounded-box z-20 w-40 p-1 shadow ml-3">
                   <li>
                     <Link to="/services" className="block">All Services</Link>
                   </li>
