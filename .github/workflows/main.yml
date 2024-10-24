@@ -1,3 +1,4 @@
+name: 🚀 Deploy website on push
 on:
   push:
     branches: main
@@ -10,7 +11,6 @@ env:
   VITE_MESSAGINGSENDERID: ${{ secrets.VITE_MESSAGINGSENDERID }}
   VITE_APPID: ${{ secrets.VITE_APPID }}
 
-name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -37,3 +37,15 @@ jobs:
           password: ${{ secrets.ftp_password }}
           dangerous-clean-slate: true
           local-dir: ./dist/
+
+      - name: 📤 Upload .htaccess
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.ftp_server }}
+          username: ${{ secrets.ftp_name }}
+          password: ${{ secrets.ftp_password }}
+          local-dir: ./
+          remote-dir: /your_desired_directory/  # Adjust this to match your cPanel directory
+          dangerous-clean-slate: false
+          exclude: |
+            dist/**
