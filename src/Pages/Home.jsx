@@ -37,7 +37,7 @@ function Home() {
       <section className="flex flex-col bg-[#f1f0f0] py-10 lg:py-24">
         <div className="text-center mb-8">
           <h1 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-4">My Services</h1>
-          <p className="text-[#343434] text-base sm:text-lg">Choose your required Service</p>
+          <p className="text-[#343434] text-base sm:text-lg">Choose any Service for more details</p>
         </div>
         <div className="flex flex-col sm:flex-row justify-center mx-4 lg:mx-20 gap-10">
           <ServiceCard 
