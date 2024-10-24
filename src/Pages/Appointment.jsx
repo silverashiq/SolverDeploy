@@ -121,10 +121,10 @@ const Appointment = () => {
       </div>
 
       {/* Divider */}
-      <hr className="w-full max-w-lg my-6 border-gray-300" />
+      <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
       {/* Inquiry Section */}
-      <div className="flex items-center mb-6">
+      <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0">
         <span className="text-lg mr-2">Send an E-mail for Inquiry/Quote</span>
         <button
           onClick={handleContactInquiry}

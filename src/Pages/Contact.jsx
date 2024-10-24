@@ -89,11 +89,11 @@ function Contact() {
 
     
       {/* Divider */}
-      <hr className="w-full max-w-lg my-6 border-gray-300" />
+      <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
             {/* Booking Section */}
-            <div className="flex items-center mb-6">
-        <span className="text-lg mr-2">Want to book an Appointment for Audio/Video calls?</span>
+      <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0">
+        <span className="text-lg mr-2">Want to book an Appointment/Online meeting?</span>
         <button
           onClick={handleBookAppointment}
           className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
