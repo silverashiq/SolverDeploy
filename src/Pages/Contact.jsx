@@ -14,14 +14,17 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send data to an API)
     console.log('Form submitted:', formData);
-    // Reset form after submission
     setFormData({ name: '', email: '', message: '' });
+  };
+
+  const handleBookAppointment = () => {
+    window.location.href = '/book'; // Simple redirection
   };
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
+
       <h1 className="text-4xl font-bold mb-6 text-gray-800">Contact Me</h1>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         I'd love to hear from you! Please fill out the form below to get in touch.
@@ -78,11 +81,28 @@ function Contact() {
 
         <button
           type="submit"
-          className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200"
+          className="bg-[#D9B592] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#343434] transition duration-200"
         >
           Send Message
         </button>
       </form>
+
+    
+      {/* Divider */}
+      <hr className="w-full max-w-lg my-6 border-gray-300" />
+
+            {/* Booking Section */}
+            <div className="flex items-center mb-6">
+        <span className="text-lg mr-2">Want to book an Appointment for Audio/Video calls?</span>
+        <button
+          onClick={handleBookAppointment}
+          className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
+        >
+          Book Now
+        </button>
+      </div>
+
+
     </div>
   );
 }

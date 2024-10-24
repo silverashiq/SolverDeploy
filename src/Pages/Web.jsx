@@ -4,29 +4,43 @@ function Website() {
   const projects = [
     {
       id: 1,
-      title: 'Project One',
-      description: 'A brief description of Project One, highlighting its features and technologies used.',
+      title: 'WordPress Development',
+      description: 'Custom themes and plugin integration for tailored functionality.',
       imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
       link: '#', // Replace with actual project link
     },
     {
       id: 2,
-      title: 'Project Two',
-      description: 'A brief description of Project Two, highlighting its features and technologies used.',
+      title: 'Landing Page',
+      description: 'High-converting, responsive designs optimized for user engagement.',
       imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
       link: '#',
     },
     {
       id: 3,
-      title: 'Project Three',
-      description: 'A brief description of Project Three, highlighting its features and technologies used.',
+      title: 'Business Website',
+      description: 'Professional, SEO-optimized websites with user-friendly navigation.',
       imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
       link: '#',
     },
     {
       id: 4,
-      title: 'Project Four',
-      description: 'A brief description of Project Four, highlighting its features and technologies used.',
+      title: 'Web-App',
+      description: 'Custom solutions with a focus on UI/UX and API integration.',
+      imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
+      link: '#',
+    },
+    {
+      id: 5,
+      title: 'MERN (Frontend + Backend)',
+      description: 'Full-stack applications built with MongoDB, Express.js, React, and Node.js.',
+      imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
+      link: '#',
+    },
+    {
+      id: 6,
+      title: 'E-Commerce site',
+      description: 'Custom online stores with secure payment integration and inventory management.',
       imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
       link: '#',
     },
@@ -35,12 +49,12 @@ function Website() {
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
-      <h1 className="text-4xl font-bold mb-6 text-gray-800">My Websites</h1>
+      <h1 className="text-4xl font-bold mb-6 text-gray-800">Full Stack Web-Development</h1>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
-        Here are some of the websites I have developed. Click on the project titles to view more details.
+      Discover the comprehensive web design services I offer. Please select any area of interest for more information.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  mx-4 md:mx-14 px-4">
         {projects.map((project) => (
           <div
             key={project.id}

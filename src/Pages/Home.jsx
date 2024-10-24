@@ -23,9 +23,9 @@ function Home() {
             <Link to="/contact" className="py-2 px-4 bg-[#D9B592] font-bold rounded-md text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300">
               Send an E-mail
             </Link>
-            <button className="py-2 px-4 bg-[#343434] font-bold rounded-md text-[#D9B592] hover:bg-[#D9B592] hover:text-[#343434] transition-colors duration-300">
+            <Link to="/book" className="py-2 px-4 bg-[#343434] font-bold rounded-md text-[#D9B592] hover:bg-[#D9B592] hover:text-[#343434] transition-colors duration-300">
               Book an Appointment
-            </button>
+            </Link >
           </div>
         </div>
         <div className="lg:w-1/2 animate__animated animate__fadeInRight mt-6 lg:mt-0">

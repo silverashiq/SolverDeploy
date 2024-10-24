@@ -17,19 +17,19 @@ function Services() {
     {
       id: 3,
       title: 'SEO Services',
-      description: 'Optimizing your website to improve visibility and ranking on search engines.',
+      description: 'COMING SOON',
       imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
     },
     {
       id: 4,
       title: 'Digital Marketing',
-      description: 'Strategizing and implementing online marketing campaigns to boost your business.',
+      description: 'COMING SOON',
       imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
     },
     {
       id: 5,
       title: 'Content Creation',
-      description: 'Developing engaging content for websites, blogs, and social media platforms.',
+      description: 'COMING SOON',
       imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
     },
     // Add more services as needed

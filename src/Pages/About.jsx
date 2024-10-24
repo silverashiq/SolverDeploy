@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
@@ -36,12 +37,14 @@ function About() {
         <div className="bg-white rounded-lg shadow-lg p-6 max-w-xs text-center">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact</h2>
           <p className="text-gray-600 mb-4">Feel free to reach out!</p>
+          <Link to="/contact">
           <a
             href="mailto:your-email@example.com"
             className="text-blue-500 hover:underline"
           >
-            your-email@example.com
+            send a message
           </a>
+          </Link>
         </div>
       </div>
     </div>
