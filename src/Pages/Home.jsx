@@ -72,7 +72,7 @@ function Home() {
             every step of the way, before and after the project. 100% Customer Satisfaction is my goal.
           </p>
           <Link to="/portfolio" className="py-2 px-4 bg-[#D9B592] font-bold rounded-md text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300">
-            Client's FeLink 
+            Client's Feedback 
           </Link >
         </div>
       </section>
