@@ -6,6 +6,8 @@ function Contact() {
     email: '',
     message: '',
   });
+  
+  const [showContactInfo, setShowContactInfo] = useState(false); // New state for contact info
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,9 +24,12 @@ function Contact() {
     window.location.href = '/book'; // Simple redirection
   };
 
+  const toggleContactInfo = () => {
+    setShowContactInfo(!showContactInfo); // Toggle the contact info
+  };
+
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
-
       <h1 className="text-4xl font-bold mb-6 text-gray-800">Contact Me</h1>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         I'd love to hear from you! Please fill out the form below to get in touch.
@@ -81,18 +86,36 @@ function Contact() {
 
         <button
           type="submit"
-          className="bg-[#D9B592] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#343434] transition duration-200"
+          className="w-full bg-[#D9B592] text-white rounded-lg py-2 hover:bg-[#343434] transition duration-200"
         >
           Send Message
         </button>
       </form>
 
-    
       {/* Divider */}
       <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
-            {/* Booking Section */}
-      <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0">
+      {/* Instant Contact Section */}
+      <div className="flex flex-col items-center mb-6 mx-9 md:mx-0">
+        <button
+          onClick={toggleContactInfo}
+          className="bg-[#D9B592] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#343434] transition duration-200"
+        >
+          {showContactInfo ? 'Hide Contact Info' : 'Contact Info'}
+        </button>
+        
+        {showContactInfo && (
+          <p className="mt-4 text-gray-600 text-center">
+            E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">silverashiq@gmail.com </a> <br/> WhatsApp: <a href="https://wa.me/8801686335821" className="text-blue-500">+8801686335821</a>
+          </p>
+        )}
+      </div>
+
+            {/* Divider */}
+            <hr className="w-full max-w-lg mb-6 border-gray-300 opacity-40" />
+
+      {/* Booking Section */}
+      <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0 text-center">
         <span className="text-lg mr-2">Want to book an Appointment/Online meeting?</span>
         <button
           onClick={handleBookAppointment}
@@ -101,8 +124,6 @@ function Contact() {
           Book Now
         </button>
       </div>
-
-
     </div>
   );
 }

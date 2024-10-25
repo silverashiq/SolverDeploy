@@ -54,11 +54,11 @@ function Website() {
       Discover the comprehensive web design services I offer. Please select any area of interest for more information.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  mx-4 md:mx-14 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6  mx-4 md:mx-14 px-4">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white rounded-lg shadow-lg overflow-hidden"
+            className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
           >
             <img
               src={project.imageUrl}

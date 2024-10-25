@@ -54,7 +54,7 @@ function Navbar() {
             </Link>
             <ul
               tabIndex={0}
-              className="dropdown-content dropdown-hover menu bg-[#525252] rounded-box z-[1] w-40 text-[#D9B592] p-3 shadow"
+              className="dropdown-content dropdown-hover menu bg-[#525252] rounded-box z-[1] w-40 text-[#D9B592] p-1 shadow"
             >
               <li>
                 <Link to="/services" className="hover:text-white">All Services</Link>
@@ -84,7 +84,7 @@ function Navbar() {
             <li>
               <details className="dropdown dropdown-right">
                 <summary className="block">Services</summary>
-                <ul className="menu dropdown-content bg-[#525252] rounded-box z-20 w-40 p-1 shadow ml-3">
+                <ul className="menu dropdown-content bg-[#525252] rounded-box z-20 w-40 p-1 shadow ml-4">
                   <li>
                     <Link to="/services" className="block">All Services</Link>
                   </li>

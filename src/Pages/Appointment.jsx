@@ -10,6 +10,8 @@ const Appointment = () => {
     meetingPlatform: '', // New field for meeting platform
   });
 
+  const [showContactInfo, setShowContactInfo] = useState(false); // Initialize showContactInfo
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -24,6 +26,10 @@ const Appointment = () => {
 
   const handleContactInquiry = () => {
     window.location.href = '/contact'; // Simple redirection
+  };
+
+  const toggleContactInfo = () => {
+    setShowContactInfo(!showContactInfo); // Toggle the contact info visibility
   };
 
   return (
@@ -102,12 +108,12 @@ const Appointment = () => {
               required
               className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
+              <option value="">Select a platform</option>
               <option value="Google Meet">Google Meet</option>
               <option value="Zoom">Zoom</option>
               <option value="Skype">Skype</option>
               <option value="Facebook">Facebook</option>
               <option value="WhatsApp">WhatsApp</option>
-
               {/* Add more options as needed */}
             </select>
           </div>
@@ -123,8 +129,27 @@ const Appointment = () => {
       {/* Divider */}
       <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
+      {/* Instant Contact Section */}
+      <div className="flex flex-col items-center mb-6 mx-9 md:mx-0">
+        <button
+          onClick={toggleContactInfo}
+          className="bg-[#D9B592] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#343434] transition duration-200"
+        >
+          {showContactInfo ? 'Hide Contact Info' : 'Contact Info'}
+        </button>
+
+        {showContactInfo && (
+          <p className="mt-4 text-gray-600 text-center">
+            E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">silverashiq@gmail.com</a> <br /> WhatsApp: <a href="https://wa.me/8801686335821" className="text-blue-500">+8801686335821</a>
+          </p>
+        )}
+      </div>
+
+                  {/* Divider */}
+                  <hr className="w-full max-w-lg mb-6 border-gray-300 opacity-40" />
+
       {/* Inquiry Section */}
-      <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0">
+      <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0 text-center">
         <span className="text-lg mr-2">Send an E-mail for Inquiry/Quote</span>
         <button
           onClick={handleContactInquiry}

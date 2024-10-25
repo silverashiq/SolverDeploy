@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaCalendarAlt } from 'react-icons/fa';
 
 function Footer() {
+  const [showContactInfo, setShowContactInfo] = useState(false); // State for contact info visibility
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
+  };
+
+  const toggleContactInfo = () => {
+    setShowContactInfo(!showContactInfo); // Toggle the contact info visibility
   };
 
   return (
@@ -43,7 +49,7 @@ function Footer() {
             </div>
 
             <h3 className="text-lg mb-2">Follow Us</h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-4">
               <a href="#" className="text-[#D9B592] hover:text-white transition duration-200">
                 <FaFacebookF size={20} />
               </a>
@@ -57,6 +63,21 @@ function Footer() {
                 <FaLinkedinIn size={20} />
               </a>
             </div>
+
+            {/* Instant Contact Button */}
+            <button
+              onClick={toggleContactInfo}
+              className="bg-[#4a4a4a] text-[#D9B592] font-semibold py-2 px-4 rounded-lg hover:bg-[#5c5b5b] transition duration-200"
+            >
+              {showContactInfo ? 'Hide Contact Info' : 'Contact Info'}
+            </button>
+
+            {showContactInfo && (
+              <p className="mt-2 text-gray-300 sm:text-center md:text-left">
+                E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">silverashiq@gmail.com</a> <br />
+                WhatsApp: <a href="https://wa.me/8801686335821" className="text-blue-500">+8801686335821</a>
+              </p>
+            )}
           </div>
         </div>
 
