@@ -106,7 +106,7 @@ function Contact() {
         
         {showContactInfo && (
           <p className="mt-4 text-gray-600 text-center">
-            E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">silverashiq@gmail.com </a> <br/> WhatsApp: <a href="https://wa.me/8801686335821" className="text-blue-500">+8801686335821</a>
+            E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">info@solversilver.com</a> <br/> WhatsApp: <a href="https://wa.me/8801686335821" className="text-blue-500">+8801686335821</a>
           </p>
         )}
       </div>

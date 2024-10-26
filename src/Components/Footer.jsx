@@ -74,7 +74,7 @@ function Footer() {
 
             {showContactInfo && (
               <p className="mt-2 text-gray-300 sm:text-center md:text-left">
-                E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">silverashiq@gmail.com</a> <br />
+                E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">info@solversilver.com</a> <br />
                 WhatsApp: <a href="https://wa.me/8801686335821" className="text-blue-500">+8801686335821</a>
               </p>
             )}
