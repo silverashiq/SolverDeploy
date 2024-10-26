@@ -7,7 +7,8 @@ function Contact() {
     message: '',
   });
   
-  const [showContactInfo, setShowContactInfo] = useState(false); // New state for contact info
+  const [showContactInfo, setShowContactInfo] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,15 +18,21 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    
+    // Simulate form submission success
+    setSubmissionStatus('Your message has been sent! Thank you.');
     setFormData({ name: '', email: '', message: '' });
+
+    // Clear the status message after 5 seconds
+    setTimeout(() => setSubmissionStatus(''), 5000);
   };
 
   const handleBookAppointment = () => {
-    window.location.href = '/book'; // Simple redirection
+    window.location.href = '/book';
   };
 
   const toggleContactInfo = () => {
-    setShowContactInfo(!showContactInfo); // Toggle the contact info
+    setShowContactInfo(!showContactInfo);
   };
 
   return (
@@ -51,6 +58,7 @@ function Contact() {
             onChange={handleChange}
             required
             className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:border-blue-500"
+            aria-label="Your Name"
           />
         </div>
         
@@ -66,6 +74,7 @@ function Contact() {
             onChange={handleChange}
             required
             className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:border-blue-500"
+            aria-label="Your Email"
           />
         </div>
         
@@ -81,15 +90,21 @@ function Contact() {
             required
             rows="4"
             className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:border-blue-500"
+            aria-label="Your Message"
           ></textarea>
         </div>
 
         <button
           type="submit"
           className="w-full bg-[#D9B592] text-white rounded-lg py-2 hover:bg-[#343434] transition duration-200"
+          aria-label="Send Message"
         >
           Send Message
         </button>
+
+        {submissionStatus && (
+          <p className="mt-4 text-green-600 text-center">{submissionStatus}</p>
+        )}
       </form>
 
       {/* Divider */}
@@ -100,19 +115,21 @@ function Contact() {
         <button
           onClick={toggleContactInfo}
           className="bg-[#D9B592] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#343434] transition duration-200"
+          aria-label={showContactInfo ? 'Hide Contact Info' : 'Show Contact Info'}
         >
           {showContactInfo ? 'Hide Contact Info' : 'Contact Info'}
         </button>
         
         {showContactInfo && (
           <p className="mt-4 text-gray-600 text-center">
-            E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">info@solversilver.com</a> <br/> WhatsApp: <a href="https://wa.me/8801686335821" className="text-blue-500">+8801686335821</a>
+            E-mail: <a href="mailto:silverashiq@gmail.com" className="text-blue-500">info@solversilver.com</a> <br /> 
+            WhatsApp: <a href="https://wa.me/8801686335821" className="text-blue-500">+8801686335821</a>
           </p>
         )}
       </div>
 
-            {/* Divider */}
-            <hr className="w-full max-w-lg mb-6 border-gray-300 opacity-40" />
+      {/* Divider */}
+      <hr className="w-full max-w-lg mb-6 border-gray-300 opacity-40" />
 
       {/* Booking Section */}
       <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0 text-center">
@@ -120,6 +137,7 @@ function Contact() {
         <button
           onClick={handleBookAppointment}
           className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
+          aria-label="Book Appointment"
         >
           Book Now
         </button>

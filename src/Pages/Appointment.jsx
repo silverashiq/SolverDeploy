@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Appointment = () => {
   const [formData, setFormData] = useState({
@@ -7,10 +7,18 @@ const Appointment = () => {
     phone: '',
     date: '',
     time: '',
-    meetingPlatform: '', // New field for meeting platform
+    meetingPlatform: '',
   });
 
-  const [showContactInfo, setShowContactInfo] = useState(false); // Initialize showContactInfo
+  const [submissionStatus, setSubmissionStatus] = useState('');
+  const [showContactInfo, setShowContactInfo] = useState(false);
+  const [timeZone, setTimeZone] = useState(''); // State for time zone
+
+  useEffect(() => {
+    // Get the user's time zone when the component mounts
+    const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    setTimeZone(userTimeZone);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,24 +27,27 @@ const Appointment = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
     console.log('Appointment booked:', formData);
-    // Reset the form or show a success message
+    setSubmissionStatus('Your appointment has been booked! Thank you.');
+    setFormData({ name: '', email: '', phone: '', date: '', time: '', meetingPlatform: '' });
   };
 
   const handleContactInquiry = () => {
-    window.location.href = '/contact'; // Simple redirection
+    window.location.href = '/contact';
   };
 
   const toggleContactInfo = () => {
-    setShowContactInfo(!showContactInfo); // Toggle the contact info visibility
+    setShowContactInfo(!showContactInfo);
   };
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100 py-10">
-
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
         <h2 className="text-2xl font-semibold mb-6 text-center">Book an Appointment</h2>
+        {submissionStatus && <p className="text-green-600 text-center mb-4">{submissionStatus}</p>}
+        
+        <p className="text-center text-gray-600 mb-4">Your Time Zone: {timeZone}</p>
+
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1" htmlFor="name">Name</label>
@@ -114,7 +125,6 @@ const Appointment = () => {
               <option value="Skype">Skype</option>
               <option value="Facebook">Facebook</option>
               <option value="WhatsApp">WhatsApp</option>
-              {/* Add more options as needed */}
             </select>
           </div>
           <button
@@ -145,8 +155,8 @@ const Appointment = () => {
         )}
       </div>
 
-                  {/* Divider */}
-                  <hr className="w-full max-w-lg mb-6 border-gray-300 opacity-40" />
+      {/* Divider */}
+      <hr className="w-full max-w-lg mb-6 border-gray-300 opacity-40" />
 
       {/* Inquiry Section */}
       <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0 text-center">
