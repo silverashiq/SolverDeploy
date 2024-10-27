@@ -16,12 +16,12 @@ function Home() {
             Are you looking for a Designer with stellar skills and experience in Graphics and Website?
           </h1>
           <p className="text-[#343434] text-base sm:text-lg mb-6">
-            I am a creative, innovative and intensely focused Graphics and Website Designer with more than 5 years of experience. 
-            Contact me and let's create something awesome!
+            I am a creative, innovative and intensely focused Graphics Designer and Full-Stack Web Developer with more than 5 years of experience. 
+            Let's connect and create something awesome!
           </p>
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
             <Link to="/contact" className="py-2 px-4 bg-[#D9B592] font-bold rounded-md text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300">
-              Send an E-mail
+              Get Quote
             </Link>
             <Link to="/book" className="py-2 px-4 bg-[#343434] font-bold rounded-md text-[#D9B592] hover:bg-[#D9B592] hover:text-[#343434] transition-colors duration-300">
               Book an Appointment
