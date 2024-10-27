@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../assets/Logo.png";
+// import Logo from "../assets/Logo.png";
 import { LuMenu, LuX } from "react-icons/lu";
 
 function Navbar() {
@@ -23,7 +23,7 @@ function Navbar() {
           <Link to="/">
           <img
             className="h-[60px] mt-[1px] object-contain"
-            src={Logo}
+            src="https://res.cloudinary.com/dntx46fvh/image/upload/v1730032577/Logo_npaiwr.png"
             alt="SolverSilver"
           />
           </Link>
