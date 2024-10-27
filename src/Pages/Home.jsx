@@ -1,9 +1,9 @@
 import React from "react";
-import Bannerpic3 from "../assets/Bannerpic3.jpg";
-import Bannerpic from "../assets/Bannerpic.jpg";
-import Brand from "../assets/Brand.jpg";
-import Brochure from "../assets/Brochure.jpg";
-import Website from "../assets/Website.jpg";
+// import Bannerpic3 from "../assets/Bannerpic3.jpg";
+// import Bannerpic from "../assets/Bannerpic.jpg";
+// import Brand from "../assets/Brand.jpg";
+// import Brochure from "../assets/Brochure.jpg";
+// import Website from "../assets/Website.jpg";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -39,7 +39,7 @@ function Home() {
         <div className="lg:w-1/2 animate__animated animate__fadeInRight mt-6 lg:mt-0">
           <img
             className="w-full h-auto rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
-            src={Bannerpic3}
+            src="https://res.cloudinary.com/dntx46fvh/image/upload/v1730036028/Bannerpic3_qtje4f.jpg"
             alt="banner"
           />
         </div>
@@ -57,17 +57,17 @@ function Home() {
         </div>
         <div className="flex flex-col sm:flex-row justify-center mx-4 lg:mx-20 gap-10">
           <ServiceCard
-            image={Brand}
+            image="https://res.cloudinary.com/dntx46fvh/image/upload/v1730036028/Brand_rstpgt.jpg"
             title="Brand Identity"
             description="A Brand Identity is made up of what your brand says, your values, and how you communicate your product."
           />
           <ServiceCard
-            image={Brochure}
+            image="https://res.cloudinary.com/dntx46fvh/image/upload/v1730036030/Brochure_x2ji3n.jpg"
             title="Print Media"
             description="A form of mass media that shares news or information via printed publications."
           />
           <ServiceCard
-            image={Website}
+            image="https://res.cloudinary.com/dntx46fvh/image/upload/v1730036030/Website_e2g0t6.jpg"
             title="Website Design"
             description="Involves planning, conceptualizing, and implementing a business profile."
           />
@@ -79,7 +79,7 @@ function Home() {
         <div className="lg:w-1/2 animate__animated animate__fadeInLeft mb-6 lg:mb-0">
           <img
             className="w-full h-auto rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
-            src={Bannerpic}
+            src="https://res.cloudinary.com/dntx46fvh/image/upload/v1730036028/Bannerpic_fsvoqv.jpg"
             alt="banner"
           />
         </div>
