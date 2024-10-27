@@ -13,8 +13,7 @@ function Home() {
       <section className="flex flex-col lg:flex-row items-center mx-4 lg:mx-20 gap-5 lg:gap-14  py-10 md:py-10 lg:py-32 px-2  lg:px-[110px]">
         <div className="lg:w-1/2 animate__animated animate__fadeInLeft">
           <h1 className="font-sans font-semibold text-3xl sm:text-4xl leading-snug text-[#343434] mb-4">
-            Are you looking for a Designer with stellar skills and experience in
-            Graphics and Website?
+          Seeking a Talented Designer Specializing in Graphics and Website Creation?
           </h1>
           <p className="text-[#343434] text-base sm:text-lg mb-6">
             I am a creative, innovative and intensely focused Graphics Designer
@@ -85,7 +84,7 @@ function Home() {
         </div>
         <div className="lg:w-1/2 animate__animated animate__fadeInRight">
           <h1 className="font-sans font-semibold text-3xl sm:text-4xl leading-snug text-[#343434] mb-4">
-            Why choose me for your projects?
+            Why choose me for your projects ?
           </h1>
           <p className="text-[#343434] text-base sm:text-lg mb-6">
             <span className="font-semibold">
