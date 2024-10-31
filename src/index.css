@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* src/index.css or src/App.css */
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+  .menu-link {
+    position: relative;
+  }
+  
+  .menu-link::after {
+    content: '';
+    display: block;
+    height: 1px; /* Adjust thickness here */
+    background-color: #D9B592; /* Bar color */
+    width: 0;
+    transition: width 0.3s; /* Animation duration */
+    position: absolute;
+    top: -53px; /* Move the bar above the text */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .menu-link:hover::after {
+    width: 100%; /* Full width on hover */
+  }
+  
+  /* Keep the hover bar visible when hovering over the dropdown */
+  .dropdown:hover .menu-link::after {
+    width: 100%; /* Maintain full width when hovering */
+  }
+  

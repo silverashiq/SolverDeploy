@@ -1,3 +1,4 @@
+// src/components/Navbar.jsx
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/Logo.png";
@@ -21,11 +22,11 @@ function Navbar() {
       <div className="h-full mx-auto px-[20px] lg:px-[200px] flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/">
-          <img
-            className="h-[60px] mt-[1px] object-contain"
-            src={Logo}
-            alt="SolverSilver"
-          />
+            <img
+              className="h-[60px] mt-[1px] object-contain"
+              src={Logo}
+              alt="SolverSilver"
+            />
           </Link>
         </div>
         {/* Hamburger Button */}
@@ -43,12 +44,13 @@ function Navbar() {
         </div>
         {/* Desktop Menu */}
         <div className="hidden md:flex text-[#D9B592] items-center gap-[40px]">
-          <Link to="/" className="hover:text-white">Home</Link>
-          <Link to="/about" className="hover:text-white">About</Link>
-          <div className="dropdown dropdown-hover">
+          <Link to="/" className="menu-link hover:text-white">Home</Link>
+          <Link to="/about" className="menu-link hover:text-white">About</Link>
+          {/* Dropdown for Services */}
+          <div className="relative dropdown dropdown-hover">
             <Link
-              
-              className="m-1 cursor-pointer hover:text-white"
+              className="menu-link m-1 cursor-pointer hover:text-white"
+              onMouseEnter={() => {}}
             >
               Services
             </Link>
@@ -67,8 +69,8 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <Link to="/portfolio" className="hover:text-white">Portfolio</Link>
-          <Link to="/contact" className="hover:text-white">Contact</Link>
+          <Link to="/portfolio" className="menu-link hover:text-white">Portfolio</Link>
+          <Link to="/contact" className="menu-link hover:text-white">Contact</Link>
         </div>
       </div>
       {/* Mobile Menu */}
