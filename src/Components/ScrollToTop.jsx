@@ -1,9 +1,16 @@
 // src/components/ScrollToTop.jsx
 import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
+  const location = useLocation(); // Access current route location
+
+  // Scroll to the top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]); // Dependency on location, triggers on route change
 
   useEffect(() => {
     const toggleVisibility = () => {

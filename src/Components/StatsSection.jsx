@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CountUp from "react-countup";
-import { FaCheckCircle } from "react-icons/fa"; // For a cool checkmark icon
+import { FaCheckCircle } from "react-icons/fa";
 
 function StatsSection() {
+  const [inView, setInView] = useState(false);
+  const statsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setInView(true); // Set inView to true when section is in view
+        observer.disconnect();
+      }
+    });
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="py-16 bg-[#f1f0f0] relative overflow-hidden">
+    <section
+      ref={statsRef}
+      className="py-16 bg-[#f1f0f0] relative overflow-hidden"
+    >
       <div className="absolute top-0 left-0 w-full h-1/2 bg-[#D9B592] opacity-30 transform -rotate-12 -z-10" />
 
       <div className="text-center mb-12">
@@ -19,8 +44,8 @@ function StatsSection() {
       <div className="flex flex-col sm:flex-row justify-center gap-16 px-10 lg:px-40">
         {/* Total Orders Completed */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="text-[#D9B592] text-7xl font-semibold mb-2 shadow-lg p-10 rounded-3xl ">
-            <CountUp end={1771} duration={2} />
+          <div className="text-[#D9B592] text-7xl font-semibold mb-2 shadow-lg p-10 rounded-3xl">
+            {inView && <CountUp end={1771} duration={2} />}
           </div>
           <h3 className="font-sans text-xl sm:text-xl text-[#343434] font-medium">
             Projects Successfully Completed
@@ -30,7 +55,7 @@ function StatsSection() {
         {/* Happy Unique Clients */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
           <div className="text-[#D9B592] text-7xl font-semibold mb-2 shadow-lg p-10 rounded-3xl">
-            <CountUp end={1256} duration={2} />
+            {inView && <CountUp end={1256} duration={2} />}
           </div>
           <h3 className="font-sans text-xl sm:text-xl text-[#343434] font-medium">
             Satisfied Unique Clients
@@ -40,7 +65,7 @@ function StatsSection() {
         {/* Client Rated */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
           <div className="text-[#D9B592] text-7xl font-semibold mb-2 shadow-lg p-10 rounded-3xl">
-            <CountUp end={1199} duration={2} />
+            {inView && <CountUp end={1199} duration={2} />}
           </div>
           <h3 className="font-sans text-xl sm:text-xl text-[#343434] font-medium">
             Client Ratings & Feedback
