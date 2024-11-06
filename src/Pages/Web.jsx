@@ -4,28 +4,28 @@ function Website() {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Site',
+      title: 'Business Website',
       description: 'Custom online stores with secure payment integration and inventory management.',
       imageUrl: 'https://via.placeholder.com/300',
       link: '#',
     },
     {
       id: 2,
-      title: 'Web-App',
+      title: 'Website Application',
       description: 'Custom solutions focused on UI/UX and API integration.',
       imageUrl: 'https://via.placeholder.com/300',
       link: '#',
     },
     {
       id: 3,
-      title: 'Frontend Design',
+      title: 'E-Commerce Website',
       description: 'High-converting, responsive designs optimized for user engagement.',
       imageUrl: 'https://via.placeholder.com/300',
       link: '#',
     },
     {
       id: 4,
-      title: 'Business Website',
+      title: 'Website Re-design',
       description: 'Professional, SEO-optimized websites with user-friendly navigation.',
       imageUrl: 'https://via.placeholder.com/300',
       link: '#',
@@ -39,7 +39,7 @@ function Website() {
     },
     {
       id: 6,
-      title: 'WordPress',
+      title: 'WordPress Website',
       description: 'Custom themes and plugin integration for tailored functionality.',
       imageUrl: 'https://via.placeholder.com/300',
       link: '#',
@@ -49,7 +49,7 @@ function Website() {
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
-      <h1 className="text-4xl font-bold mb-6 text-gray-800">Full Stack Web-Development</h1>
+      <h1 className="text-4xl font-bold mb-6 text-gray-800 text-center">Web Design & Devolvement</h1>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         Discover the comprehensive web design services I offer. Please select any area of interest for more information.
       </p>
