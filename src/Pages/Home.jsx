@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import MySkills from "../Components/MySkills";
+import StatsSection from "../Components/StatsSection.jsx";
+
 
 function Home() {
   const sectionRef = useRef(null);
@@ -27,6 +29,9 @@ function Home() {
 
   return (
     <>
+
+      
+    
       {/* Hero Section 1 */}
       <section className="flex flex-col lg:flex-row items-center mx-4 lg:mx-20 gap-5 lg:gap-14 py-10 md:py-10 lg:py-32 px-2 lg:px-[110px]">
         <div className="lg:w-1/2 animate__animated animate__fadeInLeft">
@@ -63,14 +68,17 @@ function Home() {
         </div>
       </section>
 
+
+
+
       {/* Hero Section 2 */}
       <section className="flex flex-col bg-[#f1f0f0] py-10 lg:py-24">
         <div className="text-center mb-8">
           <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-4">
-            My Services
+          Essential Services
           </h2>
-          <p className="text-[#343434] text-base sm:text-lg">
-            Choose any Service for more details
+          <p className="text-[#343434] text-lg sm:text-xl font-light mb-8">
+          Tailored solutions to meet your business needs.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row justify-center mx-4 lg:mx-20 gap-10">
@@ -103,10 +111,21 @@ function Home() {
         </div>
       </section>
 
+
+
+
+
       {/* Skills Section */}
       <div className="py-10 md:py-20 px-10 md:px-40 bg-[#faf7f7]">
         <MySkills />
       </div>
+
+    
+      {/* Stats Section */}
+      <div>
+        <StatsSection></StatsSection>
+      </div>
+
 
       {/* Section 3 */}
       <section
