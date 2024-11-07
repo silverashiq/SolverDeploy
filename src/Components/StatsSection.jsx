@@ -28,11 +28,11 @@ function StatsSection() {
   return (
     <section
       ref={statsRef}
-      className="py-16 bg-[#f1f0f0] relative overflow-hidden"
+      className="py-24 bg-[#f3f1f1] relative overflow-hidden"
     >
       <div className="absolute top-0 left-0 w-full h-1/2 bg-[#D9B592] opacity-30 transform -rotate-12 -z-10" />
 
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 px-4 sm:px-6 md:px-8 lg:px-12">
         <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-6">
           Trusted by Many, With Proven Results
         </h2>
@@ -41,40 +41,40 @@ function StatsSection() {
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-center gap-16 px-10 lg:px-40">
+      <div className="flex flex-col lg:flex-row justify-center gap-16 px-6 sm:px-10 md:px-16 lg:px-32">
         {/* Total Orders Completed */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="text-[#D9B592] text-7xl font-semibold mb-2 shadow-lg p-10 rounded-3xl">
+          <div className="text-[#D9B592] text-7xl sm:text-8xl font-semibold mb-2 shadow-lg p-8 sm:p-10 rounded-3xl">
             {inView && <CountUp end={1771} duration={2} />}
           </div>
-          <h3 className="font-sans text-xl sm:text-xl text-[#343434] font-medium">
+          <h3 className="font-semibold text-[#343434] text-lg">
             Projects Successfully Completed
           </h3>
         </div>
 
         {/* Happy Unique Clients */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="text-[#D9B592] text-7xl font-semibold mb-2 shadow-lg p-10 rounded-3xl">
+          <div className="text-[#D9B592] text-7xl sm:text-8xl font-semibold mb-2 shadow-lg p-8 sm:p-10 rounded-3xl">
             {inView && <CountUp end={1256} duration={2} />}
           </div>
-          <h3 className="font-sans text-xl sm:text-xl text-[#343434] font-medium">
+          <h3 className="font-semibold text-[#343434] text-lg">
             Satisfied Unique Clients
           </h3>
         </div>
 
         {/* Client Rated */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="text-[#D9B592] text-7xl font-semibold mb-2 shadow-lg p-10 rounded-3xl">
+          <div className="text-[#D9B592] text-7xl sm:text-8xl font-semibold mb-2 shadow-lg p-8 sm:p-10 rounded-3xl">
             {inView && <CountUp end={1199} duration={2} />}
           </div>
-          <h3 className="font-sans text-xl sm:text-xl text-[#343434] font-medium">
+          <h3 className="font-semibold text-[#343434] text-lg">
             Client Ratings & Feedback
           </h3>
         </div>
       </div>
 
       {/* Guarantee Note */}
-      <div className="mt-12 text-center text-[#343434] text-lg max-w-[80%] mx-auto italic">
+      <div className="mt-12 text-center text-[#343434] text-lg sm:text-lg max-w-[90%] sm:max-w-[80%] mx-auto italic">
         <p className="bg-[#f1f1f1] inline-block py-4 px-8 rounded-lg shadow-md">
           <FaCheckCircle className="inline-block text-green-500 mr-3 text-xl" />
           <span>

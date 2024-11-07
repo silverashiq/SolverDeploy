@@ -43,9 +43,9 @@ const SkillBar = ({ skill }) => {
 
   return (
     <div ref={skillRef} className="flex items-center space-x-4">
-      <div className="text-3xl text-[#343434]">{skill.icon}</div>
+      <div className="text-4xl text-[#343434]">{skill.icon}</div>
       <div className="w-full">
-        <h4 className="text-xl font-semibold">{skill.name}</h4>
+        <h4 className="font-semibold text-[#343434] text-lg">{skill.name}</h4>
         <p className="text-sm mb-2">{skill.description}</p>
         <div className="w-full bg-gray-300 rounded-full h-2 overflow-hidden">
           <div

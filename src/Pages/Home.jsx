@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import MySkills from "../Components/MySkills";
-import StatsSection from "../Components/StatsSection.jsx";
 
+import { FaPaintBrush, FaLink, FaRegClipboard, FaSearch, FaClock, FaInfinity } from 'react-icons/fa'
+import StatsSection from "../Components/StatsSection.Jsx";
 
 function Home() {
   const sectionRef = useRef(null);
@@ -29,9 +30,6 @@ function Home() {
 
   return (
     <>
-
-      
-    
       {/* Hero Section 1 */}
       <section className="flex flex-col lg:flex-row items-center mx-4 lg:mx-20 gap-5 lg:gap-14 py-10 md:py-10 lg:py-32 px-2 lg:px-[110px]">
         <div className="lg:w-1/2 animate__animated animate__fadeInLeft">
@@ -47,13 +45,13 @@ function Home() {
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
             <Link
               to="/contact"
-              className="py-2 px-4 bg-[#D9B592] font-bold rounded-md text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+              className="py-4 px-8 bg-[#D9B592] font-bold rounded-md text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
             >
               Request a Quote
             </Link>
             <Link
               to="/book"
-              className="py-2 px-4 bg-[#343434] font-bold rounded-md text-[#D9B592] hover:bg-[#D9B592] hover:text-[#343434] transition-colors duration-300"
+              className="py-4 px-8 bg-[#343434] font-bold rounded-md text-[#D9B592] hover:bg-[#D9B592] hover:text-[#343434] transition-colors duration-300"
             >
               Book an Appointment
             </Link>
@@ -68,17 +66,14 @@ function Home() {
         </div>
       </section>
 
-
-
-
       {/* Hero Section 2 */}
-      <section className="flex flex-col bg-[#f1f0f0] py-10 lg:py-24">
+      <section className="flex flex-col bg-[#f3f1f1] py-10 lg:py-24">
         <div className="text-center mb-8">
           <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-4">
-          Essential Services
+            Essential Services
           </h2>
           <p className="text-[#343434] text-lg sm:text-xl font-light mb-8">
-          Tailored solutions to meet your business needs.
+            Tailored solutions to meet your business needs.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row justify-center mx-4 lg:mx-20 gap-10">
@@ -111,96 +106,131 @@ function Home() {
         </div>
       </section>
 
-
-
-
-
       {/* Skills Section */}
       <div className="py-10 md:py-20 px-10 md:px-40 bg-[#faf7f7]">
         <MySkills />
       </div>
 
-    
       {/* Stats Section */}
       <div>
         <StatsSection></StatsSection>
       </div>
+5
+
 
 
       {/* Section 3 */}
-      <section
-        ref={sectionRef}
-        className={`flex flex-col lg:flex-row items-center gap-5 lg:gap-14 py-10 lg:py-32 px-2 lg:px-[110px] mx-4 md:mx-14 ${
-          isVisible ? "animate__animated animate__fadeIn" : "opacity-0"
-        }`}
-      >
-        <div
-          className={`lg:w-1/2 ${
-            isVisible ? "animate__animated animate__fadeInLeft" : "opacity-0"
-          }`}
-        >
-          <img
-            className="w-full h-auto rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
-            src="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730043798/Flyer_Brochure_q1ua0g.jpg"
-            alt="Logo Flyer brochure social media print media website design"
-          />
-        </div>
-        <div
-          className={`lg:w-1/2 ${
-            isVisible ? "animate__animated animate__fadeInRight" : "opacity-0"
-          }`}
-        >
-          <h2 className="font-sans font-semibold text-3xl sm:text-4xl leading-snug text-[#343434] mb-4">
-            Why Choose Me for Your Projects?
-          </h2>
-          <p className="text-[#343434] text-base sm:text-lg mb-6">
-            <span className="font-semibold">
-              Creative and Technical Expertise:
-            </span>{" "}
+     <section
+  ref={sectionRef}
+  className="max-w-[1400px] mx-auto px-4 lg:px-10 py-12 md:py-20 lg:py-28 bg-white text-[#343434] flex flex-col lg:flex-row items-start lg:items-center gap-8"
+>
+  {/* Left Side Image */}
+  <div className="w-full lg:w-1/3 flex justify-center lg:justify-start sm:mx-6 md:mx-8">
+    <img
+      className="w-full lg:w-[90%] md:w-[80%] h-auto px-10 lg:px-0"
+      src="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730997963/Pc_table_cql0vl.png"
+      alt="Workstation setup"
+    />
+  </div>
+
+  {/* Right Side Text */}
+  <div className="w-full lg:w-2/3 space-y-6 lg:space-y-8 lg:pl-8">
+    <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-12 text-center lg:text-start">
+      Why Choose Me?
+    </h2>
+    <div className="space-y-6">
+      <div className="flex items-start gap-4">
+        <FaPaintBrush className="text-4xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Creative and Technical Expertise
+          </h3>
+          <p className="text-[#343434]">
             As a Graphics Designer and Full-Stack Web Developer, I combine
-            visual creativity with technical proficiency, ensuring that designs
-            are not only beautiful but functional.
-            <br />
-            <br />
-            <span className="font-semibold">End-to-End Development:</span> With
-            experience in both front-end and back-end development, I create
-            cohesive digital experiences optimized for performance and
-            usability.
-            <br />
-            <br />
-            <span className="font-semibold">Client-Centered Approach:</span> I
-            prioritize understanding each client’s unique vision, aligning my
-            work with their brand identity and goals for a personalized touch.
-            <br />
-            <br />
-            <span className="font-semibold">
-              Quality and Attention to Detail:
-            </span>{" "}
-            Every project reflects my commitment to high standards, with careful
-            attention to detail in design, coding, and functionality.
-            <br />
-            <br />
-            <span className="font-semibold">Timely Delivery:</span> I understand
-            the importance of timelines and deliver work punctually, making me a
+            visual creativity with technical proficiency, ensuring designs
+            are beautiful and functional.
+          </p>
+        </div>
+      </div>
+      <div className="flex items-start gap-4">
+        <FaLink className="text-4xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            End-to-End Development
+          </h3>
+          <p className="text-[#343434]">
+            With experience in front-end and back-end development, I create
+            cohesive digital experiences optimized for performance.
+          </p>
+        </div>
+      </div>
+      <div className="flex items-start gap-4">
+        <FaRegClipboard className="text-4xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Client-Centered Approach
+          </h3>
+          <p className="text-[#343434]">
+            I prioritize understanding each client’s vision, aligning my
+            work with their brand identity and goals.
+          </p>
+        </div>
+      </div>
+      <div className="flex items-start gap-4">
+        <FaSearch className="text-3xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Quality and Attention to Detail
+          </h3>
+          <p className="text-[#343434]">
+            My commitment to high standards is reflected in every project,
+            focusing on design, coding, and functionality.
+          </p>
+        </div>
+      </div>
+      <div className="flex items-start gap-4">
+        <FaClock className="text-3xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Timely Delivery
+          </h3>
+          <p className="text-[#343434]">
+            I respect timelines and deliver punctually, making me a
             reliable partner for projects of any scale.
           </p>
         </div>
-      </section>
+      </div>
+      <div className="flex items-start gap-4">
+        <FaInfinity className="text-3xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Unlimited Revisions
+          </h3>
+          <p className="text-[#343434]">
+            I will revise and make any tweaks or modifications until the
+            design is finalized, and offer after-sale service as well.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }
 
 function ServiceCard({ image, title, description, alt }) {
   return (
-    <div className="flex flex-col  justify-evenly items-center text-center hover:scale-105 transition-transform duration-300">
-      <img
-        className="rounded-3xl shadow-md mb-4 h-auto md:h-[180px] lg:h-[400px] "
-        src={image}
-        alt={alt}
-      />
-      <h3 className="font-semibold text-[#343434] text-lg">{title}</h3>
-      <p className="text-[#343434] mt-2">{description}</p>
-    </div>
+<div className="flex flex-col justify-evenly items-center text-center hover:scale-105 transition-transform duration-300">
+  <img
+    className="rounded-3xl shadow-md mb-4 w-full max-w-[400px] h-auto object-cover lg:max-w-[600px] lg:h-[400px]"
+    src={image}
+    alt={alt}
+  />
+  <h3 className="font-semibold text-[#343434] text-lg">{title}</h3>
+  <p className="text-[#343434] mt-2">{description}</p>
+</div>
   );
 }
 
