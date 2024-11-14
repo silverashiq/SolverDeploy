@@ -5,45 +5,45 @@ function Graphics() {
   const graphicsData = [
     {
       id: 1,
-      title: "Brand Identity",
+      title: "Brand Guidelines",
       description:
         "Crafting unique visual identities that resonate with target audiences.",
-      imageUrl: "https://via.placeholder.com/300", // Replace with actual image URL
+      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731598363/Logo_Brand_identy_style_guide_design_jvuonh.png", // Replace with actual image URL
     },
     {
       id: 2,
       title: "Logo Design",
       description:
         "Crafting unique and memorable logos that capture the essence of your brand.",
-      imageUrl: "https://via.placeholder.com/300", // Replace with actual image URL
+        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731599786/Brand_Identity_Logo_Design3_hlfcxn.jpg", // Replace with actual image URL
     },
     {
       id: 3,
       title: "Print Media Design",
       description:
         "Creating compelling print materials, including brochures, posters, and business cards.",
-      imageUrl: "https://via.placeholder.com/300", // Replace with actual image URL
+        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731598363/Logo_Brand_identy_style_guide_design_jvuonh.png", // Replace with actual image URL
     },
     {
       id: 4,
       title: "Social Media Design",
       description:
         "Developing eye-catching digital assets for websites, social media, and online advertising.",
-      imageUrl: "https://via.placeholder.com/300", // Replace with actual image URL
+        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731598363/Logo_Brand_identy_style_guide_design_jvuonh.png", // Replace with actual image URL
     },
     {
       id: 5,
       title: "Packaging Design",
       description:
         "Designing packaging solutions that stand out on shelves and reflect brand values.",
-      imageUrl: "https://via.placeholder.com/300", // Replace with actual image URL
+        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731598363/Logo_Brand_identy_style_guide_design_jvuonh.png", // Replace with actual image URL
     },
     {
       id: 6,
       title: "User Interface (UI) Design",
       description:
         "Focusing on intuitive and engaging user interfaces for applications and websites.",
-      imageUrl: "https://via.placeholder.com/300", // Replace with actual image URL
+        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731598363/Logo_Brand_identy_style_guide_design_jvuonh.png", // Replace with actual image URL
     },
     // Add more graphics as needed
   ];
@@ -56,7 +56,7 @@ function Graphics() {
         select any sector for further details.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 px-4 mx-4 md:mx-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 px-4 mx-4 md:mx-14">
         {graphicsData.map((graphic) => (
           <Link
             to="#"
@@ -69,7 +69,7 @@ function Graphics() {
               <img
                 src={graphic.imageUrl}
                 alt={graphic.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-auto object-cover"
               />
               <div className="p-4">
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">

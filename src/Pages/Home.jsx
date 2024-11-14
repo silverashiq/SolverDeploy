@@ -27,7 +27,7 @@ function Home() {
       }
     };
   }, []);
-
+  
   return (
     <>
       {/* Hero Section 1 */}
@@ -38,20 +38,18 @@ function Home() {
             Creation?
           </h1>
           <p className="text-[#343434] text-base sm:text-lg mb-6">
-            I am a creative, innovative and intensely focused Graphics Designer
-            and Full-Stack Web Developer with more than 5 years of experience.
-            Let's connect and create something awesome!
+          With over 5 years of experience as a Graphics Designer and Full-Stack Web Developer, I craft innovative, high-quality designs and responsive websites tailored to your needs. <br/> Let’s collaborate to turn your vision into a powerful digital experience.
           </p>
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
             <Link
               to="/contact"
-              className="py-4 px-8 bg-[#D9B592] font-bold rounded-md text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+              className="py-4 px-8 bg-[#343434] font-bold rounded-md text-white hover:bg-[#D9B592] hover:text-[#343434] transition-colors duration-300"
             >
               Request a Quote
             </Link>
             <Link
               to="/book"
-              className="py-4 px-8 bg-[#343434] font-bold rounded-md text-[#D9B592] hover:bg-[#D9B592] hover:text-[#343434] transition-colors duration-300"
+              className="py-4 px-8 bg-[#343434] font-bold rounded-md text-white hover:bg-[#D9B592] hover:text-[#343434] transition-colors duration-300"
             >
               Book an Appointment
             </Link>
@@ -68,11 +66,11 @@ function Home() {
 
       {/* Hero Section 2 */}
       <section className="flex flex-col bg-[#f3f1f1] py-10 lg:py-24">
-        <div className="text-center mb-8">
-          <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-4">
+        <div className="text-center mb-8 ">
+          <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-4 ">
             Essential Services
           </h2>
-          <p className="text-[#343434] text-lg sm:text-xl font-light mb-8">
+          <p className="text-[#343434] text-lg sm:text-xl font-light mb-10">
             Tailored solutions to meet your business needs.
           </p>
         </div>
@@ -115,7 +113,6 @@ function Home() {
       <div>
         <StatsSection></StatsSection>
       </div>
-5
 
 
 
@@ -222,16 +219,21 @@ function Home() {
 
 function ServiceCard({ image, title, description, alt }) {
   return (
-<div className="flex flex-col justify-evenly items-center text-center hover:scale-105 transition-transform duration-300">
-  <img
-    className="rounded-3xl shadow-md mb-4 w-full max-w-[400px] h-auto object-cover lg:max-w-[600px] lg:h-[400px]"
-    src={image}
-    alt={alt}
-  />
-  <h3 className="font-semibold text-[#343434] text-lg">{title}</h3>
-  <p className="text-[#343434] mt-2">{description}</p>
-</div>
+    <div className="flex flex-col justify-between items-center text-center hover:scale-105 transition-transform duration-300 max-w-[400px] lg:max-w-[600px] min-h-[500px]">
+      <div className="w-full aspect-[720/526]">
+        <img
+          className="rounded-3xl shadow-md w-full h-full object-cover"
+          src={image}
+          alt={alt}
+        />
+      </div>
+      <div className="flex flex-col flex-grow items-center">
+        <h3 className="font-semibold text-[#343434] text-lg mt-4">{title}</h3>
+        <p className="text-[#343434] mt-2">{description}</p>
+      </div>
+    </div>
   );
 }
+
 
 export default Home;

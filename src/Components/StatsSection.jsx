@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import CountUp from "react-countup";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle, FaTasks, FaUsers, FaStar } from "react-icons/fa";
 
 function StatsSection() {
   const [inView, setInView] = useState(false);
@@ -9,7 +9,7 @@ function StatsSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
-        setInView(true); // Set inView to true when section is in view
+        setInView(true); 
         observer.disconnect();
       }
     });
@@ -41,33 +41,36 @@ function StatsSection() {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center gap-16 px-6 sm:px-10 md:px-16 lg:px-32">
+      <div className="flex flex-col lg:flex-row justify-center gap-20 px-6 sm:px-10 md:px-16 lg:px-32 pt-">
         {/* Total Orders Completed */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="text-[#D9B592] text-7xl sm:text-8xl font-semibold mb-2 shadow-lg p-8 sm:p-10 rounded-3xl">
+          <div className="relative text-[#D9B592] text-7xl sm:text-8xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
+            <FaTasks className="absolute text-2xl sm:text-4xl text-[#D9B592] -top-3 -left-8" />
             {inView && <CountUp end={1771} duration={2} />}
           </div>
-          <h3 className="font-semibold text-[#343434] text-lg">
+          <h3 className="font-semibold text-[#343434] text-lg text-center">
             Projects Successfully Completed
           </h3>
         </div>
 
         {/* Happy Unique Clients */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="text-[#D9B592] text-7xl sm:text-8xl font-semibold mb-2 shadow-lg p-8 sm:p-10 rounded-3xl">
+          <div className="relative text-[#D9B592] text-7xl sm:text-8xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
+            <FaUsers className="absolute text-3xl sm:text-4xl text-[#D9B592] -top-3 -left-6" />
             {inView && <CountUp end={1256} duration={2} />}
           </div>
-          <h3 className="font-semibold text-[#343434] text-lg">
+          <h3 className="font-semibold text-[#343434] text-lg text-center">
             Satisfied Unique Clients
           </h3>
         </div>
 
         {/* Client Rated */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="text-[#D9B592] text-7xl sm:text-8xl font-semibold mb-2 shadow-lg p-8 sm:p-10 rounded-3xl">
+          <div className="relative text-[#D9B592] text-7xl sm:text-8xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
+            <FaStar className="absolute text-3xl sm:text-4xl text-[#D9B592] -top-3 -left-6" />
             {inView && <CountUp end={1199} duration={2} />}
           </div>
-          <h3 className="font-semibold text-[#343434] text-lg">
+          <h3 className="font-semibold text-[#343434] text-lg text-center">
             Client Ratings & Feedback
           </h3>
         </div>

@@ -137,7 +137,7 @@ const MySkills = () => {
   ];
   return (
     <section className="text-center mb-8">
-      <h3 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] text-center mb-6">
+      <h3 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] text-center mb-6 ">
       My Expertise
       </h3>
       <p className="text-[#343434] text-lg sm:text-xl font-light">
