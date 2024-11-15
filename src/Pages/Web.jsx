@@ -48,13 +48,13 @@ function Website() {
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-6 md:px-10 lg:px-28">
       <h1 className="text-4xl font-bold mb-6 text-gray-800 text-center">Web Design & Devolvement</h1>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         Discover the comprehensive web design services I offer. Please select any area of interest for more information.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 mx-4 md:mx-14 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-20 mx-4 md:mx-14 px-4 mb-10 md:mb-20">
         {projects.map((project) => (
           <a
             key={project.id}

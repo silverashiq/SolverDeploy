@@ -77,7 +77,7 @@ function Home() {
         <div className="flex flex-col sm:flex-row justify-center mx-4 lg:mx-20 gap-10">
           <Link to="/graphics">
             <ServiceCard
-              image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730377910/Brand_Identity_Logo_Design_a4upyf.jpg"
+              image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731683328/Asset_16_oumlu1.png"
               title="Logo Design & Brand Identity"
               description="Create a compelling brand identity that resonates with your audience. My logo design reflects your brand's core values and ensures effective communication."
               alt="Business Professional Brand Identity and Logo Design, Custom Logo, Visual Identity, Graphic Design, Branding Solutions, Corporate Identity, Logo Development"
