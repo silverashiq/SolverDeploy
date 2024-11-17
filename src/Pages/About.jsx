@@ -74,7 +74,7 @@ const About = () => {
             </p>
             <a
               href="/services"
-              className="bg-[#D9B592] font-semibold text-[#343434] px-4 py-2 rounded-lg shadow-md hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+              className="bg-[#D9B592] font-semibold text-white px-4 py-2 rounded-lg shadow-md hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
             >
               View Services
             </a>
@@ -88,7 +88,7 @@ const About = () => {
             </p>
             <a
               href="/portfolio"
-              className="bg-[#D9B592] font-semibold text-[#343434] px-4 py-2 rounded-lg shadow-md hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+              className="bg-[#D9B592] font-semibold text-white px-4 py-2 rounded-lg shadow-md hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
             >
               View Portfolio
             </a>
@@ -102,7 +102,7 @@ const About = () => {
             </p>
             <a
               href="/contact"
-              className="bg-[#D9B592] font-semibold text-[#343434] px-4 py-2 rounded-lg shadow-md hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+              className="bg-[#D9B592] font-semibold text-white px-4 py-2 rounded-md shadow-md hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
             >
               Contact Me
             </a>

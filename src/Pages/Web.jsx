@@ -4,44 +4,44 @@ function Website() {
   const projects = [
     {
       id: 1,
-      title: 'Business Website',
-      description: 'Custom online stores with secure payment integration and inventory management.',
-      imageUrl: 'https://via.placeholder.com/300',
+      title: 'Landing Page',
+      description: 'A clean, conversion-focused landing page with clear CTAs, responsive design, and engaging visuals.',
+      imageUrl: 'https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731836719/Landing_t5a5mo.jpg',
       link: '#',
     },
     {
       id: 2,
-      title: 'Website Application',
-      description: 'Custom solutions focused on UI/UX and API integration.',
-      imageUrl: 'https://via.placeholder.com/300',
+      title: 'Business Website',
+      description: 'A professional, user-friendly business website with responsive design and clear navigation.',
+      imageUrl: 'https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731836718/Business_xyujva.jpg',
       link: '#',
     },
     {
       id: 3,
-      title: 'E-Commerce Website',
-      description: 'High-converting, responsive designs optimized for user engagement.',
-      imageUrl: 'https://via.placeholder.com/300',
+      title: 'Website Re-design',
+      description: 'A modern, responsive website redesign with enhanced usability and optimized performance.',
+      imageUrl: 'https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731836719/Re-design_altrfh.jpg',
       link: '#',
     },
     {
       id: 4,
-      title: 'Website Re-design',
-      description: 'Professional, SEO-optimized websites with user-friendly navigation.',
-      imageUrl: 'https://via.placeholder.com/300',
+      title: 'E-Commerce Website',
+      description: 'High-converting, sleek, responsive e-commerce website with easy navigation and secure checkout.',
+      imageUrl: 'https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731836718/E-comm_iyuy4k.jpg',
       link: '#',
     },
     {
       id: 5,
-      title: 'Full-Stack Development',
-      description: 'Full-stack applications built using MongoDB, Express.js, React, and Node.js.',
-      imageUrl: 'https://via.placeholder.com/300',
+      title: 'Web Application',
+      description: 'A robust, user-friendly web application with seamless functionality and intuitive design.',
+      imageUrl: 'https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731836720/Web_App_iunx4e.jpg',
       link: '#',
     },
     {
       id: 6,
-      title: 'WordPress Website',
-      description: 'Custom themes and plugin integration for tailored functionality.',
-      imageUrl: 'https://via.placeholder.com/300',
+      title: 'Full-Stack Web Devolvement',
+      description: 'Full-stack applications built using MongoDB, Express.js, React, and Node.js.',
+      imageUrl: 'https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731836720/Full_Stack_bvuksg.jpg',
       link: '#',
     },
     // Add more projects as needed
@@ -54,7 +54,7 @@ function Website() {
         Discover the comprehensive web design services I offer. Please select any area of interest for more information.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-20 mx-4 md:mx-14 px-4 mb-10 md:mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16 mx-4 md:mx-14 px-4 mb-10 md:mb-20">
         {projects.map((project) => (
           <a
             key={project.id}
@@ -64,7 +64,7 @@ function Website() {
             <img
               src={project.imageUrl}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-auto object-cover opacity-35"
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h2>

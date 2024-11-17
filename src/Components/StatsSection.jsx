@@ -44,7 +44,7 @@ function StatsSection() {
       <div className="flex flex-col lg:flex-row justify-center gap-20 px-6 sm:px-10 md:px-16 lg:px-32 pt-">
         {/* Total Orders Completed */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="relative text-[#D9B592] text-7xl sm:text-8xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
+          <div className="relative text-[#D9B592] text-4xl md:text-6xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
             <FaTasks className="absolute text-2xl sm:text-4xl text-[#D9B592] -top-3 -left-8" />
             {inView && <CountUp end={1771} duration={2} />}
           </div>
@@ -55,7 +55,7 @@ function StatsSection() {
 
         {/* Happy Unique Clients */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="relative text-[#D9B592] text-7xl sm:text-8xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
+          <div className="relative text-[#D9B592] text-4xl md:text-6xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
             <FaUsers className="absolute text-3xl sm:text-4xl text-[#D9B592] -top-3 -left-6" />
             {inView && <CountUp end={1256} duration={2} />}
           </div>
@@ -66,7 +66,7 @@ function StatsSection() {
 
         {/* Client Rated */}
         <div className="flex flex-col items-center space-y-4 transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <div className="relative text-[#D9B592] text-7xl sm:text-8xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
+          <div className="relative text-[#D9B592] text-4xl md:text-6xl font-semibold shadow-lg p-10 rounded-full bg-white border border-[#D9B592]">
             <FaStar className="absolute text-3xl sm:text-4xl text-[#D9B592] -top-3 -left-6" />
             {inView && <CountUp end={1199} duration={2} />}
           </div>

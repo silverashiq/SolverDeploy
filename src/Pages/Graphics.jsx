@@ -5,20 +5,23 @@ function Graphics() {
   const graphicsData = [
     {
       id: 1,
-      title: "Brand Guidelines",
-      description:
-        "Crafting unique visual identities and style guide that resonate with target audiences.",
-      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731598363/Logo_Brand_identy_style_guide_design_jvuonh.png", // Replace with actual image URL
-    },
-    {
-      id: 2,
+      url: "" ,
       title: "Logo Design",
       description:
         "Crafting any kind of unique and memorable logos that capture the essence of your brand.",
         imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731599786/Brand_Identity_Logo_Design3_hlfcxn.jpg", // Replace with actual image URL
     },
     {
+      id: 2,
+      url: "" ,
+      title: "Brand Guidelines",
+      description:
+        "Crafting unique visual identities and style guide that resonate with target audiences.",
+      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731598363/Logo_Brand_identy_style_guide_design_jvuonh.png", // Replace with actual image URL
+    },
+    {
       id: 3,
+      url: "" ,
       title: "Print Media Design",
       description:
         "Creating compelling print materials, including brochures, posters, and business cards.",
@@ -26,20 +29,23 @@ function Graphics() {
     },
     {
       id: 4,
-      title: "Social Media Design",
-      description:
-        "Developing eye-catching digital assets for websites, social media, and online advertising.",
-        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731688976/Social_Media_post_Design_iltuuh.jpg", // Replace with actual image URL
-    },
-    {
-      id: 5,
+      url:"" ,
       title: "Packaging Design",
       description:
         "Designing packaging solutions that stand out on shelves and reflect brand values.",
         imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731688975/Product_Packaging_design_uihxji.jpg", // Replace with actual image URL
     },
     {
+      id: 5,
+      url: "" ,
+      title: "Social Media Design",
+      description:
+        "Developing eye-catching digital assets for websites, social media, and online advertising.",
+        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731688976/Social_Media_post_Design_iltuuh.jpg", // Replace with actual image URL
+    },
+    {
       id: 6,
+      url: "",
       title: "T-Shirt Design",
       description:
         "Creative & Unique T-Shirt Designs Tailored Just for You, Bringing Your Ideas to Life!.",
@@ -56,10 +62,11 @@ function Graphics() {
         select any sector for further details.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-20 px-4 mx-4 md:mx-14 mb-10 md:mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16 px-4 mx-4 md:mx-14 mb-10 md:mb-20">
         {graphicsData.map((graphic) => (
           <Link
-            to="#"
+            // to="#"
+            to={graphic.url}
             className="hover:scale-105 transition-transform duration-300"
           >
             <div
