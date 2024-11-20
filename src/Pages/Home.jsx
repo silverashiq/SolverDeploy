@@ -87,7 +87,7 @@ function Home() {
           <Link to="/graphics">
             <ServiceCard
               image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730043798/Brochure_Flyer_Trifold_Design_ho0dic.jpg"
-              title="Social Media & Print Design"
+              title="Social & Print Media Design"
               description="Enhance your brand presence with engaging social media content and eye-catching print materials like brochures and flyers."
               alt="Print Media like Brochure Flyers Brochures Stationery Books Magazines Catalogs Annual reports Proposals Billboards Posters Bifold Trifold Magazine Booklet Packaging"
             />

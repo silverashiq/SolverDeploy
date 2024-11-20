@@ -5,7 +5,7 @@ function Graphics() {
   const graphicsData = [
     {
       id: 1,
-      url: "" ,
+      url: "/brand" ,
       title: "Logo Design",
       description:
         "Crafting any kind of unique and memorable logos that capture the essence of your brand.",
