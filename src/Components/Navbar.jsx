@@ -33,7 +33,7 @@ function Navbar() {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-[#D9B592] focus:outline-none"
+            className="text-[#D9B592] focus:outline-none text-3xl"
           >
             {isOpen ? (
               <LuX className="text-[#D9B592]" />
@@ -75,17 +75,17 @@ function Navbar() {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#343434] p-4">
+        <div className="md:hidden bg-[#343434] p-4 ">
           <ul className="text-[#D9B592]">
             <li>
-              <Link to="/" className="block hover:text-white">Home</Link>
+              <Link to="/" className="block hover:text-white mb-2">Home</Link>
             </li>
             <li>
-              <Link to="/about" className="block hover:text-white">About</Link>
+              <Link to="/about" className="block hover:text-white mb-2">About</Link>
             </li>
             <li>
               <details className="dropdown dropdown-right">
-                <summary className="block">Services</summary>
+                <summary className="block mb-2">Services</summary>
                 <ul className="menu dropdown-content bg-[#525252] rounded-box z-20 w-40 p-1 shadow ml-4">
                   <li>
                     <Link to="/services" className="block">All Services</Link>
@@ -100,10 +100,10 @@ function Navbar() {
               </details>
             </li>
             <li>
-              <Link to="/portfolio" className="block hover:text-white">Portfolio</Link>
+              <Link to="/portfolio" className="block hover:text-white mb-2">Portfolio</Link>
             </li>
             <li>
-              <Link to="/contact" className="block hover:text-white">Contact</Link>
+              <Link to="/contact" className="block hover:text-white ">Contact</Link>
             </li>
           </ul>
         </div>

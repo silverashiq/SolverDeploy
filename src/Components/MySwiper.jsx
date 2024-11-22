@@ -10,7 +10,7 @@ function MySwiper({ slides }) {
     <Swiper
       modules={[Navigation, Autoplay, EffectCoverflow]}
       effect="coverflow"
-      className="my-0 md:my-10"
+      className="mt-0 md:mt-10"
       grabCursor={true}
       centeredSlides={true}
       spaceBetween={20}
@@ -32,14 +32,14 @@ function MySwiper({ slides }) {
           slidesPerView: 2,
         },
         1024: {
-          slidesPerView: 2,
+          slidesPerView: 4,
         },
       }}
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <img
-            className="w-full h-auto lg:h-[600px] object-cover object-center rounded-none md:rounded-3xl"
+            className="w-full h-auto lg:h-[600px] object-cover object-scale-down rounded-none md:rounded-3xl"
             src={slide.url}
             alt={slide.alt}
           />

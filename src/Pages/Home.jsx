@@ -104,20 +104,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <div className="py-10 md:py-20 px-10 md:px-40 bg-[#faf7f7]">
-        <MySkills />
-      </div>
-
-      {/* Stats Section */}
-      <div>
-        <StatsSection></StatsSection>
-      </div>
-
-
-
-      {/* Section 3 */}
-     <section
+      <section
   ref={sectionRef}
   className="max-w-[1400px] mx-auto px-4 lg:px-10 py-12 md:py-20 lg:py-28 bg-white text-[#343434] flex flex-col lg:flex-row items-start lg:items-center gap-8"
 >
@@ -212,6 +199,23 @@ function Home() {
     </div>
   </div>
 </section>
+
+
+
+      {/* Skills Section */}
+      <div className="py-10 md:py-20 px-10 md:px-40 bg-[#faf7f7]">
+        <MySkills />
+      </div>
+
+      {/* Stats Section */}
+      <div>
+        <StatsSection></StatsSection>
+      </div>
+
+
+
+      {/* Section 3 */}
+
 
     </>
   );

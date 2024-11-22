@@ -1,18 +1,37 @@
 import React, { useState } from 'react';
+import { FiPaperclip } from 'react-icons/fi'; // Importing the attach icon
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
+    files: [], // Changed to store an array of files
   });
   
   const [showContactInfo, setShowContactInfo] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState('');
+  const [fileError, setFileError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFileChange = (e) => {
+    const selectedFiles = Array.from(e.target.files);
+    let error = '';
+
+    // Check if any file exceeds 5MB
+    const isFileTooLarge = selectedFiles.some(file => file.size > 5 * 1024 * 1024); // 5MB in bytes
+    if (isFileTooLarge) {
+      error = 'File size should not exceed 5MB';
+    }
+
+    if (!error) {
+      setFormData({ ...formData, files: selectedFiles });
+    }
+    setFileError(error);
   };
 
   const handleSubmit = (e) => {
@@ -21,7 +40,7 @@ function Contact() {
     
     // Simulate form submission success
     setSubmissionStatus('Your message has been sent! Thank you.');
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: '', email: '', message: '', files: [] });
 
     // Clear the status message after 5 seconds
     setTimeout(() => setSubmissionStatus(''), 5000);
@@ -80,7 +99,7 @@ function Contact() {
         
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="message">
-            Message
+            Project Details
           </label>
           <textarea
             name="message"
@@ -92,6 +111,37 @@ function Contact() {
             className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:border-blue-500"
             aria-label="Your Message"
           ></textarea>
+        </div>
+
+        <div className="mb-4 flex items-center">
+          <label className="block text-gray-700 text-sm font-semibold mb-2 mr-2" htmlFor="file">
+            Sample images (if any)
+          </label>
+          <input
+            type="file"
+            name="files"
+            id="file"
+            onChange={handleFileChange}
+            className="hidden"
+            accept="image/*"
+            multiple
+            aria-label="Attach Images"
+          />
+          <label
+            htmlFor="file"
+            className="cursor-pointer flex items-center bg-gray-200 text-gray-700 py-1 px-2 rounded-lg hover:bg-gray-300 transition duration-200 text-sm"
+            aria-label="Choose Files"
+          >
+            <FiPaperclip className="mr-2" /> Attach Images
+          </label>
+          {formData.files.length > 0 && (
+            <div className="ml-2 text-sm text-gray-600">
+              {formData.files.map((file, index) => (
+                <div key={index}>{file.name}</div>
+              ))}
+            </div>
+          )}
+          {fileError && <p className="mt-2 text-red-500 text-sm">{fileError}</p>}
         </div>
 
         <button

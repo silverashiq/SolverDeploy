@@ -13,9 +13,12 @@ import NotFound from './Pages/NotFound';
 import Terms from './Pages/Terms';
 import Policy from './Pages/Policy';
 import Appointment from './Pages/Appointment';
-import BrandLogo from './Pages/BrandLogo';
+import Logos from './Pages/Logos';
+import BrandGuidelines from './Pages/BrandGuidelines ';
+import Brochure from './Pages/Brochure';
 
 
+BrandGuidelines
 
 function App() {
   return (
@@ -31,7 +34,9 @@ function App() {
         <Route path="book" element={<Appointment />} />
         <Route path="terms" element={<Terms />} />
         <Route path="policy" element={<Policy />} />
-        <Route path="brand" element={<BrandLogo />} />
+        <Route path="logo" element={<Logos />} />
+        <Route path="brand" element={<BrandGuidelines />} />
+        <Route path="print" element={<Brochure />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

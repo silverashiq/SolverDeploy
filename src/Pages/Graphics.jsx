@@ -5,7 +5,7 @@ function Graphics() {
   const graphicsData = [
     {
       id: 1,
-      url: "/brand" ,
+      url: "/logo" ,
       title: "Logo Design",
       description:
         "Crafting any kind of unique and memorable logos that capture the essence of your brand.",
@@ -13,7 +13,7 @@ function Graphics() {
     },
     {
       id: 2,
-      url: "" ,
+      url: "/brand" ,
       title: "Brand Guidelines",
       description:
         "Crafting unique visual identities and style guide that resonate with target audiences.",
@@ -21,7 +21,7 @@ function Graphics() {
     },
     {
       id: 3,
-      url: "" ,
+      url: "/print" ,
       title: "Print Media Design",
       description:
         "Creating compelling print materials, including brochures, posters, and business cards.",
@@ -29,20 +29,21 @@ function Graphics() {
     },
     {
       id: 4,
-      url:"" ,
-      title: "Packaging Design",
-      description:
-        "Designing packaging solutions that stand out on shelves and reflect brand values.",
-        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731688975/Product_Packaging_design_uihxji.jpg", // Replace with actual image URL
-    },
-    {
-      id: 5,
       url: "" ,
       title: "Social Media Design",
       description:
         "Developing eye-catching digital assets for websites, social media, and online advertising.",
         imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731688976/Social_Media_post_Design_iltuuh.jpg", // Replace with actual image URL
     },
+    {
+      id: 5,
+      url:"" ,
+      title: "Packaging Design",
+      description:
+        "Designing packaging solutions that stand out on shelves and reflect brand values.",
+        imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731688975/Product_Packaging_design_uihxji.jpg", // Replace with actual image URL
+    },
+
     {
       id: 6,
       url: "",
