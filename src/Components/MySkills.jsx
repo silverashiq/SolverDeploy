@@ -122,7 +122,7 @@ const MySkills = () => {
       description: "Proficient in NoSQL database management.",
     },
     {
-      name: "WordPress",
+      name: "Wordpress & other CMS",
       icon: <FaWordpress />,
       level: 8.5,
       description:
@@ -136,14 +136,14 @@ const MySkills = () => {
     },
   ];
   return (
-    <section className="text-center mb-8">
+    <section className="text-center mb-8 mx-2 md:mx-10 lg:mx-32">
       <h3 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] text-center mb-6 ">
       My Expertise
       </h3>
       <p className="text-[#343434] text-lg sm:text-xl font-light">
       Expert in design and development, delivering innovative solutions.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-20">
         {skills.map((skill) => (
           <SkillBar key={skill.name} skill={skill} />
         ))}

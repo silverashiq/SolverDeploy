@@ -29,7 +29,7 @@ function Graphics() {
     },
     {
       id: 4,
-      url: "" ,
+      url: "/social" ,
       title: "Social Media Design",
       description:
         "Developing eye-catching digital assets for websites, social media, and online advertising.",
@@ -37,7 +37,7 @@ function Graphics() {
     },
     {
       id: 5,
-      url:"" ,
+      url:"/pack" ,
       title: "Packaging Design",
       description:
         "Designing packaging solutions that stand out on shelves and reflect brand values.",
@@ -46,7 +46,7 @@ function Graphics() {
 
     {
       id: 6,
-      url: "",
+      url: "/tshirt",
       title: "T-Shirt Design",
       description:
         "Creative & Unique T-Shirt Designs Tailored Just for You, Bringing Your Ideas to Life!.",
@@ -56,7 +56,7 @@ function Graphics() {
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-6 md:px-10 lg:px-28">
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-2 md:px-10 lg:px-28">
       <h1 className="text-4xl font-bold mb-6 text-gray-800">Graphic Design </h1>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         Explore the diverse range of graphic design services I provide. Please
@@ -77,10 +77,10 @@ function Graphics() {
               <img
                 src={graphic.imageUrl}
                 alt={graphic.title}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover "
               />
               <div className="p-4">
-                <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                <h2 className="text-2xl font-semibold text-[#D9B592] mb-2 ">
                   {graphic.title}
                 </h2>
                 <p className="text-gray-600">{graphic.description}</p>

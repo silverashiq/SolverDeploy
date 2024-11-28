@@ -65,7 +65,7 @@ const About = () => {
         {/* Skills Section */}
         <MySkills /> {/* Use the MySkills component */}
         {/* Buttons Section */}
-        <div className="mt-16 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-20 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6  mx-2 md:mx-10 lg:mx-24">
           {/* Services Section */}
           <div className="border border-gray-300 py-8 px-6 rounded-lg shadow-lg text-center">
             <h3 className="text-xl font-semibold mb-2">My Services</h3>

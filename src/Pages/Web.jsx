@@ -48,7 +48,7 @@ function Website() {
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-6 md:px-10 lg:px-28">
+    <div className="bg-gray-50 min-h-screen flex flex-col items-center py-10 px-2 md:px-10 lg:px-28">
       <h1 className="text-4xl font-bold mb-6 text-gray-800 text-center">Web Design & Devolvement</h1>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         Discover the comprehensive web design services I offer. Please select any area of interest for more information.
@@ -64,10 +64,10 @@ function Website() {
             <img
               src={project.imageUrl}
               alt={project.title}
-              className="w-full h-auto object-cover opacity-35"
+              className="w-full h-auto object-cover opacity-60"
             />
             <div className="p-4">
-              <h2 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h2>
+              <h2 className="text-2xl font-semibold text-[#D9B592] mb-2">{project.title}</h2>
               <p className="text-gray-600 mb-4">{project.description}</p>
             </div>
           </a>

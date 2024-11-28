@@ -52,7 +52,7 @@ function Services() {
                 className="w-full h-auto object-cover"
               />
               <div className="p-4">
-                <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-2">
                   {service.title}
                 </h2>
                 <p className="text-gray-600">{service.description}</p>

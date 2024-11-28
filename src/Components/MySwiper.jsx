@@ -15,11 +15,12 @@ function MySwiper({ slides }) {
       centeredSlides={true}
       spaceBetween={20}
       loop={true}
+      slidesPerView="auto" // Set to "auto" for smooth, continuous flow
       autoplay={{
-        delay: 5000,
+        delay: 0, // No delay between transitions
         disableOnInteraction: false,
       }}
-      navigation
+      speed={5000}
       pagination={{ clickable: true }}
       coverflowEffect={{
         slideShadows: false, // Disable slide shadows

@@ -17,6 +17,11 @@ import Logos from './Pages/Logos';
 import BrandGuidelines from './Pages/BrandGuidelines ';
 import Brochure from './Pages/Brochure';
 
+import Packaging from './Pages/Packaging';
+import Tshirt from './Pages/Tshirt';
+import SocialPage from './Pages/Socialpage';
+
+
 
 BrandGuidelines
 
@@ -37,6 +42,9 @@ function App() {
         <Route path="logo" element={<Logos />} />
         <Route path="brand" element={<BrandGuidelines />} />
         <Route path="print" element={<Brochure />} />
+        <Route path="social" element={<SocialPage />} />
+        <Route path="pack" element={<Packaging />} />
+        <Route path="tshirt" element={<Tshirt />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
