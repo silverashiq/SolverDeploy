@@ -69,9 +69,9 @@ const Tshirt = () => {
       <MySwiper slides={tshirtSlides} />
       <div className="bg-white text-[#343434]">
         {/* Introduction */}
-        <div className="px-6 py-16 md:px-16 lg:px-32">
+        <div className="px-6 py-8 md:px-16 lg:px-32">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-[#D9B592] mb-4">
+            <h1 className="text-3xl md:5xl font-bold text-[#D9B592] mb-4">
               T-shirt Design
             </h1>
             <p className="text-lg text-[#525252]">

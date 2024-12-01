@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 const Packaging = () => {
   const packagingSlides = [
     {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813524/76421_jcmebz.jpg",
+      alt: "Sophisticated design with professional aesthetics",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813523/130_a1k8tb.jpg",
+      alt: "Minimalist design focused on sleek presentation",
+    },
+    {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813528/Leather_Bag_2000x1300px_Free_PSD_Mockup_by_MD15_rbqnpi.jpg",
       alt: "Premium leather bag mockup for branding visualization",
     },
@@ -25,7 +33,7 @@ const Packaging = () => {
       alt: "Elegant wine label design for sophisticated branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813534/STRAWBERRY_MockUp_ttsrer.png",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/t_pot/q_auto/v1732813534/STRAWBERRY_MockUp_ttsrer.png",
       alt: "Strawberry-themed product mockup for fresh branding",
     },
     {
@@ -61,10 +69,6 @@ const Packaging = () => {
       alt: "Logo mockup showcasing minimalist elegance",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813527/Flyer_51_rqrpvp.jpg",
-      alt: "High-impact flyer design for event promotion",
-    },
-    {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813526/Flyer_25_fuqpi7.jpg",
       alt: "Engaging flyer design with modern elements",
     },
@@ -80,14 +84,8 @@ const Packaging = () => {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813525/183_jhuvdl.jpg",
       alt: "Modern layout with a bold visual statement",
     },
-    {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813524/76421_jcmebz.jpg",
-      alt: "Sophisticated design with professional aesthetics",
-    },
-    {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813523/130_a1k8tb.jpg",
-      alt: "Minimalist design focused on sleek presentation",
-    },
+
+
     
   ];
 
@@ -97,9 +95,9 @@ const Packaging = () => {
       <MySwiper slides={packagingSlides} />
       <div className="bg-white text-[#343434]">
         {/* Introduction */}
-        <div className="px-6 py-16 md:px-16 lg:px-32">
+        <div className="px-6 py-8 md:px-16 lg:px-32">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-[#D9B592] mb-4">
+            <h1 className="text-3xl md:5xl font-bold text-[#D9B592] mb-4">
               Packaging Design
             </h1>
             <p className="text-lg text-[#525252]">

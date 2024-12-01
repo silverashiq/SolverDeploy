@@ -143,7 +143,7 @@ const Appointment = () => {
       <div className="flex flex-col items-center mb-6 mx-9 md:mx-0">
         <button
           onClick={toggleContactInfo}
-          className="bg-[#D9B592] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#343434] transition duration-200"
+          className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-2000"
         >
           {showContactInfo ? 'Hide Contact Info' : 'Contact Info'}
         </button>

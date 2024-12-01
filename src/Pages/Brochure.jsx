@@ -5,12 +5,30 @@ import { Link } from "react-router-dom";
 const Brochure = () => {
   const printDesignSlides = [
     {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288625/Print_Media_Design_Brochure_Flyer_32_ojuiet.jpg",
+      alt: "Sophisticated design with professional aesthetics",
+    },    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733047776/Tri_MOCKUP_bt2dmq.jpg",
+      alt: "Sophisticated design with professional aesthetics",
+    },    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733047775/BC_3d_Mockup_stt3y6.jpg",
+      alt: "Sophisticated design with professional aesthetics",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733042392/BH2_Mockup1_n6k7v2.jpg",
+      alt: "Sophisticated design with professional aesthetics",
+    },
+    {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_37_gk71te.jpg",
       alt: "Creative and professional print media design",
     },
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288637/Print_Media_Design_Brochure_Flyer_43_v2riwc.jpg",
       alt: "Eye-catching flyers and brochures designed to elevate your business",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288517/Print_Media_Design_Brochure_Flyer_4_rrpnuu.png",
+      alt: "High-quality print media designs for your business",
     },
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288637/Print_Media_Design_Brochure_Flyer_41_h4x7ol.jpg",
@@ -132,7 +150,7 @@ const Brochure = () => {
       <MySwiper slides={printDesignSlides} />
       <div className="bg-white text-[#343434]">
         {/* Introduction */}
-        <div className="px-6 py-16 md:px-16 lg:px-32">
+        <div className="px-6 py-8 md:px-16 lg:px-32">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-3xl md:5xl font-bold text-[#D9B592] mb-4">
               Print Media Design
