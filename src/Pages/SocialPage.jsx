@@ -65,11 +65,11 @@ const SocialPage = () => {
         {/* Introduction */}
         <div className="px-6 py-8 md:px-16 lg:px-32">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-3xl md:5xl font-bold text-[#D9B592] mb-4">
+            <h1 className="text-3xl md:5xl font-bold text-gray-700 mb-4">
               Social Media Design
             </h1>
             <p className="text-lg text-[#525252]">
-              Create a strong online presence with custom, eye-catching social media designs tailored to your brand.
+              Create a strong online presence with custom, eye-catching social & digital media designs tailored to your brand.
             </p>
           </div>
         </div>

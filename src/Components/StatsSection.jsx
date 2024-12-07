@@ -33,10 +33,13 @@ function StatsSection() {
       <div className="absolute top-0 left-0 w-full h-1/2 bg-[#D9B592] opacity-30 transform -rotate-12 -z-10" />
 
       <div className="text-center mb-12 px-4 sm:px-6 md:px-8 lg:px-12">
-        <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-6">
+        <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-gray-700">
           Trusted by Many, With Proven Results
         </h2>
-        <p className="text-[#343434] text-lg sm:text-xl font-light mb-8">
+        <div className='flex justify-center'>
+  <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]'></span>
+</div>
+        <p className="text-[#343434] text-lg sm:text-xl font-light mb-24">
           Here’s a snapshot of my successful collaborations. The numbers speak for themselves.
         </p>
       </div>

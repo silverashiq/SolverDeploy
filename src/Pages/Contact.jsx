@@ -56,7 +56,10 @@ function Contact() {
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
-      <h1 className="text-4xl font-bold mb-6 text-gray-800">Contact Me</h1>
+      <h1 className="text-4xl font-bold text-gray-700">Contact Me</h1>
+      <div className='flex justify-center'>
+  <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]'></span>
+</div>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         I'd love to hear from you! Please fill out the form below to get in touch.
       </p>

@@ -8,11 +8,15 @@ const About = () => {
       <div className="container mx-auto px-6 lg:px-20">
         {/* Introduction Section */}
         <div className="flex flex-col items-center text-center mb-16 px-6 md:px-0 max-w-4xl mx-auto">
-          <img className="rounded-lg mb-6" src="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733052287/SolverSilver_symtg0.jpg" alt="SolverSilver" />
-          <h2 className="text-4xl font-bold text-gray-800">
+          <img className="rounded-lg mb-6" src="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733607813/SolverSilver_klttwk.jpg" alt="SolverSilver" />
+          <h2 className="text-4xl font-bold text-gray-700">
             About SolverSilver
           </h2>
-          <p className="mt-4 text-md text-gray-700 leading-relaxed">
+
+          <div className='flex justify-center'>
+  <span className='w-[200px] h-[2px] block my-[30px] bg-[#D9B592]'></span>
+</div>
+          <p className=" text-md text-gray-700 leading-relaxed">
             I’m a dedicated{" "}
             <span className="font-semibold text-blue-900">
               Graphics Designer
@@ -63,8 +67,11 @@ const About = () => {
             </div>
           </div>
         </div>
+        <hr className="mb-10" />
         {/* Skills Section */}
         <MySkills  /> {/* Use the MySkills component */}
+
+        <hr className="mb-10 mt-20" />
         {/* Buttons Section */}
         <div className="mt-20 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6  mx-2 md:mx-10 lg:mx-24">
           {/* Services Section */}

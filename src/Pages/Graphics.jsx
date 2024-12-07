@@ -57,13 +57,16 @@ function Graphics() {
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-2 md:px-10 lg:px-28">
-      <h1 className="text-4xl font-bold mb-6 text-gray-800">Graphic Design </h1>
+      <h1 className="text-4xl font-bold text-gray-700">Graphic Design </h1>
+      <div className='flex justify-center'>
+  <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]'></span>
+</div>
       <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         Explore the diverse range of graphic design services I provide. Please
         select any sector for further details.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16 px-4 mx-4 md:mx-14 mb-10 md:mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 px-4 mx-4 md:mx-14 mb-10 md:mb-20">
         {graphicsData.map((graphic) => (
           <Link
             // to="#"
@@ -80,10 +83,10 @@ function Graphics() {
                 className="w-full h-auto object-cover "
               />
               <div className="p-4">
-                <h2 className="text-2xl font-semibold text-[#D9B592] mb-2 ">
+                <h2 className="text-2xl font-semibold text-center text-[#D9B592] mb-2 ">
                   {graphic.title}
                 </h2>
-                <p className="text-gray-600">{graphic.description}</p>
+                <p className="text-gray-600 text-center mb-2">{graphic.description}</p>
               </div>
             </div>
           </Link>

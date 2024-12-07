@@ -67,9 +67,12 @@ function Home() {
       {/* Hero Section 2 */}
       <section className="flex flex-col bg-[#f3f1f1] py-10 lg:py-24">
         <div className="text-center mb-8 ">
-          <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-4 ">
+          <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-gray-700">
             Essential Services
           </h2>
+          <div className='flex justify-center'>
+  <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]'></span>
+</div>
           <p className="text-[#343434] text-lg sm:text-xl font-light mb-10">
             Tailored solutions to meet your business needs.
           </p>
@@ -77,7 +80,7 @@ function Home() {
         <div className="flex flex-col sm:flex-row justify-center mx-4 lg:mx-20 gap-10">
           <Link to="/graphics">
             <ServiceCard
-              image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731683328/Asset_16_oumlu1.png"
+              image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733607471/SolverSilver_Luxury_Logo_Design_rgouqz.png"
               title="Logo Design & Brand Identity"
               description="Create a compelling brand identity that resonates with your audience. My logo design reflects your brand's core values and ensures effective communication."
               alt="Business Professional Brand Identity and Logo Design, Custom Logo, Visual Identity, Graphic Design, Branding Solutions, Corporate Identity, Logo Development"

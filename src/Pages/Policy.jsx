@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 const PrivacyPolicy = () => {
   return (
     <div className="max-w-3xl mx-auto p-5">
-      <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
-      <p className="mb-4">
+      <h1 className="text-4xl font-bold text-center text-gray-700 mt-6">Privacy Policy</h1>
+      <div className='flex justify-center'>
+  <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]'></span>
+</div>
+      <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
         Welcome to SolverSilver. Your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your information when you use our services.
       </p>
 

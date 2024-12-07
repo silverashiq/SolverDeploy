@@ -43,10 +43,13 @@ const Appointment = () => {
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100 py-10">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
-        <h2 className="text-2xl font-semibold mb-6 text-center">Book an Appointment</h2>
+        <h2 className="text-4xl  text-center font-bold text-gray-700">Book an Appointment</h2>
+        <div className='flex justify-center'>
+  <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]'></span>
+</div>
         {submissionStatus && <p className="text-green-600 text-center mb-4">{submissionStatus}</p>}
         
-        <p className="text-center text-gray-600 mb-4">Your Time Zone: {timeZone}</p>
+        <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">Your Time Zone: {timeZone}</p>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
