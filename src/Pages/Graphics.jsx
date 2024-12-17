@@ -56,7 +56,7 @@ function Graphics() {
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-2 md:px-10 lg:px-28">
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-2 md:px-10 lg:px-60">
       <h1 className="text-4xl font-bold text-gray-700">Graphic Design </h1>
       <div className='flex justify-center'>
   <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]'></span>
@@ -66,7 +66,7 @@ function Graphics() {
         select any sector for further details.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 px-4 mx-4 md:mx-14 mb-10 md:mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-10 px-4 mx-4 md:mx-14 mb-10 md:mb-20">
         {graphicsData.map((graphic) => (
           <Link
             // to="#"

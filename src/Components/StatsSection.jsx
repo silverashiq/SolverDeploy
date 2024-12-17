@@ -28,7 +28,7 @@ function StatsSection() {
   return (
     <section
       ref={statsRef}
-      className="py-24 bg-[#f3f1f1] relative overflow-hidden"
+      className="py-24 bg-[#f8f8f8] relative overflow-hidden"
     >
       <div className="absolute top-0 left-0 w-full h-1/2 bg-[#D9B592] opacity-30 transform -rotate-12 -z-10" />
 

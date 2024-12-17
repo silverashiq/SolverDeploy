@@ -40,7 +40,7 @@ function MySwiper({ slides }) {
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <img
-            className="w-full h-auto lg:h-[600px] object-cover object-scale-down rounded-none md:rounded-3xl"
+            className="w-full h-auto lg:h-[600px]  object-scale-down rounded-none md:rounded-3xl"
             src={slide.url}
             alt={slide.alt}
           />

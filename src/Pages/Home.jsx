@@ -4,6 +4,7 @@ import MySkills from "../Components/MySkills";
 
 import { FaPaintBrush, FaLink, FaRegClipboard, FaSearch, FaClock, FaInfinity } from 'react-icons/fa'
 import StatsSection from "../Components/StatsSection.Jsx";
+import ReviewSection from "../Components/ReviewSection";
 
 function Home() {
   const sectionRef = useRef(null);
@@ -65,8 +66,8 @@ function Home() {
       </section>
 
       {/* Hero Section 2 */}
-      <section className="flex flex-col bg-[#f3f1f1] py-10 lg:py-24">
-        <div className="text-center mb-8 ">
+      <section className="flex flex-col bg-[#e9e8e8] py-10 px-0 md:px-6 lg:px-20 lg:py-24">
+        <div className="text-center mb-8  ">
           <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-gray-700">
             Essential Services
           </h2>
@@ -107,6 +108,14 @@ function Home() {
         </div>
       </section>
 
+            {/* Stats Section */}
+            <div>
+        <StatsSection></StatsSection>
+      </div>
+
+
+
+
       <section
   ref={sectionRef}
   className="max-w-[1400px] mx-auto px-4 lg:px-10 py-12 md:py-20 lg:py-28 bg-white text-[#343434] flex flex-col lg:flex-row items-start lg:items-center gap-8"
@@ -119,6 +128,9 @@ function Home() {
       alt="Workstation setup"
     />
   </div>
+
+
+
 
   {/* Right Side Text */}
   <div className="w-full lg:w-2/3 space-y-6 lg:space-y-8 lg:pl-8">
@@ -210,14 +222,10 @@ function Home() {
         <MySkills />
       </div>
 
-      {/* Stats Section */}
-      <div>
-        <StatsSection></StatsSection>
-      </div>
 
+      {/* Testimonial */}
+<ReviewSection/>
 
-
-      {/* Section 3 */}
 
 
     </>

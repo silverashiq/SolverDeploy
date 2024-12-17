@@ -146,7 +146,7 @@ const MySkills = () => {
       <p className="text-[#343434] text-lg sm:text-xl font-light">
       Expert in design and development, delivering innovative solutions.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
         {skills.map((skill) => (
           <SkillBar key={skill.name} skill={skill} />
         ))}

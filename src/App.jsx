@@ -20,6 +20,12 @@ import Brochure from './Pages/Brochure';
 import Packaging from './Pages/Packaging';
 import Tshirt from './Pages/Tshirt';
 import SocialPage from './Pages/Socialpage';
+import Landing from './Pages/Landing';
+import Business from './Pages/Business';
+import Redesign from './Pages/Redesign';
+import Ecommerce from './Pages/Ecommerce';
+import WebApp from './Pages/WebApp';
+import FullStack from './Pages/FullStack';
 
 
 
@@ -45,6 +51,12 @@ function App() {
         <Route path="social" element={<SocialPage />} />
         <Route path="pack" element={<Packaging />} />
         <Route path="tshirt" element={<Tshirt />} />
+        <Route path="landing" element={<Landing/>} />
+        <Route path="business" element={<Business/>} />
+        <Route path="redo" element={<Redesign/>} />
+        <Route path="ecommerce" element={<Ecommerce/>} />
+        <Route path="app" element={<WebApp/>} />
+        <Route path="stack" element={<FullStack/>} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
