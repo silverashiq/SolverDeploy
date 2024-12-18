@@ -107,28 +107,27 @@ const WebsiteShowcase = () => {
           <div key={index} className="relative group cursor-pointer">
             {/* Image Container */}
             <div
-              className="w-full h-64 lg:h-80 bg-gray-200 rounded-2xl overflow-hidden relative"
-            >
-              <img
-                src={website.image}
-                alt={website.alt}
-                className="w-full h-full object-cover transition duration-300 group-hover:blur-sm"
-              />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <FaSearch
-                  className="text-white text-3xl mx-10 cursor-pointer"
-                  onClick={() => handleModalOpen(website.image)}
-                />
-                <FaLink
-                  className="text-white text-3xl mx-10 cursor-pointer"
-                  onClick={(e) => {
-                    // Prevent the magnify icon click from triggering the link
-                    e.stopPropagation();
-                    window.open(website.url, "_blank");
-                  }}
-                />
-              </div>
-            </div>
+  className="w-full h-64 lg:h-80 bg-gray-200 rounded-2xl overflow-hidden relative"
+>
+  <img
+    src={website.image}
+    alt={website.alt}
+    className="w-full h-full object-cover transition duration-300"
+  />
+  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 group-hover:backdrop-blur-sm transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+    <FaSearch
+      className="text-white text-3xl mx-10 cursor-pointer"
+      onClick={() => handleModalOpen(website.image)}
+    />
+    <FaLink
+      className="text-white text-3xl mx-10 cursor-pointer"
+      onClick={(e) => {
+        e.stopPropagation();
+        window.open(website.url, "_blank");
+      }}
+    />
+  </div>
+</div>
 
             {/* Icons Below Image */}
             <div className="flex justify-between mt-4 text-sm text-[#343434]">
