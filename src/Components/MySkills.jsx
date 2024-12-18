@@ -137,7 +137,7 @@ const MySkills = () => {
   ];
   return (
     <section className="text-center mb-8 mx-2 md:mx-10 lg:mx-32">
-      <h3 className="font-sans font-semibold text-3xl sm:text-4xl text-gray-700 text-center ">
+      <h3 className="font-sans font-semibold text-3xl sm:text-4xl text-gray-700 text-center mt-0 lg:mt-5 ">
       My Expertise
       </h3>
       <div className='flex justify-center'>

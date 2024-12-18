@@ -52,3 +52,9 @@ html {
   width: 40px;  /* Width of the arrow container */
   height: 40px; /* Height of the arrow container */
 }
+
+
+html, body {
+  overflow-x: hidden;  /* Prevent horizontal scrolling */
+  overflow-y: auto;    /* Allow vertical scrolling */
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/Logo.png";
-import { LuMenu, LuX, LuPlus, LuMinus } from "react-icons/lu";
+import { LuMenu, LuX, LuChevronUp, LuChevronDown } from "react-icons/lu";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="bg-[#343434] h-[130px] relative z-10">
+      <nav className="bg-[#343434] h-[130px] relative z-12">
         <div className="h-full mx-auto px-[20px] lg:px-[200px] flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
@@ -102,7 +102,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-0 left-0 w-full bg-[#343434] transform transition-transform duration-300 ease-in-out z-0 ${
+        className={`absolute top-0 left-0 w-full bg-[#343434] transform transition-transform duration-300 ease-in-out z-10 ${
           isOpen
             ? "translate-y-[130px] opacity-100"
             : "-translate-y-full opacity-0"
@@ -110,41 +110,45 @@ function Navbar() {
       >
         <ul className="text-[#D9B592] p-4 text-right">
           <li className="mb-2">
-            <Link to="/" className="inline-block hover:text-white">
+            <Link
+              to="/"
+              className="inline-block py-2 text-right hover:text-white"
+            >
               Home
             </Link>
           </li>
           <li className="mb-2">
-            <Link to="/about" className="inline-block hover:text-white">
+            <Link
+              to="/about"
+              className="inline-block py-2 text-right hover:text-white"
+            >
               About
             </Link>
           </li>
           {/* Mobile Services Dropdown */}
           <li className="mb-2">
-            <div className="w-full flex justify-end items-center">
+            <div className="w-full text-right">
               <button
                 onClick={toggleDropdown}
-                className="hover:text-white inline-flex items-center gap-2"
+                className="w-full flex justify-end items-center gap-2 py-2 hover:text-white"
               >
                 {dropdownOpen ? (
-                  <LuMinus className="text-[#D9B592]" />
+                  <LuChevronUp className="text-[#D9B592]" />
                 ) : (
-                  <LuPlus className="text-[#D9B592]" />
+                  <LuChevronDown className="text-[#D9B592]" />
                 )}
                 <span>Services</span>
               </button>
-            </div>
-            <div
-              className={`overflow-hidden transition-max-h duration-300 ease-in-out ${
-                dropdownOpen ? "max-h-40" : "max-h-0"
-              }`}
-            >
-              {dropdownOpen && (
-                <ul className="bg-[#525252] text-[#b18e6a] p-3 rounded-box shadow-lg mt-2 ml-4">
+              <div
+                className={`overflow-hidden transition-max-h duration-300 ease-in-out ${
+                  dropdownOpen ? "max-h-40" : "max-h-0"
+                }`}
+              >
+                <ul className="bg-[#525252] text-[#b18e6a] p-3 rounded-box shadow-lg mt-2">
                   <li>
                     <Link
                       to="/services"
-                      className="block hover:text-white inline-block"
+                      className="inline-block py-2 text-right hover:text-white"
                     >
                       All Services
                     </Link>
@@ -152,7 +156,7 @@ function Navbar() {
                   <li className="my-1">
                     <Link
                       to="/graphics"
-                      className="block hover:text-white inline-block"
+                      className="inline-block py-2 text-right hover:text-white"
                     >
                       Graphics
                     </Link>
@@ -160,22 +164,28 @@ function Navbar() {
                   <li>
                     <Link
                       to="/web"
-                      className="block hover:text-white inline-block"
+                      className="inline-block py-2 text-right hover:text-white"
                     >
                       Website
                     </Link>
                   </li>
                 </ul>
-              )}
+              </div>
             </div>
           </li>
           <li className="mb-2">
-            <Link to="/portfolio" className="inline-block hover:text-white">
+            <Link
+              to="/portfolio"
+              className="inline-block py-2 text-right hover:text-white"
+            >
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="inline-block hover:text-white">
+            <Link
+              to="/contact"
+              className="inline-block py-2 text-right hover:text-white"
+            >
               Contact
             </Link>
           </li>

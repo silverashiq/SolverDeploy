@@ -1,4 +1,7 @@
 import React from 'react';
+import WebsiteShowcase from '../Components/WebsiteShowcase';
+import { Link } from "react-router-dom";
+
 
 const Business = () => {
   return (
@@ -6,13 +9,15 @@ const Business = () => {
       {/* Hero Section */}
       <section className="bg-white py-16 px-4 text-center">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Professional Business Website Design</h1>
+        <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592] mx-auto'></span>
+
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Build a strong online presence with customized, scalable, and business-focused website solutions.
         </p>
       </section>
 
       {/* Services Overview */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4 bg-gray-100">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-white shadow-lg rounded-lg text-center">
             <h2 className="text-2xl font-semibold mb-4">Custom Business Solutions</h2>
@@ -36,31 +41,49 @@ const Business = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-gray-200 py-16 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Why Choose My Business Website Design?</h2>
-          <ul className="text-gray-600 list-disc list-inside text-left inline-block">
-            <li>Custom-built websites tailored to your brand identity</li>
-            <li>Responsive layouts for all devices</li>
-            <li>SEO and speed optimized for better performance</li>
-            <li>Integrated contact forms and business features</li>
-            <li>Ongoing support and maintenance</li>
-          </ul>
-        </div>
-      </section>
+<section className="bg-white py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
+  <h2 className="text-3xl font-bold text-gray-700 mb-6 text-center">
+    Why Choose My Business Website Design?
+  </h2>
+  <div className="max-w-3xl mx-auto">
+    <ul className="list-inside list-disc space-y-4 text-lg text-[#525252]">
+      <li className="flex items-start space-x-3">
+        <span className="text-[#D9B592] text-2xl">•</span>
+        <p>Custom-built websites tailored to your brand identity</p>
+      </li>
+      <li className="flex items-start space-x-3">
+        <span className="text-[#D9B592] text-2xl">•</span>
+        <p>Responsive layouts for all devices</p>
+      </li>
+      <li className="flex items-start space-x-3">
+        <span className="text-[#D9B592] text-2xl">•</span>
+        <p>SEO and speed optimized for better performance</p>
+      </li>
+      <li className="flex items-start space-x-3">
+        <span className="text-[#D9B592] text-2xl">•</span>
+        <p>Integrated contact forms and business features</p>
+      </li>
+      <li className="flex items-start space-x-3">
+        <span className="text-[#D9B592] text-2xl">•</span>
+        <p>Ongoing support and maintenance</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <WebsiteShowcase/>
+
+      
 
       {/* Call-to-Action */}
-      <section className="py-12 px-4 text-center">
-        <h3 className="text-3xl font-semibold mb-4">Take Your Business to the Next Level</h3>
-        <p className="text-gray-600 mb-6">
+      <section className="bg-[#D9B592] text-white py-12 text-center">
+        <h3 className="text-3xl font-bold mb-4">Take Your Business to the Next Level</h3>
+        <p className="mb-8 text-lg">
           Let's collaborate to build a professional website that showcases your business and attracts clients.
         </p>
-        <a
-          href="/contact"
-          className="inline-block bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 transition-all"
-        >
-          Get Started Now
-        </a>
+          <Link to="/contact" className="px-10 py-4 bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-opacity-90 transition">
+           Get Started Now
+          </Link>
       </section>
     </div>
   );

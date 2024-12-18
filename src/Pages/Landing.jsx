@@ -1,13 +1,19 @@
-import React from 'react';
+import React from "react";
+import WebsiteShowcase from "../Components/WebsiteShowcase";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800">
       {/* Hero Section */}
       <section className="bg-white py-16 px-4 text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Professional Landing Page Designs</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          Professional Landing Page Designs
+        </h1>
+        <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592] mx-auto"></span>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Elevate your brand with custom-designed, responsive, and user-friendly landing pages tailored to your needs.
+          Elevate your brand with custom-designed, responsive, and user-friendly
+          landing pages tailored to your needs.
         </p>
       </section>
 
@@ -18,7 +24,8 @@ const Landing = () => {
           <div className="p-6 bg-white shadow-lg rounded-lg text-center">
             <h2 className="text-2xl font-semibold mb-4">Custom Design</h2>
             <p className="text-gray-600">
-              Unique and creative designs tailored to fit your business identity and goals.
+              Unique and creative designs tailored to fit your business identity
+              and goals.
             </p>
           </div>
 
@@ -26,7 +33,8 @@ const Landing = () => {
           <div className="p-6 bg-white shadow-lg rounded-lg text-center">
             <h2 className="text-2xl font-semibold mb-4">Responsive Layouts</h2>
             <p className="text-gray-600">
-              Optimized for all devices, ensuring a seamless user experience across desktops, tablets, and phones.
+              Optimized for all devices, ensuring a seamless user experience
+              across desktops, tablets, and phones.
             </p>
           </div>
 
@@ -34,41 +42,63 @@ const Landing = () => {
           <div className="p-6 bg-white shadow-lg rounded-lg text-center">
             <h2 className="text-2xl font-semibold mb-4">Conversion Focused</h2>
             <p className="text-gray-600">
-              Designed with strategic CTAs to turn visitors into customers and maximize your ROI.
+              Designed with strategic CTAs to turn visitors into customers and
+              maximize your ROI.
             </p>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-gray-200 py-16 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Why Choose My Landing Page Designs?</h2>
-          <p className="text-gray-700 mb-4">
-            I specialize in creating impactful landing pages that help businesses attract customers, build trust, and grow.
+      <section className="bg-white py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-700 mb-6">
+            Why Choose My Landing Page Designs?
+          </h2>
+          <p className="text-gray-700 mb-6">
+            I specialize in creating impactful landing pages that help
+            businesses attract customers, build trust, and grow.
           </p>
-          <ul className="text-gray-600 list-disc list-inside text-left inline-block">
-            <li>Pixel-perfect designs tailored to your brand</li>
-            <li>SEO-friendly structure for higher visibility</li>
-            <li>Fast-loading and optimized performance</li>
-            <li>Unlimited revisions until you're satisfied</li>
-            <li>Full support from design to implementation</li>
+          <ul className="list-inside list-disc space-y-4 text-lg text-[#525252]">
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Pixel-perfect designs tailored to your brand</p>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>SEO-friendly structure for higher visibility</p>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Fast-loading and optimized performance</p>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Unlimited revisions until you're satisfied</p>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Full support from design to implementation</p>
+            </li>
           </ul>
         </div>
       </section>
 
+      <WebsiteShowcase />
+
       {/* Call-to-Action */}
-      <section className="py-12 px-4 text-center">
-        <h3 className="text-3xl font-semibold mb-4">Ready to Get Started?</h3>
-        <p className="text-gray-600 mb-6">
-          Contact me today to bring your ideas to life and create a high-performing landing page for your business.
+      <section className="bg-[#D9B592] text-white py-12 text-center">
+        <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
+        <p className="mb-8 text-lg">
+          Contact me today to bring your ideas to life and create a
+          high-performing landing page for your business.
         </p>
-        <a
-          href="/contact"
-          className="inline-block bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 transition-all"
+        <Link
+          to="/contact"
+          className="px-10 py-4 bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-opacity-90 transition"
         >
           Get a Quote
-        </a>
+        </Link>
       </section>
     </div>
   );

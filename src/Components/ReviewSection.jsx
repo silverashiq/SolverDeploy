@@ -141,7 +141,7 @@ const ReviewSection = () => {
               <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
             </div>
             <p className="text-gray-100 text-lg sm:text-xl font-light mb-14">
-              Hear from our happy clients about their experiences with our services.
+              Hear from our happy clients about their experiences with my services.
             </p>
           </div>
 
