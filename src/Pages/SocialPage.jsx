@@ -31,6 +31,10 @@ const SocialPage = () => {
     },
 
     {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734619141/Social_Media_Design_12_nwdrqp.jpg",
+      alt: "Modern social media design for impactful storytelling",
+    },
+    {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813477/Social_Media_Design_4_a9mumv.jpg",
       alt: "Modern social media design for impactful storytelling",
     },
@@ -43,6 +47,10 @@ const SocialPage = () => {
       alt: "Engaging social media design for impactful branding",
     },
     {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734619141/Social_Media_Design_13_ntntml.jpg",
+      alt: "Engaging social media design for impactful branding",
+    },
+    {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813476/Social_Media_Design_3_azlv4k.jpg",
       alt: "Eye-catching social media design for brand promotion",
     },
@@ -52,6 +60,10 @@ const SocialPage = () => {
     },
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813377/Social_Media_Design_1_lugat9.jpg",
+      alt: "Elegant social media design for professional branding",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734619139/Social_Media_Design_11_xrcrks.jpg",
       alt: "Elegant social media design for professional branding",
     },
     

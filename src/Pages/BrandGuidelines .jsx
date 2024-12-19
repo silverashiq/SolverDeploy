@@ -90,6 +90,94 @@ const guidelineSlides = [
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205511/3d_Mockup_12_lfb6gn.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118420/3d_Mockup_14_qxicys.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118420/3d_Mockup_19_wvdp4l.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118422/3d_Mockup_45_piabue.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118423/3d_Mockup_54_wrkp5g.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118424/CDGW_1_Mockup_snduka.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118423/DW_3d_Mockup_tijua2.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118423/3d_Mockup_JPG_avbrtf.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118425/FS_3d_Mockup_llwcdi.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118426/EV_Mockup_xky9or.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118426/JF_Mockup_jdyjbp.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118427/LK_Mockup_qnsyic.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118428/MKI_3d_Mockup_sbnx7j.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118428/MM_3d_Mockup_fncnwl.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118430/NA_Mockup_lgdu2b.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118431/OVE_3d_Mockup_lnezdc.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118433/Penta_3d_Mockup_lquttv.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118435/PR_Mokup_kmkuyc.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118434/PH_3d_Mockup_dnasqw.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118436/Q_Mockup_tiveol.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118437/TSA_3d_Mockup_apdq9b.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118438/WC_Mockup_b3wbfl.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118439/WF_Mockup_eyspus.jpg",
+      alt: "Luxury modern minimalist elegant creative professional Logo design",
+    },
 ];
 
   return (

@@ -45,6 +45,10 @@ const Tshirt = () => {
       alt: "Dynamic T-shirt design for the adventurous spirit",
     },
     {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734618658/Tshirts_40_d2pjdi.jpg",
+      alt: "Dynamic T-shirt design for the adventurous spirit",
+    },
+    {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813043/Asset_2T_shirt_Design_qzhthx.jpg",
       alt: "Professional T-shirt design with sleek visuals",
     },

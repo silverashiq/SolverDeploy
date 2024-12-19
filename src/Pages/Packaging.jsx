@@ -37,6 +37,10 @@ const Packaging = () => {
       alt: "Strawberry-themed product mockup for fresh branding",
     },
     {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733042392/BH2_Mockup1_n6k7v2.jpg",
+      alt: "Sophisticated design with professional aesthetics",
+    },
+    {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813534/Vintage_Label_Tag_MockUp_jtlice.jpg",
       alt: "Vintage label tag mockup with classic aesthetics",
     },
@@ -63,10 +67,6 @@ const Packaging = () => {
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813530/seal_c_y7rq7p.jpg",
       alt: "Seal design mockup for official branding",
-    },
-    {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813527/Logo_55_ybhzzh.jpg",
-      alt: "Logo mockup showcasing minimalist elegance",
     },
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813526/Flyer_25_fuqpi7.jpg",
@@ -98,10 +98,10 @@ const Packaging = () => {
         <div className="px-6 py-8 md:px-16 lg:px-32">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-3xl md:5xl font-bold text-gray-700 mb-4">
-              Packaging Design
+              Packaging, Label and Signage Design
             </h1>
             <p className="text-lg text-[#525252]">
-              Enhance your product's appeal with custom packaging designs that leave a lasting impression on your customers.
+              Enhance your product's appeal with custom packaging, label and signage designs that leave a lasting impression on your customers.
             </p>
           </div>
         </div>

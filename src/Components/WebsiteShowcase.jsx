@@ -100,7 +100,7 @@ const WebsiteShowcase = () => {
   return (
     <section className="py-16 px-8 lg:px-20 bg-[#f8f8f8]">
       <h2 className="text-3xl sm:text-4xl text-center font-semibold text-[#343434] mb-10">
-      Explore My Work
+      Explore My Website Designs
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mx-0 lg:mx-24">
         {websites.map((website, index) => (
@@ -152,24 +152,29 @@ const WebsiteShowcase = () => {
         ))}
       </div>
 
-      {/* Modal for Enlarged Image */}
-      {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="relative">
-            <img
-              src={modalImage}
-              alt="Modal View"
-              className="max-w-[80vw] max-h-[80vh] object-contain rounded-lg shadow-lg"
-            />
-            <button
-              className="absolute top-2 right-2 text-white text-3xl"
-              onClick={handleModalClose}
-            >
-              <FaTimes />
-            </button>
-          </div>
-        </div>
-      )}
+{/* Modal for Enlarged Image */}
+{isModalOpen && (
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 z-50" onClick={handleModalClose}>
+    <div
+      className="relative w-full h-full flex items-center justify-center"
+      onClick={(e) => e.stopPropagation()} // Prevent modal close when clicking inside the image
+    >
+      <img
+        src={modalImage}
+        alt="Modal View"
+        className="max-w-full max-h-full object-contain"
+        style={{ width: "100%", height: "100%" }} // Ensures fullscreen scaling
+      />
+      <button
+        className="absolute top-4 right-4 text-white text-3xl z-50"
+        onClick={handleModalClose}
+      >
+        <FaTimes />
+      </button>
+    </div>
+  </div>
+)}
+
     </section>
   );
 };

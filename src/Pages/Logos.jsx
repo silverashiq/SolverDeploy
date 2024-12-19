@@ -49,10 +49,7 @@ const Logos = () => {
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
 
-    {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118427/LD_3d_Mockup_eepa3g.jpg",
-      alt: "Luxury modern minimalist elegant creative professional Logo design",
-    },
+
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118428/MKI_3d_Mockup_sbnx7j.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",

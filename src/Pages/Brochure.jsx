@@ -14,10 +14,7 @@ const Brochure = () => {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733047775/BC_3d_Mockup_stt3y6.jpg",
       alt: "Sophisticated design with professional aesthetics",
     },
-    {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733042392/BH2_Mockup1_n6k7v2.jpg",
-      alt: "Sophisticated design with professional aesthetics",
-    },
+
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_37_gk71te.jpg",
       alt: "Creative and professional print media design",
@@ -64,6 +61,10 @@ const Brochure = () => {
     },
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288626/Print_Media_Design_Brochure_Flyer_33_rjkosn.jpg",
+      alt: "Striking print media designs for any occasion",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288518/Print_Media_Design_Brochure_Flyer_3_i0wjvy.jpg",
       alt: "Striking print media designs for any occasion",
     },
     {
