@@ -41,48 +41,47 @@ function Home() {
     <>
       {/* Hero Section 1 */}
       <section  
-      className="flex flex-col lg:flex-row items-center w-full gap-5 lg:gap-10 py-10 md:py-10 lg:py-32 bg-cover bg-center px-4 md:px-10 lg:px-24"
-      style={{ backgroundImage: "url('https://res.cloudinary.com/dntx46fvh/image/upload/dpr_auto/q_auto/v1734711533/Asset_4_2_aegzbo.png')" }}
+  className="flex flex-col lg:flex-row items-center w-full gap-5 lg:gap-10 py-10 md:py-10 lg:py-32 bg-cover bg-center px-4 md:px-10 lg:px-24"
+  style={{ backgroundImage: "url('https://res.cloudinary.com/dntx46fvh/image/upload/dpr_auto/q_auto/v1734711533/Asset_4_2_aegzbo.png')" }}
+>
+  <div className="lg:w-1/2 px-4 lg:px-16 text-center lg:text-left">
+    <h1 className="font-sans font-medium text-[16pt] sm:text-[18pt] md:text-[22pt] lg:text-[27pt] leading-normal text-[#f3f3f3] mb-4">
+      Looking for a Talented Designer/Developer Specializing in{" "}
+      <span className="font-bold uppercase text-[#D9B592]">Graphics</span> and{" "}
+      <span className="font-bold uppercase text-[#D9B592]">Website</span> Design?
+    </h1>
+    <span className="w-[150px] sm:w-[200px] lg:w-[220px] h-[2px] block my-4 mx-auto lg:mx-0 bg-[#D9B592]"></span>
+    <p className="text-[#b8b8b8] text-base sm:text-lg mb-6">
+      With over 5 years of experience as a Graphics Designer and Full-Stack Web Developer, I craft innovative, high-quality designs and responsive websites tailored to your needs. <br /> Let’s collaborate to turn your vision into a powerful digital experience.
+    </p>
+    <div className="flex flex-col sm:flex-row sm:space-y-0 space-y-4 justify-center lg:justify-start gap-0 md:gap-6 mx-auto lg:mx-0">
+      <Link
+        to="/contact"
+        className="py-3 px-8 bg-white font-bold rounded-md text-center text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
       >
-        <div className="lg:w-1/2 px-4 lg:px-20 text-center lg:text-left">
-          <h1 className="font-sans font-medium text-[18pt] md:text-[27pt] leading-normal text-[#f3f3f3] mb-4">
-            Looking for a Talented Designer/Developer Specializing in{" "}
-            <span className="font-bold uppercase text-[#D9B592]">Graphics</span> and{" "}
-            <span className="font-bold uppercase text-[#D9B592]">Website</span> Design?
-          </h1>
-          <span className="w-[200px] h-[2px] block my-4 mx-auto lg:mx-0 bg-[#D9B592]"></span>
-          <p className="text-[#b8b8b8] text-base sm:text-lg mb-6">
-            With over 5 years of experience as a Graphics Designer and
-            Full-Stack Web Developer, I craft innovative, high-quality designs
-            and responsive websites tailored to your needs. <br /> Let’s
-            collaborate to turn your vision into a powerful digital experience.
-          </p>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center sm:justify-start mx-auto sm:mx-0">
-            <Link
-              to="/contact"
-              className="py-4 px-8 bg-white font-bold rounded-md text-center text-   hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
-            >
-              Request a Quote
-            </Link>
-            <Link
-              to="/book"
-              className="py-4 px-8 bg-white font-bold rounded-md text-center text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
-            >
-              Book an Appointment
-            </Link>
-          </div>
-        </div>
+        Request a Quote
+      </Link>
+      <Link
+        to="/book"
+        className="py-3 px-8 bg-white font-bold rounded-md text-center text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+      >
+        Book an Appointment
+      </Link>
+    </div>
+  </div>
 
-        <div className="lg:w-1/2 px-4 lg:px-20 animate__animated animate__fadeInRight mt-6 lg:mt-0">
-          <img
-            className="w-full h-auto rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
-            src="https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1733607813/SolverSilver_klttwk.jpg"
-            alt="SolverSilver Luxury Logo Design Mockup"
-            width="700"
-            height="500"
-          />
-        </div>
-      </section>
+  <div className="lg:w-1/2 px-4 lg:px-16 animate__animated animate__fadeInRight mt-6 lg:mt-0">
+    <img
+      className="w-full h-auto rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
+      src="https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1733607813/SolverSilver_klttwk.jpg"
+      alt="SolverSilver Luxury Logo Design Mockup"
+      width="700"
+      height="500"
+    />
+  </div>
+</section>
+
+
 
       {/* Hero Section 2 */}
       <section className="flex flex-col bg-[#e9e8e8] py-10 px-0 md:px-6 lg:px-20 lg:py-24">
