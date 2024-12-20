@@ -5,83 +5,87 @@ import { Link } from "react-router-dom";
 const Packaging = () => {
   const packagingSlides = [
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813524/76421_jcmebz.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813524/76421_jcmebz.jpg",
       alt: "Sophisticated design with professional aesthetics",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813523/130_a1k8tb.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813523/130_a1k8tb.jpg",
       alt: "Minimalist design focused on sleek presentation",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813528/Leather_Bag_2000x1300px_Free_PSD_Mockup_by_MD15_rbqnpi.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813528/Leather_Bag_2000x1300px_Free_PSD_Mockup_by_MD15_rbqnpi.jpg",
       alt: "Premium leather bag mockup for branding visualization",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813522/44_emhhep.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813522/44_emhhep.jpg",
       alt: "Elegant design showcasing minimalist aesthetics",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813525/Flyer_24_x77kzo.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1734692373/whack_aay6hj.jpg",
+      alt: "Elegant design showcasing minimalist aesthetics",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813525/Flyer_24_x77kzo.jpg",
       alt: "Vibrant flyer design ideal for promotions",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813527/Flyer_5_rmrgg5.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813527/Flyer_5_rmrgg5.jpg",
       alt: "Creative flyer design for marketing campaigns",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732814047/wine_gnkli8.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732814047/wine_gnkli8.jpg",
       alt: "Elegant wine label design for sophisticated branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/t_pot/q_auto/v1732813534/STRAWBERRY_MockUp_ttsrer.png",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/t_pot/w_500/dpr_auto/q_auto/v1732813534/STRAWBERRY_MockUp_ttsrer.png",
       alt: "Strawberry-themed product mockup for fresh branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733042392/BH2_Mockup1_n6k7v2.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733042392/BH2_Mockup1_n6k7v2.jpg",
       alt: "Sophisticated design with professional aesthetics",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813534/Vintage_Label_Tag_MockUp_jtlice.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813534/Vintage_Label_Tag_MockUp_jtlice.jpg",
       alt: "Vintage label tag mockup with classic aesthetics",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813533/tyhtyr_rdgkpe.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813533/tyhtyr_rdgkpe.jpg",
       alt: "Modern design with a bold visual approach",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813533/Social_Design_23_fmveyz.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813533/Social_Design_23_fmveyz.jpg",
       alt: "Dynamic social media design for impactful engagement",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813533/Window_mockup_njesog.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813533/Window_mockup_njesog.jpg",
       alt: "Realistic window mockup for brand display",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813533/Shop_Facade_Logo_MockUp_2_iuvjrk.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813533/Shop_Facade_Logo_MockUp_2_iuvjrk.jpg",
       alt: "Shop facade logo mockup for outdoor branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813531/Reality_1_mockup_uizrzk.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813531/Reality_1_mockup_uizrzk.jpg",
       alt: "Stylish mockup with a realistic visual appeal",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813530/seal_c_y7rq7p.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813530/seal_c_y7rq7p.jpg",
       alt: "Seal design mockup for official branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813526/Flyer_25_fuqpi7.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813526/Flyer_25_fuqpi7.jpg",
       alt: "Engaging flyer design with modern elements",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813523/65900_ipe8w8.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813523/65900_ipe8w8.jpg",
       alt: "Creative composition with eye-catching visuals",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813526/Flyer_27_b9zdet.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813526/Flyer_27_b9zdet.jpg",
       alt: "Stylish flyer design for impactful marketing",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813525/183_jhuvdl.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813525/183_jhuvdl.jpg",
       alt: "Modern layout with a bold visual statement",
     },
 
@@ -163,8 +167,23 @@ const Packaging = () => {
           </div>
         </section>
 
+        {/* Explore Full Graphics Portfolio Section */}
+        <section className="py-12 px-6 lg:px-0 bg-[#f9f8f6] text-center ">
+          <h2 className="text-3xl font-bold text-gray-700 mb-4">Explore My Graphics Portfolio</h2>
+          <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
+            Dive into my complete collection of designs, from logos to creative graphics, and explore the visual stories I've created for brands and individuals.
+          </p>
+          <Link
+            to="/portfolio/graphics"
+            target="_blank"  // This ensures the link opens in a new tab
+            className="inline-block bg-[#D9B592] text-white px-6 py-3 rounded-md font-semibold text-lg transition duration-300 hover:bg-[#343434]"
+          >
+            Explore Now
+          </Link>
+        </section>
+
         {/* Call to Action */}
-        <div className="bg-[#D9B592] text-white py-12 text-center">
+        <div className="bg-[#D9B592] text-white py-12 text-center px-6 lg:px-0">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Package Your Product in Style?
           </h2>

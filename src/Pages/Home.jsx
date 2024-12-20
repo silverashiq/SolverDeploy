@@ -59,7 +59,7 @@ function Home() {
         <div className="lg:w-1/2 animate__animated animate__fadeInRight mt-6 lg:mt-0">
           <img
             className="w-full h-auto rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
-            src="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730043799/SolverSilver_Luxury_Logo_Design_Mockup_muvuuw.jpg"
+            src="https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1730043799/SolverSilver_Luxury_Logo_Design_Mockup_muvuuw.jpg"
             alt="SolverSilver Luxury Logo Design Mockup"
           />
         </div>

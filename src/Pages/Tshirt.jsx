@@ -5,63 +5,63 @@ import { Link } from "react-router-dom";
 const Tshirt = () => {
   const tshirtSlides = [
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813047/Asset_10T_shirt_Design_jmyphj.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813047/Asset_10T_shirt_Design_jmyphj.jpg",
       alt: "Stylish T-shirt design with a modern aesthetic",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813047/Asset_8T_shirt_Design_xbsbd5.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813047/Asset_8T_shirt_Design_xbsbd5.jpg",
       alt: "Creative T-shirt design showcasing bold patterns",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813047/Tshirts_36_qvuqds.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813047/Tshirts_36_qvuqds.jpg",
       alt: "Minimalist T-shirt design for everyday wear",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813043/Asset_3T_shirt_Design_lwunrl.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813043/Asset_3T_shirt_Design_lwunrl.jpg",
       alt: "Elegant T-shirt design with unique typography",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813047/Asset_9T_shirt_Design_hruwti.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813047/Asset_9T_shirt_Design_hruwti.jpg",
       alt: "Eye-catching T-shirt design with vibrant elements",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813048/Tshirts_42_dqvabo.png",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813048/Tshirts_42_dqvabo.png",
       alt: "Custom T-shirt design with detailed graphics",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813048/Tshirts_38_pqfi7t.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813048/Tshirts_38_pqfi7t.jpg",
       alt: "Premium T-shirt design for casual outings",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813047/Asset_6T_shirt_Design_c0hyha.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813047/Asset_6T_shirt_Design_c0hyha.jpg",
       alt: "Artistic T-shirt design featuring bold creativity",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813047/Asset_7T_shirt_Design_fy6q1f.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813047/Asset_7T_shirt_Design_fy6q1f.jpg",
       alt: "Modern T-shirt design with a trendy touch",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813044/Asset_5T_shirt_Design_ppzgyb.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813044/Asset_5T_shirt_Design_ppzgyb.jpg",
       alt: "Dynamic T-shirt design for the adventurous spirit",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734618658/Tshirts_40_d2pjdi.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1734618658/Tshirts_40_d2pjdi.jpg",
       alt: "Dynamic T-shirt design for the adventurous spirit",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813043/Asset_2T_shirt_Design_qzhthx.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813043/Asset_2T_shirt_Design_qzhthx.jpg",
       alt: "Professional T-shirt design with sleek visuals",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813043/2258798_fwslbn.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813043/2258798_fwslbn.jpg",
       alt: "Unique T-shirt design combining simplicity and style",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813043/Asset_4T_shirt_Design_ckiio3.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813043/Asset_4T_shirt_Design_ckiio3.jpg",
       alt: "Versatile T-shirt design suitable for any occasion",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813043/Asset_1T_shirt_Design_pc22en.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813043/Asset_1T_shirt_Design_pc22en.jpg",
       alt: "Innovative T-shirt design with artistic flair",
     },
     
@@ -141,8 +141,23 @@ const Tshirt = () => {
           </div>
         </section>
 
+{/* Explore Full Graphics Portfolio Section */}
+<section className="py-12 px-6 lg:px-0 bg-[#f9f8f6] text-center ">
+  <h2 className="text-3xl font-bold text-gray-700 mb-4">Explore My Graphics Portfolio</h2>
+  <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
+    Dive into my complete collection of designs, from logos to creative graphics, and explore the visual stories I've created for brands and individuals.
+  </p>
+  <Link
+    to="/portfolio/graphics"
+    target="_blank"  // This ensures the link opens in a new tab
+    className="inline-block bg-[#D9B592] text-white px-6 py-3 rounded-md font-semibold text-lg transition duration-300 hover:bg-[#343434]"
+  >
+    Explore Now
+  </Link>
+</section>
+
         {/* Call to Action */}
-        <div className="bg-[#D9B592] text-white py-12 text-center">
+        <div className="bg-[#D9B592] text-white py-12 text-center px-6 lg:px-0">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Design Your Custom T-shirt?
           </h2>

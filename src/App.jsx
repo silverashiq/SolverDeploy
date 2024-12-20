@@ -28,18 +28,17 @@ import WebApp from './Pages/WebApp';
 import FullStack from './Pages/FullStack';
 
 
-
-BrandGuidelines
-
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home/>} />
+        <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
         <Route path="graphics" element={<Graphics />} />
-        <Route path="portfolio" element={<Portfolio />} />
+        {/* Route for portfolio with dynamic category */}
+        <Route path="portfolio" element={<Portfolio />} /> {/* Default portfolio page */}
+        <Route path="portfolio/:category" element={<Portfolio />} /> {/* Portfolio with category */}
         <Route path="web" element={<Web />} />
         <Route path="contact" element={<Contact />} />
         <Route path="book" element={<Appointment />} />
@@ -51,12 +50,12 @@ function App() {
         <Route path="social" element={<SocialPage />} />
         <Route path="pack" element={<Packaging />} />
         <Route path="tshirt" element={<Tshirt />} />
-        <Route path="landing" element={<Landing/>} />
-        <Route path="business" element={<Business/>} />
-        <Route path="redo" element={<Redesign/>} />
-        <Route path="ecommerce" element={<Ecommerce/>} />
-        <Route path="app" element={<WebApp/>} />
-        <Route path="stack" element={<FullStack/>} />
+        <Route path="landing" element={<Landing />} />
+        <Route path="business" element={<Business />} />
+        <Route path="redo" element={<Redesign />} />
+        <Route path="ecommerce" element={<Ecommerce />} />
+        <Route path="app" element={<WebApp />} />
+        <Route path="stack" element={<FullStack />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

@@ -6,64 +6,64 @@ const SocialPage = () => {
   const socialSlides = [
 
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813505/Social_Media_Design_8_uhu853.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813505/Social_Media_Design_8_uhu853.jpg",
       alt: "Dynamic social media design to boost online presence",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813736/Social_Media_Design_xylgzf.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813736/Social_Media_Design_xylgzf.jpg",
       alt: "Professional social media design tailored for your needs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813476/Social_Media_Design_2_bzp0gd.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813476/Social_Media_Design_2_bzp0gd.jpg",
       alt: "Creative and stylish social media design templates",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813505/Social_Media_Design_10_vdbhmm.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813505/Social_Media_Design_10_vdbhmm.jpg",
       alt: "Sophisticated social media design for brand elevation",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813505/Social_Media_Design_9_nrg0ec.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813505/Social_Media_Design_9_nrg0ec.jpg",
       alt: "Trendy social media design perfect for promotions",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813478/Social_Media_Design_6_hzvig6.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813478/Social_Media_Design_6_hzvig6.jpg",
       alt: "High-quality social media graphics for better engagement",
     },
 
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734619141/Social_Media_Design_12_nwdrqp.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1734619141/Social_Media_Design_12_nwdrqp.jpg",
       alt: "Modern social media design for impactful storytelling",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813477/Social_Media_Design_4_a9mumv.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813477/Social_Media_Design_4_a9mumv.jpg",
       alt: "Modern social media design for impactful storytelling",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813478/Social_Media_Design_5_zaeta2.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813478/Social_Media_Design_5_zaeta2.jpg",
       alt: "Custom social media design with vibrant aesthetics",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813479/Social_Media_Design_7_q8i4t7.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813479/Social_Media_Design_7_q8i4t7.jpg",
       alt: "Engaging social media design for impactful branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734619141/Social_Media_Design_13_ntntml.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1734619141/Social_Media_Design_13_ntntml.jpg",
       alt: "Engaging social media design for impactful branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813476/Social_Media_Design_3_azlv4k.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813476/Social_Media_Design_3_azlv4k.jpg",
       alt: "Eye-catching social media design for brand promotion",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813475/Social_Media_Design_1_nij2g5.png",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813475/Social_Media_Design_1_nij2g5.png",
       alt: "Unique social media design for standout posts",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813377/Social_Media_Design_1_lugat9.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813377/Social_Media_Design_1_lugat9.jpg",
       alt: "Elegant social media design for professional branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734619139/Social_Media_Design_11_xrcrks.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1734619139/Social_Media_Design_11_xrcrks.jpg",
       alt: "Elegant social media design for professional branding",
     },
     
@@ -144,8 +144,23 @@ const SocialPage = () => {
           </div>
         </section>
 
+        {/* Explore Full Graphics Portfolio Section */}
+        <section className="py-12 px-6 lg:px-0 bg-[#f9f8f6] text-center ">
+          <h2 className="text-3xl font-bold text-gray-700 mb-4">Explore My Graphics Portfolio</h2>
+          <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
+            Dive into my complete collection of designs, from logos to creative graphics, and explore the visual stories I've created for brands and individuals.
+          </p>
+          <Link
+            to="/portfolio/graphics"
+            target="_blank"  // This ensures the link opens in a new tab
+            className="inline-block bg-[#D9B592] text-white px-6 py-3 rounded-md font-semibold text-lg transition duration-300 hover:bg-[#343434]"
+          >
+            Explore Now
+          </Link>
+        </section>
+
         {/* Call to Action */}
-        <div className="bg-[#D9B592] text-white py-12 text-center">
+        <div className="bg-[#D9B592] text-white py-12 text-center px-6 lg:px-0">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Make Your Social Media Stand Out?
           </h2>

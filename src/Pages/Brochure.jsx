@@ -5,142 +5,144 @@ import { Link } from "react-router-dom";
 const Brochure = () => {
   const printDesignSlides = [
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288625/Print_Media_Design_Brochure_Flyer_32_ojuiet.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288625/Print_Media_Design_Brochure_Flyer_32_ojuiet.jpg",
       alt: "Sophisticated design with professional aesthetics",
-    },    {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733047776/Tri_MOCKUP_bt2dmq.jpg",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733047776/Tri_MOCKUP_bt2dmq.jpg",
       alt: "Sophisticated design with professional aesthetics",
-    },    {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733047775/BC_3d_Mockup_stt3y6.jpg",
+    },
+    {
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733047775/BC_3d_Mockup_stt3y6.jpg",
       alt: "Sophisticated design with professional aesthetics",
     },
 
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_37_gk71te.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_37_gk71te.jpg",
       alt: "Creative and professional print media design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288637/Print_Media_Design_Brochure_Flyer_43_v2riwc.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288637/Print_Media_Design_Brochure_Flyer_43_v2riwc.jpg",
       alt: "Eye-catching flyers and brochures designed to elevate your business",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288517/Print_Media_Design_Brochure_Flyer_4_rrpnuu.png",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288517/Print_Media_Design_Brochure_Flyer_4_rrpnuu.png",
       alt: "High-quality print media designs for your business",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288637/Print_Media_Design_Brochure_Flyer_41_h4x7ol.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288637/Print_Media_Design_Brochure_Flyer_41_h4x7ol.jpg",
       alt: "High-quality print media designs for your business",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288634/Print_Media_Design_Brochure_Flyer_40_crjamo.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288634/Print_Media_Design_Brochure_Flyer_40_crjamo.jpg",
       alt: "Custom print media designs that represent your brand",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_36_gx8ij9.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_36_gx8ij9.jpg",
       alt: "Premium print media designs tailored to your needs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_37_gk71te.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_37_gk71te.jpg",
       alt: "Attention-grabbing designs to promote your business",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_38_ifljvv.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288633/Print_Media_Design_Brochure_Flyer_38_ifljvv.jpg",
       alt: "Creative print media solutions for your brand",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288632/Print_Media_Design_Brochure_Flyer_39_d5t9iq.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288632/Print_Media_Design_Brochure_Flyer_39_d5t9iq.jpg",
       alt: "Elegant and stylish print media designs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288627/Print_Media_Design_Brochure_Flyer_31_oht4v9.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288627/Print_Media_Design_Brochure_Flyer_31_oht4v9.jpg",
       alt: "Professional print designs that captivate",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288627/Print_Media_Design_Brochure_Flyer_27_xnefzz.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288627/Print_Media_Design_Brochure_Flyer_27_xnefzz.jpg",
       alt: "Bespoke print designs tailored for your brand",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288626/Print_Media_Design_Brochure_Flyer_33_rjkosn.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288626/Print_Media_Design_Brochure_Flyer_33_rjkosn.jpg",
       alt: "Striking print media designs for any occasion",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288518/Print_Media_Design_Brochure_Flyer_3_i0wjvy.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288518/Print_Media_Design_Brochure_Flyer_3_i0wjvy.jpg",
       alt: "Striking print media designs for any occasion",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288619/Print_Media_Design_Brochure_Flyer_30_yqs2rt.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288619/Print_Media_Design_Brochure_Flyer_30_yqs2rt.jpg",
       alt: "Dynamic and modern print media designs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288619/Print_Media_Design_Brochure_Flyer_28_d76ocj.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288619/Print_Media_Design_Brochure_Flyer_28_d76ocj.jpg",
       alt: "Versatile designs to suit your business needs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288618/Print_Media_Design_Brochure_Flyer_29_deukxg.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288618/Print_Media_Design_Brochure_Flyer_29_deukxg.jpg",
       alt: "High-quality print materials that leave an impression",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288616/Print_Media_Design_Brochure_Flyer_26_h6urci.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288616/Print_Media_Design_Brochure_Flyer_26_h6urci.jpg",
       alt: "Customizable designs for any industry",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288616/Print_Media_Design_Brochure_Flyer_23_n8htpa.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288616/Print_Media_Design_Brochure_Flyer_23_n8htpa.jpg",
       alt: "Creative solutions for your print media needs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288614/Print_Media_Design_Brochure_Flyer_25_xqtgkn.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288614/Print_Media_Design_Brochure_Flyer_25_xqtgkn.jpg",
       alt: "Stylish designs that communicate effectively",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288613/Print_Media_Design_Brochure_Flyer_22_w7ouua.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288613/Print_Media_Design_Brochure_Flyer_22_w7ouua.jpg",
       alt: "Elegant print media designs to captivate your audience",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288613/Print_Media_Design_Brochure_Flyer_21_cdfdt7.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288613/Print_Media_Design_Brochure_Flyer_21_cdfdt7.jpg",
       alt: "High-impact print media for all your needs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288612/Print_Media_Design_Brochure_Flyer_20_kze9u2.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288612/Print_Media_Design_Brochure_Flyer_20_kze9u2.jpg",
       alt: "Creative print media solutions for branding",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288612/Print_Media_Design_Brochure_Flyer_19_b2ljqc.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288612/Print_Media_Design_Brochure_Flyer_19_b2ljqc.jpg",
       alt: "Exceptional print designs for your business",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288609/Print_Media_Design_Brochure_Flyer_9_vu9j8q.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288609/Print_Media_Design_Brochure_Flyer_9_vu9j8q.jpg",
       alt: "Custom designs that speak for your brand",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288608/Print_Media_Design_Brochure_Flyer_12_mcfeaj.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288608/Print_Media_Design_Brochure_Flyer_12_mcfeaj.jpg",
       alt: "Professional and clean print media designs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288607/Print_Media_Design_Brochure_Flyer_16_pdmztk.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288607/Print_Media_Design_Brochure_Flyer_16_pdmztk.jpg",
       alt: "Tailored print media designs for your goals",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288605/Print_Media_Design_Brochure_Flyer_11_c5th8b.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288605/Print_Media_Design_Brochure_Flyer_11_c5th8b.jpg",
       alt: "Modern and impactful print media designs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288576/Print_Media_Design_Brochure_Flyer_14_ojzr2l.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288576/Print_Media_Design_Brochure_Flyer_14_ojzr2l.jpg",
       alt: "Beautiful print media solutions for your brand",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288565/Print_Media_Design_Brochure_Flyer_10_ux5kjm.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288565/Print_Media_Design_Brochure_Flyer_10_ux5kjm.jpg",
       alt: "Creative and functional print media designs",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288563/Print_Media_Design_Brochure_Flyer_7_a6ax56.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288563/Print_Media_Design_Brochure_Flyer_7_a6ax56.jpg",
       alt: "Innovative print media designs to stand out",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288533/Print_Media_Design_Brochure_Flyer_2_mbp3rf.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288533/Print_Media_Design_Brochure_Flyer_2_mbp3rf.jpg",
       alt: "Eye-catching designs for print media materials",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732288534/Print_Media_Design_Brochure_Flyer_8_mkojye.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732288534/Print_Media_Design_Brochure_Flyer_8_mkojye.jpg",
       alt: "Efficient and creative print designs for branding",
     },
   ];
@@ -157,7 +159,10 @@ const Brochure = () => {
               Print Media Design
             </h1>
             <p className="text-lg text-[#525252]">
-              Whether you're looking for a brochure, banner, poster, or any other print media, I provide custom design services that help you stand out. From business cards to large format prints, I can create designs that align with your brand and goals.
+              Whether you're looking for a brochure, banner, poster, or any
+              other print media, I provide custom design services that help you
+              stand out. From business cards to large format prints, I can
+              create designs that align with your brand and goals.
             </p>
           </div>
         </div>
@@ -191,7 +196,9 @@ const Brochure = () => {
               </li>
             </ul>
             <p className="mt-6 text-lg text-[#525252] italic text-center">
-              *The final cost will depend on the specific design, number of items, and complexity. Custom packages can be created based on your specific budget.
+              *The final cost will depend on the specific design, number of
+              items, and complexity. Custom packages can be created based on
+              your specific budget.
             </p>
           </div>
         </section>
@@ -209,7 +216,6 @@ const Brochure = () => {
               "Unlimited revisions until you're satisfied",
               "3d Mockup image",
               "After-sales support",
-
             ].map((point, index) => (
               <div
                 key={index}
@@ -249,13 +255,29 @@ const Brochure = () => {
           </div>
         </section>
 
+        {/* Explore Full Graphics Portfolio Section */}
+        <section className="py-12 px-6 lg:px-0 bg-[#f9f8f6] text-center ">
+          <h2 className="text-3xl font-bold text-gray-700 mb-4">Explore My Graphics Portfolio</h2>
+          <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
+            Dive into my complete collection of designs, from logos to creative graphics, and explore the visual stories I've created for brands and individuals.
+          </p>
+          <Link
+            to="/portfolio/graphics"
+            target="_blank"  // This ensures the link opens in a new tab
+            className="inline-block bg-[#D9B592] text-white px-6 py-3 rounded-md font-semibold text-lg transition duration-300 hover:bg-[#343434]"
+          >
+            Explore Now
+          </Link>
+        </section>
+
         {/* Call to Action */}
-        <div className="bg-[#D9B592] text-white py-12 text-center">
+        <div className="bg-[#D9B592] text-white py-12 text-center px-6 lg:px-0">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Create Stunning Print Media for Your Business?
           </h2>
           <p className="mb-8 text-lg">
-            Let’s work together to bring your ideas to life with high-quality print media designs that leave a lasting impression.
+            Let’s work together to bring your ideas to life with high-quality
+            print media designs that leave a lasting impression.
           </p>
           <Link
             to="/contact"

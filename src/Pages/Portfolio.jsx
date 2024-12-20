@@ -1,15 +1,18 @@
-import React, { useState } from "react";
-import ReviewSection from "../Components/ReviewSection";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import WebsiteShowcase from "../Components/WebsiteShowcase";
 import GraphicsShowcase from "../Components/GraphicsShowcase";
+import ReviewSection from "../Components/ReviewSection";
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState("website"); // Default filter is "website"
+  const { category } = useParams(); // Get the category from the URL (either "website" or "graphics")
+  const [activeFilter, setActiveFilter] = useState(category || "website"); // Default to "website" if no category is provided
 
-  // Function to handle filter toggle
-  const toggleFilter = (filter) => {
-    setActiveFilter(filter);
-  };
+  useEffect(() => {
+    if (category) {
+      setActiveFilter(category); // Update activeFilter based on URL param
+    }
+  }, [category]);
 
   return (
     <div>
@@ -27,7 +30,7 @@ const Portfolio = () => {
               className={`px-6 py-2 text-lg font-medium ${
                 activeFilter === "website" ? "bg-[#D9B592] text-white" : "bg-gray-200 text-gray-800"
               } rounded-lg`}
-              onClick={() => toggleFilter("website")}
+              onClick={() => setActiveFilter("website")}
             >
               Website Design
             </button>
@@ -35,7 +38,7 @@ const Portfolio = () => {
               className={`px-6 py-2 text-lg font-medium ${
                 activeFilter === "graphics" ? "bg-[#D9B592] text-white" : "bg-gray-200 text-gray-800"
               } rounded-lg`}
-              onClick={() => toggleFilter("graphics")}
+              onClick={() => setActiveFilter("graphics")}
             >
               Graphics Design
             </button>

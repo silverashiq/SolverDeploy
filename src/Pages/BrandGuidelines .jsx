@@ -5,177 +5,177 @@ import { Link } from "react-router-dom";
 const BrandGuidelines = () => {
 const guidelineSlides = [
   {
-    url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732289156/Preview_2_wx4ifz.jpg",
+    url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732289156/Preview_2_wx4ifz.jpg",
     alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
   },
   {
-    url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205512/CE_Mockup_goyh9s.jpg",
+    url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205512/CE_Mockup_goyh9s.jpg",
     alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
   },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205511/Asset_9_cqybxk.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205511/Asset_9_cqybxk.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
 
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205525/Req_Mockup_aszzci.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205525/Req_Mockup_aszzci.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205522/QIA_Mockup_nj0v1a.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205522/QIA_Mockup_nj0v1a.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205521/NF_Mockup_xdca7f.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205521/NF_Mockup_xdca7f.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205520/M_Mockup_wb0w8b.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205520/M_Mockup_wb0w8b.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205517/K_Mockup_otrupb.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205517/K_Mockup_otrupb.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205508/Asset_5_zmq7ap.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205508/Asset_5_zmq7ap.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205516/Helimo_3d_Mockup_yejvjj.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205516/Helimo_3d_Mockup_yejvjj.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205509/3d_Mockup-1_qkncgh.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205509/3d_Mockup-1_qkncgh.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205517/HSU_Mockup_hx6xcc.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205517/HSU_Mockup_hx6xcc.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205512/Asset_12_rylbgc.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205512/Asset_12_rylbgc.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205511/A_Mockup_nmldii.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205511/A_Mockup_nmldii.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205513/JL_Mockup_1_bdxevl.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205513/JL_Mockup_1_bdxevl.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205516/MB_Mockup_d7uzqt.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205516/MB_Mockup_d7uzqt.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205517/BK_Mockup_uof5mh.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205517/BK_Mockup_uof5mh.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205511/Asset_8_unywd2.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205511/Asset_8_unywd2.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205516/Helimo_3d_Mockup_yejvjj.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205516/Helimo_3d_Mockup_yejvjj.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205521/MV_Mockup_envhns.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205521/MV_Mockup_envhns.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
 
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732205511/3d_Mockup_12_lfb6gn.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732205511/3d_Mockup_12_lfb6gn.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design and Brand Identity guidelines",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118420/3d_Mockup_14_qxicys.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118420/3d_Mockup_14_qxicys.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118420/3d_Mockup_19_wvdp4l.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118420/3d_Mockup_19_wvdp4l.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118422/3d_Mockup_45_piabue.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118422/3d_Mockup_45_piabue.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118423/3d_Mockup_54_wrkp5g.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118423/3d_Mockup_54_wrkp5g.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118424/CDGW_1_Mockup_snduka.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118424/CDGW_1_Mockup_snduka.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118423/DW_3d_Mockup_tijua2.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118423/DW_3d_Mockup_tijua2.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118423/3d_Mockup_JPG_avbrtf.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118423/3d_Mockup_JPG_avbrtf.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118425/FS_3d_Mockup_llwcdi.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118425/FS_3d_Mockup_llwcdi.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118426/EV_Mockup_xky9or.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118426/EV_Mockup_xky9or.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118426/JF_Mockup_jdyjbp.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118426/JF_Mockup_jdyjbp.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118427/LK_Mockup_qnsyic.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118427/LK_Mockup_qnsyic.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118428/MKI_3d_Mockup_sbnx7j.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118428/MKI_3d_Mockup_sbnx7j.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118428/MM_3d_Mockup_fncnwl.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118428/MM_3d_Mockup_fncnwl.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118430/NA_Mockup_lgdu2b.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118430/NA_Mockup_lgdu2b.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118431/OVE_3d_Mockup_lnezdc.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118431/OVE_3d_Mockup_lnezdc.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118433/Penta_3d_Mockup_lquttv.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118433/Penta_3d_Mockup_lquttv.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118435/PR_Mokup_kmkuyc.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118435/PR_Mokup_kmkuyc.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118434/PH_3d_Mockup_dnasqw.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118434/PH_3d_Mockup_dnasqw.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118436/Q_Mockup_tiveol.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118436/Q_Mockup_tiveol.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118437/TSA_3d_Mockup_apdq9b.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118437/TSA_3d_Mockup_apdq9b.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118438/WC_Mockup_b3wbfl.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118438/WC_Mockup_b3wbfl.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
     {
-      url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732118439/WF_Mockup_eyspus.jpg",
+      url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118439/WF_Mockup_eyspus.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
 ];
@@ -313,8 +313,23 @@ const guidelineSlides = [
           </div>
         </section>
 
+        {/* Explore Full Graphics Portfolio Section */}
+        <section className="py-12 px-6 lg:px-0 bg-[#f9f8f6] text-center ">
+          <h2 className="text-3xl font-bold text-gray-700 mb-4">Explore My Graphics Portfolio</h2>
+          <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
+            Dive into my complete collection of designs, from logos to creative graphics, and explore the visual stories I've created for brands and individuals.
+          </p>
+          <Link
+            to="/portfolio/graphics"
+            target="_blank"  // This ensures the link opens in a new tab
+            className="inline-block bg-[#D9B592] text-white px-6 py-3 rounded-md font-semibold text-lg transition duration-300 hover:bg-[#343434]"
+          >
+            Explore Now
+          </Link>
+        </section>
+
         {/* Call to Action */}
-        <div className="bg-[#D9B592] text-white py-12 text-center">
+        <div className="bg-[#D9B592] text-white py-12 text-center px-6 lg:px-0">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Build a Strong Brand Identity?
           </h2>

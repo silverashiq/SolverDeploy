@@ -9,7 +9,7 @@ const About = () => {
         <div className="flex flex-col items-center text-center mb-16 max-w-4xl mx-auto">
           <img
             className="rounded-lg mb-6"
-            src="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733607813/SolverSilver_klttwk.jpg"
+            src="https://res.cloudinary.com/dntx46fvh/image/upload/w_900/dpr_auto/q_auto/v1733607813/SolverSilver_klttwk.jpg"
             alt="SolverSilver branding"
           />
           <h2 className="text-4xl font-bold text-gray-700">

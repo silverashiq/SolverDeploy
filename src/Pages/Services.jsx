@@ -8,28 +8,28 @@ function Services() {
       url: "/graphics",
       title: "Graphic Design",
       description: "Creating visually appealing graphics for branding, marketing, and more.",
-      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730043798/Flyer_Brochure_q1ua0g.jpg", // Replace with actual image URL
+      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1730043798/Flyer_Brochure_q1ua0g.jpg", // Replace with actual image URL
     },
     {
       id: 2,
       url: "/web",
       title: "Web Development",
       description: "Building responsive and functional websites tailored to your needs.",
-      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731596777/Website_frontend_backend_developement_2_mscvdv.jpg", // Replace with actual image URL
+      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1731596777/Website_frontend_backend_developement_2_mscvdv.jpg", // Replace with actual image URL
     },
     {
       id: 3,
       url: "",
       title: "Digital Marketing",
       description: "COMING SOON",
-      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731597494/3_nyov6m.jpg", // Replace with actual image URL
+      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1731597494/3_nyov6m.jpg", // Replace with actual image URL
     },
     {
       id: 4,
       url: "",
       title: "SEO Services",
       description: "COMING SOON",
-      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1731597494/3_nyov6m.jpg", // Replace with actual image URL
+      imageUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1731597494/3_nyov6m.jpg", // Replace with actual image URL
     },
 
     // Add more services as needed
