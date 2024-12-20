@@ -50,7 +50,7 @@ function Navbar() {
         <nav
           className={`fixed top-0 left-0 w-full z-50 ${
             isScrolled
-            ? "bg-opacity-80 bg-[#343434] h-[90px] backdrop-blur-md" // Add blur and opacity when scrolling down
+            ? "bg-opacity-50 bg-[#343434] h-[90px] backdrop-blur-md" // Add blur and opacity when scrolling down
             : "bg-opacity-100 bg-[#343434] h-[140px]" // Remove blur and keep full opacity when at the top
           }`}
         >

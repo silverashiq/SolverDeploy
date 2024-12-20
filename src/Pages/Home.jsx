@@ -46,9 +46,9 @@ function Home() {
       >
         <div className="lg:w-1/2 px-4 lg:px-20 text-center lg:text-left">
           <h1 className="font-sans font-medium text-[18pt] md:text-[27pt] leading-normal text-[#f3f3f3] mb-4">
-            Looking for a Talented Designer Specializing in{" "}
-            <span className="font-bold uppercase">Graphics</span> and{" "}
-            <span className="font-bold uppercase">Website</span> Design?
+            Looking for a Talented Designer/Developer Specializing in{" "}
+            <span className="font-bold uppercase text-[#D9B592]">Graphics</span> and{" "}
+            <span className="font-bold uppercase text-[#D9B592]">Website</span> Design?
           </h1>
           <span className="w-[200px] h-[2px] block my-4 mx-auto lg:mx-0 bg-[#D9B592]"></span>
           <p className="text-[#b8b8b8] text-base sm:text-lg mb-6">
@@ -60,13 +60,13 @@ function Home() {
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center sm:justify-start mx-auto sm:mx-0">
             <Link
               to="/contact"
-              className="py-4 px-8 bg-[#D9B592] font-bold rounded-md text-center text-   hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+              className="py-4 px-8 bg-white font-bold rounded-md text-center text-   hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
             >
               Request a Quote
             </Link>
             <Link
               to="/book"
-              className="py-4 px-8 bg-[#D9B592] font-bold rounded-md text-center text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+              className="py-4 px-8 bg-white font-bold rounded-md text-center text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
             >
               Book an Appointment
             </Link>
