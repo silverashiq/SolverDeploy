@@ -38,7 +38,7 @@ function Navbar() {
     <>
       {/* Navbar */}
       <nav
-        className={`bg-[#343434] transition-all duration-300 ${
+        className={`bg-[#272727] transition-all duration-300 ${
           isScrolled
             ? "fixed md:bg-opacity-90 lg:bg-opacity-80 lg:backdrop-blur-md h-[90px]"  // When scrolled, reduce height, opacity and add blur
             : "relative h-[140px] bg-opacity-100 backdrop-blur-none"  // When at the top, keep original size, full opacity and no blur

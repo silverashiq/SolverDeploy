@@ -1,249 +1,274 @@
-
 import React, { useState } from "react";
 import { FiPaperclip } from "react-icons/fi"; // Importing the attach icon
+import { Link } from "react-router-dom";
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-    files: [], // Changed to store an array of files
+    files: [],
   });
 
   const [showContactInfo, setShowContactInfo] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState("");
   const [fileError, setFileError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
   const handleFileChange = (e) => {
     const selectedFiles = Array.from(e.target.files);
-    let error = "";
+    const allowedFormats = [
+      "image/jpeg",
+      "image/png",
+      "image/webp",
+      "image/svg+xml",
+      "application/zip",
+      "application/x-rar-compressed",
+      "application/pdf",
+      "application/vnd.adobe.photoshop",
+      "application/msword",
+      "application/vnd.ms-excel",
+      "application/vnd.ms-powerpoint",
+      "text/plain",
+      "application/illustrator",
+      "application/postscript",
+    ];
 
-    // Check if any file exceeds 5MB
-    const isFileTooLarge = selectedFiles.some(
-      (file) => file.size > 5 * 1024 * 1024
-    ); // 5MB in bytes
-    if (isFileTooLarge) {
-      error = "File size should not exceed 5MB";
+    const invalidFiles = selectedFiles.filter(
+      (file) => !allowedFormats.includes(file.type)
+    );
+    if (invalidFiles.length > 0) {
+      setFileError("Some files are not allowed. Please upload a valid file.");
+    } else {
+      setFileError("");
+      setFormData((prevData) => ({
+        ...prevData,
+        files: [...prevData.files, ...selectedFiles],
+      }));
     }
-
-    if (!error) {
-      setFormData({ ...formData, files: selectedFiles });
-    }
-    setFileError(error);
   };
 
-  const handleSubmit = (e) => {
+  const handleRemoveFile = (index) => {
+    setFormData((prevData) => {
+      const newFiles = [...prevData.files];
+      newFiles.splice(index, 1);
+      return { ...prevData, files: newFiles };
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmissionStatus("");
 
-    // Simulate form submission success
-    setSubmissionStatus("Your message has been sent! Thank you.");
-    setFormData({ name: "", email: "", message: "", files: [] });
+    try {
+      const response = await fetch("https://solversilver.com/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    // Clear the status message after 5 seconds
-    setTimeout(() => setSubmissionStatus(""), 5000);
-  };
-
-  const handleBookAppointment = () => {
-    window.location.href = "/book";
-  };
-
-  const toggleContactInfo = () => {
-    setShowContactInfo(!showContactInfo);
+      const data = await response.json();
+      if (data.success) {
+        setSubmissionStatus("Your message has been sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          files: [],
+        });
+      } else {
+        setSubmissionStatus("Failed to send the message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setSubmissionStatus("Failed to send the message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
-
-        {/* Maintenance Notice */}
-        <div className="bg-yellow-100 text-gray-800 px-6 py-3 rounded-lg mb-6 text-center shadow-md max-w-lg">
-          <p>
-            <strong>Notice:</strong> The backend system for form submission is
-            currently under maintenance. Feel free to browse the page and try
-            out the features, but submissions will not be processed at this
-            time.
-          </p>
+    <div className="min-h-screen flex flex-col items-center bg-gray-100 py-10">
+      <div>
+        <h1 className="text-4xl font-bold text-gray-700 text-center">Contact Us</h1>
+        <div className="flex justify-center">
+          <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
         </div>
-
-      <h1 className="text-4xl font-bold text-gray-700">Contact Me</h1>
-      <div className="flex justify-center">
-        <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
+        <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
+          Fill out the form below to share the project details and requirements.
+        </p>
       </div>
-      <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
-        I'd love to hear from you! Please fill out the form below to get in
-        touch.
-      </p>
 
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full"
-      >
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-semibold mb-2"
-            htmlFor="name"
-          >
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:border-blue-500"
-            aria-label="Your Name"
-          />
-        </div>
+      <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+        <form onSubmit={handleSubmit} className="space-y-4">
+        {["name", "email", "phone"].map((field) => (
+  <div key={field}>
+    <label className="block text-sm font-medium mb-1" htmlFor={field}>
+      {field === "phone"
+        ? "Phone Number (optional)"
+        : field.charAt(0).toUpperCase() + field.slice(1)}
+    </label>
+    <input
+      type={field === "email" ? "email" : "text"}
+      id={field}
+      name={field}
+      value={formData[field]}
+      onChange={handleChange}
+      required={field !== "phone"} // Phone field is not required
+      placeholder={
+        field === "phone" ? "For Instant Communication/Chatting" : undefined
+      }
+      className={`w-full border rounded-lg p-2 focus:outline-none focus:ring-2 ${
+        submissionStatus.includes("Failed") || fileError
+          ? "border-red-500 focus:ring-red-500"
+          : "border-gray-300 focus:ring-blue-500"
+      }`}
+    />
+  </div>
+))}
 
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-semibold mb-2"
-            htmlFor="email"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:border-blue-500"
-            aria-label="Your Email"
-          />
-        </div>
 
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-semibold mb-2"
-            htmlFor="message"
-          >
-            Project Details
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            rows="4"
-            className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:border-blue-500"
-            aria-label="Your Message"
-          ></textarea>
-        </div>
+          <div>
+            <label className="block text-sm font-medium mb-1" htmlFor="message">
+              Project Details
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              className={`w-full border rounded-lg p-2 focus:outline-none focus:ring-2 ${
+                submissionStatus.includes("Failed") || fileError
+                  ? "border-red-500 focus:ring-red-500"
+                  : "border-gray-300 focus:ring-blue-500"
+              }`}
+            />
+          </div>
 
-        <div className="mb-4 flex items-center">
-          <label
-            className="block text-gray-700 text-sm font-semibold mb-2 mr-2"
-            htmlFor="file"
+          <div>
+            <label className="block text-sm font-medium mb-1" htmlFor="files">
+              Attach Files (Optional)
+            </label>
+            <input
+              type="file"
+              id="files"
+              name="files"
+              onChange={handleFileChange}
+              multiple
+              className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            {fileError && <p className="text-red-500 text-sm">{fileError}</p>}
+          </div>
+
+          <div className="grid grid-cols-4 gap-1.5 mt-4">
+            {formData.files.map((file, index) => (
+              <div
+                key={index}
+                className="relative bg-gray-200 p-2 rounded-lg w-full mb-2 overflow-hidden"
+              >
+                <button
+                  type="button"
+                  className="absolute top-0 right-0 bg-black text-white rounded-full p-1"
+                  onClick={() => handleRemoveFile(index)}
+                >
+                  ×
+                </button>
+                {file.type.startsWith("image") ? (
+                  <img
+                    src={URL.createObjectURL(file)}
+                    alt={file.name}
+                    className="w-full h-full object-cover rounded"
+                  />
+                ) : (
+                  <div className="w-full h-full flex justify-center items-center bg-gray-300 text-xs text-gray-700 truncate p-1">
+                    <span className="block text-ellipsis overflow-hidden whitespace-nowrap">{file.name}</span>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-[#D9B592] text-white rounded-lg py-2 hover:bg-[#343434] transition duration-200 flex items-center justify-center"
+            disabled={isSubmitting}
           >
-            Sample images (if any)
-          </label>
-          <input
-            type="file"
-            name="files"
-            id="file"
-            onChange={handleFileChange}
-            className="hidden"
-            accept="image/*"
-            multiple
-            aria-label="Attach Images"
-          />
-          <label
-            htmlFor="file"
-            className="cursor-pointer flex items-center bg-gray-200 text-gray-700 py-1 px-2 rounded-lg hover:bg-gray-300 transition duration-200 text-sm"
-            aria-label="Choose Files"
-          >
-            <FiPaperclip className="mr-2" /> Attach Images
-          </label>
-          {formData.files.length > 0 && (
-            <div className="ml-2 text-sm text-gray-600">
-              {formData.files.map((file, index) => (
-                <div key={index}>{file.name}</div>
-              ))}
-            </div>
+            {isSubmitting ? (
+              <svg
+                className="animate-spin h-5 w-5 mr-3 text-white"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                ></path>
+              </svg>
+            ) : null}
+            {isSubmitting ? "Submitting..." : "Send Message"}
+          </button>
+
+          {submissionStatus && (
+            <p
+              className={`mt-4 text-center ${
+                submissionStatus.includes("Failed")
+                  ? "text-red-600"
+                  : "text-green-600"
+              }`}
+            >
+              {submissionStatus}
+            </p>
           )}
-          {fileError && (
-            <p className="mt-2 text-red-500 text-sm">{fileError}</p>
-          )}
-        </div>
+        </form>
+      </div>
 
-        <button
-          type="submit"
-          className="w-full bg-[#D9B592] text-white rounded-lg py-2 hover:bg-[#343434] transition duration-200"
-          aria-label="Send Message"
-        >
-          Send Message
-        </button>
-
-        {submissionStatus && (
-          <p className="mt-4 text-green-600 text-center">{submissionStatus}</p>
-        )}
-      </form>
-
-      {/* Divider */}
       <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
-      {/* Instant Contact Section */}
-      <div className="flex flex-col items-center mb-6 mx-9 md:mx-0">
+      <div className="text-center mb-6">
         <button
-          onClick={toggleContactInfo}
+          onClick={() => setShowContactInfo(!showContactInfo)}
           className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
-          aria-label={
-            showContactInfo ? "Hide Contact Info" : "Show Contact Info"
-          }
         >
-          {showContactInfo ? "Hide Contact Info" : "Contact Info"}
+          {showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
         </button>
 
         {showContactInfo && (
-          <p className="mt-4 text-gray-600 text-center">
+          <p className="mt-4 text-gray-600">
             E-mail:{" "}
-            <a href="mailto:silverashiq@gmail.com" className="text-blue-500">
+            <a
+              href="mailto:info@solversilver.com"
+              className="text-blue-500 hover:underline"
+            >
               info@solversilver.com
-            </a>{" "}
+            </a>
             <br />
             WhatsApp:{" "}
-            <a href="https://wa.me/8801686335821" className="text-blue-500">
-              +8801686335821
+            <a
+              href="https://wa.me/8801759565304"
+              className="text-blue-500 hover:underline"
+            >
+              +8801759565304
             </a>
           </p>
         )}
-      </div>
-
-      {/* Divider */}
-      <hr className="w-full max-w-lg mb-6 border-gray-300 opacity-40" />
-
-      {/* Booking Section */}
-      <div className="flex-row md:flex-col items-center mb-6 mx-9 md:mx-0 text-center">
-        <span className="text-lg mr-2">
-          Want to book an Appointment/Online meeting?
-        </span>
-        <button
-          onClick={handleBookAppointment}
-          className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
-          aria-label="Book Appointment"
-        >
-          Book Now
-        </button>
       </div>
     </div>
   );
 }
 
 export default Contact;
-
-
-
-
-
-
-

@@ -66,7 +66,7 @@ function Graphics() {
         select any sector for further details.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-10 px-4 mx-4 md:mx-14 mb-10 md:mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16 px-4 mx-4 md:mx-14 mb-10 md:mb-20">
         {graphicsData.map((graphic) => (
           <Link
             // to="#"

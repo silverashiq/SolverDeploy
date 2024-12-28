@@ -72,7 +72,7 @@ function Home() {
 
   <div className="lg:w-1/2 px-4 lg:px-16 animate__animated animate__fadeInRight mt-6 lg:mt-0">
     <img
-      className="w-full h-auto rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
+      className="w-full h-auto rounded-3xl shadow-lg "
       src="https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1733607813/SolverSilver_klttwk.jpg"
       alt="SolverSilver Luxury Logo Design Mockup"
       width="700"

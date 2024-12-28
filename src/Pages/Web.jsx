@@ -59,7 +59,7 @@ function Website() {
         Discover the comprehensive web design services I offer. Please select any area of interest for more information.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-10 mx-4 md:mx-14 px-4 mb-10 md:mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16 mx-4 md:mx-14 px-4 mb-10 md:mb-20">
         {projects.map((project) => (
           <a
             key={project.id}

@@ -45,7 +45,7 @@ function Services() {
         We offer a range of services to help your business succeed. Explore what we can do for you!
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-14 px-4 mb-8 md:mb-12 lg:mb-20 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-16 px-4 mb-8 md:mb-12 lg:mb-20 ">
         {services.map((service) => (
           <Link key={service.id} to={service.url} className="hover:scale-105 transition-transform duration-300">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
