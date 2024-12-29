@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FiPaperclip } from "react-icons/fi"; // Importing the attach icon
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
+import { FiMail, FiPhone } from "react-icons/fi"; // Importing the React icons
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -61,16 +61,25 @@ function Contact() {
     });
   };
 
+  const navigate = useNavigate(); // Initialize navigate to use for redirection
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmissionStatus("");
 
+    const formDataToSend = new FormData();
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("message", formData.message);
+    formData.files.forEach((file) => {
+      formDataToSend.append("files", file); // 'files' matches the backend field
+    });
+
     try {
       const response = await fetch("https://solversilver.com/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: formDataToSend, // FormData includes all fields and files
       });
 
       const data = await response.json();
@@ -80,8 +89,13 @@ function Contact() {
           name: "",
           email: "",
           message: "",
-          files: [],
+          files: [], // Clear files
         });
+
+        // Wait for 3 seconds, then redirect to the /confirmed page
+        setTimeout(() => {
+          navigate("/confirmed"); // Redirect to the /confirmed page
+        }, 2000);
       } else {
         setSubmissionStatus("Failed to send the message. Please try again.");
       }
@@ -93,10 +107,13 @@ function Contact() {
     }
   };
 
+  const toggleContactInfo = () => setShowContactInfo((prev) => !prev);
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100 py-10">
       <div>
-        <h1 className="text-4xl font-bold text-gray-700 text-center">Contact Us</h1>
+        <h1 className="text-4xl font-bold text-gray-700 text-center">
+          Contact Us
+        </h1>
         <div className="flex justify-center">
           <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
         </div>
@@ -107,32 +124,33 @@ function Contact() {
 
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
         <form onSubmit={handleSubmit} className="space-y-4">
-        {["name", "email", "phone"].map((field) => (
-  <div key={field}>
-    <label className="block text-sm font-medium mb-1" htmlFor={field}>
-      {field === "phone"
-        ? "Phone Number (optional)"
-        : field.charAt(0).toUpperCase() + field.slice(1)}
-    </label>
-    <input
-      type={field === "email" ? "email" : "text"}
-      id={field}
-      name={field}
-      value={formData[field]}
-      onChange={handleChange}
-      required={field !== "phone"} // Phone field is not required
-      placeholder={
-        field === "phone" ? "For Instant Communication/Chatting" : undefined
-      }
-      className={`w-full border rounded-lg p-2 focus:outline-none focus:ring-2 ${
-        submissionStatus.includes("Failed") || fileError
-          ? "border-red-500 focus:ring-red-500"
-          : "border-gray-300 focus:ring-blue-500"
-      }`}
-    />
-  </div>
-))}
-
+          {["name", "email", "phone"].map((field) => (
+            <div key={field}>
+              <label className="block text-sm font-medium mb-1" htmlFor={field}>
+                {field === "phone"
+                  ? "Phone Number (optional)"
+                  : field.charAt(0).toUpperCase() + field.slice(1)}
+              </label>
+              <input
+                type={field === "email" ? "email" : "text"}
+                id={field}
+                name={field}
+                value={formData[field]}
+                onChange={handleChange}
+                required={field !== "phone"} // Phone field is not required
+                placeholder={
+                  field === "phone"
+                    ? "For Instant Communication/Chatting"
+                    : undefined
+                }
+                className={`w-full border rounded-lg p-2 focus:outline-none focus:ring-2 ${
+                  submissionStatus.includes("Failed") || fileError
+                    ? "border-red-500 focus:ring-red-500"
+                    : "border-gray-300 focus:ring-blue-500"
+                }`}
+              />
+            </div>
+          ))}
 
           <div>
             <label className="block text-sm font-medium mb-1" htmlFor="message">
@@ -188,7 +206,9 @@ function Contact() {
                   />
                 ) : (
                   <div className="w-full h-full flex justify-center items-center bg-gray-300 text-xs text-gray-700 truncate p-1">
-                    <span className="block text-ellipsis overflow-hidden whitespace-nowrap">{file.name}</span>
+                    <span className="block text-ellipsis overflow-hidden whitespace-nowrap">
+                      {file.name}
+                    </span>
                   </div>
                 )}
               </div>
@@ -239,34 +259,45 @@ function Contact() {
 
       <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
-      <div className="text-center mb-6">
-        <button
-          onClick={() => setShowContactInfo(!showContactInfo)}
-          className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
-        >
-          {showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
-        </button>
+      {/* Instant Contact Section */}
+<div className="text-center mb-6">
+  <button
+    onClick={toggleContactInfo}
+    className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
+    aria-label={showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
+  >
+    {showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
+  </button>
 
-        {showContactInfo && (
-          <p className="mt-4 text-gray-600">
-            E-mail:{" "}
-            <a
-              href="mailto:info@solversilver.com"
-              className="text-blue-500 hover:underline"
-            >
-              info@solversilver.com
-            </a>
-            <br />
-            WhatsApp:{" "}
-            <a
-              href="https://wa.me/8801759565304"
-              className="text-blue-500 hover:underline"
-            >
-              +8801759565304
-            </a>
-          </p>
-        )}
-      </div>
+  {showContactInfo && (
+    <p
+      className="mt-4 text-gray-600 transition-all duration-500 opacity-0 transform ease-in-out flex items-center gap-4"
+      style={{
+        opacity: showContactInfo ? 1 : 0,
+        transform: showContactInfo ? 'translateY(0)' : 'translateY(-20px)',
+      }}
+    >
+      <span className="flex items-center gap-2">
+        <FiMail className="text-blue-500" /> {/* Mail icon */}
+        <a
+          href="mailto:info@solversilver.com"
+          className="text-blue-500 hover:underline"
+        >
+          info@solversilver.com
+        </a>
+      </span>
+      <span className="flex items-center gap-2">
+        <FiPhone className="text-blue-500" /> {/* Phone icon */}
+        <a
+          href="https://wa.me/8801759565304"
+          className="text-blue-500 hover:underline"
+        >
+          +8801759565304
+        </a>
+      </span>
+    </p>
+  )}
+</div>
     </div>
   );
 }

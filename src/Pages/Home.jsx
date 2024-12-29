@@ -62,7 +62,7 @@ function Home() {
         Request a Quote
       </Link>
       <Link
-        to="/book"
+        to="/appointment"
         className="py-3 px-8 bg-white font-bold rounded-md text-center text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
       >
         Book an Appointment
@@ -96,21 +96,21 @@ function Home() {
             Tailored solutions to meet your business needs.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row justify-center mx-4 lg:mx-20 gap-10">
-          <Link to="/graphics">
+        <div className="flex flex-col sm:flex-row justify-center mx-4 lg:mx-20 gap-12 md:10 lg:14">
+          <Link to="/Logo">
             <ServiceCard
               image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733607471/SolverSilver_Luxury_Logo_Design_rgouqz.png"
-              title="Logo Design & Brand Identity"
-              description="Create a compelling brand identity that resonates with your audience. My logo design reflects your brand's core values and ensures effective communication."
-              alt="Business Professional Brand Identity and Logo Design, Custom Logo, Visual Identity, Graphic Design, Branding Solutions, Corporate Identity, Logo Development"
+              title="Logo Design & Branding"
+              description="Create a distinctive logo that reflects your brand's identity. My logo designs are tailored to capture your brand’s essence, ensuring recognition and a strong visual presence"
+              alt="Business Professional Logo Design, Custom Logo, Visual Identity, Graphic Design, Branding Solutions, Corporate Identity, Logo Development"
             />
           </Link>
 
           <Link to="/graphics">
             <ServiceCard
               image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730043798/Brochure_Flyer_Trifold_Design_ho0dic.jpg"
-              title="Social & Print Media Design"
-              description="Enhance your brand presence with engaging social media content and eye-catching print materials like brochures and flyers."
+              title="Digital & Print Media Design"
+              description="Create impactful brochures and print media designs that effectively communicate your message. My designs will stand out and capture attention in digital and physical formats."
               alt="Print Media like Brochure Flyers Brochures Stationery Books Magazines Catalogs Annual reports Proposals Billboards Posters Bifold Trifold Magazine Booklet Packaging"
             />
           </Link>
@@ -119,12 +119,32 @@ function Home() {
             <ServiceCard
               image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730043799/Website_frontend_backend_developement_qxlypq.jpg"
               title="Website Design & Development"
-              description="Elevate your online presence with responsive websites tailored to your business needs, combining aesthetic design with robust functionality."
+              description="Create responsive websites that captivate your audience, combining sleek design with smooth functionality to enhance user experience and elevate your brand presence online."
               alt="Complete Website design backend frontend landing page e-commerce web app, Web Development, Responsive Design, User Experience, UX/UI Design, Custom Websites, Digital Solutions"
             />
           </Link>
         </div>
+
+         {/* More */}
+         <div className=" text-white pt-14 pb-14 md:pb-14 lg:pb-1 text-center px-6 lg:px-0">
+          
+          <div className="flex justify-center space-x-4">
+                    <Link
+                      to="/services"
+                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md text-lg hover:bg-[#343434] transition"
+                    >
+                      View all Services
+                    </Link>
+                    <Link
+                      to="/portfolio"
+                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md text-lg hover:bg-[#343434] transition"
+                    >
+                      Explore Portfolio
+                    </Link>
+                    </div>
+        </div>
       </section>
+
 
       {/* Stats Section */}
       <div>
@@ -244,20 +264,20 @@ function Home() {
 
 function ServiceCard({ image, title, description, alt }) {
   return (
-    <div className="flex flex-col justify-between items-center text-center hover:scale-105 transition-transform duration-300 max-w-[400px] lg:max-w-[600px] min-h-[500px]">
+    <div className="flex flex-col justify-between items-center text-center hover:scale-105 transition-transform duration-300 max-w-[400px] lg:max-w-[600px] min-h-[500px] bg-white rounded-3xl">
       <div className="w-full aspect-[720/526]">
-        <img
-          className="rounded-3xl shadow-md w-full h-full object-cover"
-          src={image}
-          alt={alt}
-          loading="lazy" // Lazy load image
-        />
+      <img
+  className="rounded-tl-3xl rounded-tr-3xl shadow-md w-full h-full object-cover"
+  src={image}
+  alt={alt}
+  loading="lazy"
+/>
       </div>
       <div className="flex flex-col flex-grow items-center py-4">
-        <h4 className="text-xl sm:text-2xl text-[#343434] font-semibold mb-3">
+        <h4 className="text-xl sm:text-2xl text-[#D9B592] font-semibold mb-3">
           {title}
         </h4>
-        <p className="text-[#343434]">{description}</p>
+        <p className="text-[#343434] px-4">{description}</p>
       </div>
     </div>
   );

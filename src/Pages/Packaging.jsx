@@ -190,9 +190,20 @@ const Packaging = () => {
           <p className="mb-8 text-lg">
             Let's create a packaging design that reflects your brand and captivates your customers.
           </p>
-          <Link to="/contact" className="px-10 py-4 bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-opacity-90 transition">
-            Start Your Project
-          </Link>
+          <div className="flex justify-center space-x-4">
+                    <Link
+                      to="/contact"
+                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-[#343434] transition"
+                    >
+                      Request a Quote
+                    </Link>
+                    <Link
+                      to="/appointment"
+                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-[#343434] transition"
+                    >
+                      Book an Appointment
+                    </Link>
+                    </div>
         </div>
       </div>
     </div>

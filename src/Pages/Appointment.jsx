@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment-timezone";
 import { Link } from "react-router-dom";
+  import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
+  import { FiMail, FiPhone } from "react-icons/fi"; // Importing the React icons
+
 
 const Appointment = () => {
   const [formData, setFormData] = useState({
@@ -65,25 +68,27 @@ const Appointment = () => {
       setErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
     }
   };
+  
+  const navigate = useNavigate(); // Initialize navigate to use for redirection
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     // Log form data for testing
     console.log("Form Data:", formData);
-
+  
     if (!validateForm()) return;
-
+  
     setIsSubmitting(true);
     setSubmissionStatus("");
-
+  
     try {
-      const response = await fetch("https://solversilver.com/api/book", {
+      const response = await fetch("https://solversilver.com/api/appointment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-
+  
       const data = await response.json();
       if (data.success) {
         setSubmissionStatus(
@@ -99,6 +104,11 @@ const Appointment = () => {
           platformLink: "",
           timeZone: "",
         });
+  
+        // Wait for 2000ms, then redirect to the /confirmed page
+        setTimeout(() => {
+          navigate("/confirmedApp"); // Redirect to the /confirmed page
+        }, 2000);
       } else {
         throw new Error(data.error || "Failed to book appointment");
       }
@@ -109,7 +119,7 @@ const Appointment = () => {
       setIsSubmitting(false);
     }
   };
-
+  
   const toggleContactInfo = () => setShowContactInfo((prev) => !prev);
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100 py-10">
@@ -330,55 +340,50 @@ const Appointment = () => {
         </div>
       </div>
 
-      <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
-      <div className="flex flex-col sm:flex-row items-center mb-6 mx-4 md:mx-0 text-center">
-        <span className="text-lg mr-2 mb-4 sm:mb-0">
-          Send an Email for Inquiry/Quote
-        </span>
-        <Link
-          to="/contact"
-          className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
-        >
-          Contact Now
-        </Link>
-      </div>
 
       {/* Divider */}
-      <hr className="w-full max-w-lg mb-6 border-gray-300 opacity-40" />
+      <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
-      {/* Instant Contact Section */}
-      <div className="text-center mb-6">
-        <button
-          onClick={toggleContactInfo}
-          className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
-          aria-label={
-            showContactInfo ? "Hide Contact Info" : "Show Contact Info"
-          }
+{/* Instant Contact Section */}
+<div className="text-center mb-6">
+  <button
+    onClick={toggleContactInfo}
+    className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
+    aria-label={showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
+  >
+    {showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
+  </button>
+
+  {showContactInfo && (
+    <p
+      className="mt-4 text-gray-600 transition-opacity duration-300 opacity-0 transform translate-x-4 ease-in-out flex items-center gap-4"
+      style={{
+        opacity: showContactInfo ? 1 : 0,
+        transform: showContactInfo ? 'translateX(0)' : 'translateX(10px)',
+      }}
+    >
+      <span className="flex items-center gap-2">
+        <FiMail className="text-blue-500" /> {/* Mail icon */}
+        <a
+          href="mailto:info@solversilver.com"
+          className="text-blue-500 hover:underline"
         >
-          {showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
-        </button>
-
-        {showContactInfo && (
-          <p className="mt-4 text-gray-600">
-            E-mail:{" "}
-            <a
-              href="mailto:info@solversilver.com"
-              className="text-blue-500 hover:underline"
-            >
-              info@solversilver.com
-            </a>
-            <br />
-            WhatsApp:{" "}
-            <a
-              href="https://wa.me/8801759565304"
-              className="text-blue-500 hover:underline"
-            >
-              +8801759565304
-            </a>
-          </p>
-        )}
-      </div>
+          info@solversilver.com
+        </a>
+      </span>
+      <span className="flex items-center gap-2">
+        <FiPhone className="text-blue-500" /> {/* Phone icon */}
+        <a
+          href="https://wa.me/8801759565304"
+          className="text-blue-500 hover:underline"
+        >
+          +8801759565304
+        </a>
+      </span>
+    </p>
+  )}
+</div>
     </div>
   );
 };

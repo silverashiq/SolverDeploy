@@ -86,12 +86,20 @@ const WebApp = () => {
           Bring your ideas to life with custom-built web applications tailored
           for success.
         </p>
-        <Link
-          to="/contact"
-          className="px-10 py-4 bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-opacity-90 transition"
-        >
-          Get Started
-        </Link>
+       <div className="flex justify-center space-x-4">
+                           <Link
+                             to="/contact"
+                             className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-[#343434] transition"
+                           >
+                             Request a Quote
+                           </Link>
+                           <Link
+                             to="/appointment"
+                             className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-[#343434] transition"
+                           >
+                             Book an Appointment
+                           </Link>
+                           </div>
       </section>
     </div>
   );

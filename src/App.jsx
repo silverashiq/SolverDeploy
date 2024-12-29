@@ -19,13 +19,15 @@ import Brochure from './Pages/Brochure';
 
 import Packaging from './Pages/Packaging';
 import Tshirt from './Pages/Tshirt';
-import SocialPage from './Pages/Socialpage';
+import SocialPage from './Pages/SocialPage';
 import Landing from './Pages/Landing';
 import Business from './Pages/Business';
 import Redesign from './Pages/Redesign';
 import Ecommerce from './Pages/Ecommerce';
 import WebApp from './Pages/WebApp';
 import FullStack from './Pages/FullStack';
+import FormSubmitted from './Pages/FormSubmitted';
+import FormSubmittedApp from './Pages/FormSubmittedApp';
 
 
 function App() {
@@ -41,7 +43,7 @@ function App() {
         <Route path="portfolio/:category" element={<Portfolio />} /> {/* Portfolio with category */}
         <Route path="web" element={<Web />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="book" element={<Appointment />} />
+        <Route path="appointment" element={<Appointment />} />
         <Route path="terms" element={<Terms />} />
         <Route path="policy" element={<Policy />} />
         <Route path="logo" element={<Logos />} />
@@ -56,6 +58,8 @@ function App() {
         <Route path="ecommerce" element={<Ecommerce />} />
         <Route path="app" element={<WebApp />} />
         <Route path="stack" element={<FullStack />} />
+        <Route path="confirmed" element={<FormSubmitted />} />
+        <Route path="confirmedApp" element={<FormSubmittedApp />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

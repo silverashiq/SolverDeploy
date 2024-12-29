@@ -43,7 +43,7 @@ function Footer() {
             <h3 className="text-lg mb-2">Book an Appointment</h3>
             <div className="flex items-center mb-4">
               <FaCalendarAlt className="text-2xl mr-2" />
-              <Link to="/book" className="hover:text-white text-lg transition duration-200" onClick={scrollToTop}>
+              <Link to="/appointment" className="hover:text-white text-lg transition duration-200" onClick={scrollToTop}>
                 Schedule Now
               </Link>
             </div>

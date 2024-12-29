@@ -86,20 +86,28 @@ const Landing = () => {
 
       <WebsiteShowcase />
 
-      {/* Call-to-Action */}
-      <section className="bg-[#D9B592] text-white py-12 text-center">
-        <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
-        <p className="mb-8 text-lg">
-          Contact me today to bring your ideas to life and create a
-          high-performing landing page for your business.
-        </p>
-        <Link
-          to="/contact"
-          className="px-10 py-4 bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-opacity-90 transition"
-        >
-          Get a Quote
-        </Link>
-      </section>
+{/* Call-to-Action */}
+                  <section className="bg-[#D9B592] text-white py-12 text-center">
+                    <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
+                    <p className="mb-8 text-lg">
+                      Contact me today to bring your ideas to life and create a
+                      high-performing landing page for your business.
+                    </p>
+                    <div className="flex justify-center space-x-4">
+                    <Link
+                      to="/contact"
+                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-[#343434] transition"
+                    >
+                      Request a Quote
+                    </Link>
+                    <Link
+                      to="/appointment"
+                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-[#343434] transition"
+                    >
+                      Book an Appointment
+                    </Link>
+                    </div>
+                  </section>
     </div>
   );
 };
