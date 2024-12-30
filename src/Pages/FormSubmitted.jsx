@@ -30,15 +30,15 @@ const FormSubmitted = () => {
             <li>A confirmation email will be sent to you shortly.</li>
             <li>Your request will be personally reviewed by me.</li>
             <li>You will receive a follow-up email with the next steps.</li>
-            <li className="leading-6">
+            <li className="leading-8">
               If your project is urgent, feel free to reach me on WhatsApp:
               <br />
               {/* WhatsApp Link with Icon */}
               <a 
                 href="https://wa.me/8801759565304" 
-                className="flex items-center text-slate-100 hover:underline bg-blue-500 p-1 my-1 rounded-md inline-flex shadow-sm  justify-center"
+                className="flex items-center text-green-500 hover:opacity-70 bg-[#343434] px-4 py-1 my-1 rounded-full inline-flex shadow-sm  justify-center "
               >
-                <FaWhatsapp className="w-5 h-5 mr-2" />
+                <FaWhatsapp className="w-5 h-5 mr-2 text-green-500" />
                 +8801759565304
               </a>
             </li>

@@ -442,7 +442,7 @@ const GraphicsShowcase = () => {
       {
         url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1732813478/Social_Media_Design_6_hzvig6.jpg",
         previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/w_400/dpr_auto/q_auto/v1732813478/Social_Media_Design_6_hzvig6.jpg",
-        alt: "High-quality social media graphics for better engagement"
+        alt: "High-quality social media graphic for better engagement"
       },
       {
         url: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734619141/Social_Media_Design_12_nwdrqp.jpg",
@@ -703,7 +703,7 @@ const GraphicsShowcase = () => {
             <button
               key={filter}
               onClick={() => handleFilterChange(filter)}
-              className={`px-4 py-2 text-sm sm:text-base rounded-lg text-white ${
+              className={`px-6 py-2 text-sm sm:text-base rounded-full text-white ${
                 selectedFilter === filter
                   ? "bg-[#D9B592] shadow-lg"
                   : "bg-[#343434] hover:bg-[#D9B592] transition-colors"
@@ -732,7 +732,7 @@ const GraphicsShowcase = () => {
                   onClick={() => handleModalOpen(item.url)}
                 />
                 {/* Hover effect for desktop view */}
-                <div className="absolute inset-0 bg-black bg-opacity-0 lg:group-hover:bg-opacity-50 lg:group-hover:backdrop-blur-sm transition duration-300 flex items-center justify-center opacity-0 lg:group-hover:opacity-100">
+                <div className="absolute inset-0 bg-black bg-opacity-0 lg:group-hover:bg-opacity-50 lg:group-hover:backdrop-blur-sm transition-colors duration-300 flex items-center justify-center opacity-0 lg:group-hover:opacity-100">
                   <FaSearch
                     className="text-white text-3xl mx-10 cursor-pointer"
                     onClick={() => handleModalOpen(item.url)}

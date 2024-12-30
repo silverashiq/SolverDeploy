@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import moment from "moment-timezone";
 import { Link } from "react-router-dom";
   import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
-  import { FiMail, FiPhone } from "react-icons/fi"; // Importing the React icons
+  import { FiMail } from "react-icons/fi"; // Importing the React icons
+  import { FaWhatsapp } from "react-icons/fa"; // WhatsApp icon
 
 
 const Appointment = () => {
@@ -289,7 +290,7 @@ const Appointment = () => {
 
           <button
             type="submit"
-            className="w-full bg-[#D9B592] text-white rounded-lg py-2 hover:bg-[#343434] transition duration-200 flex items-center justify-center"
+            className="w-full bg-[#D9B592] text-white font-semibold rounded-full py-2 hover:bg-[#343434] transition duration-200 flex items-center justify-center"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
@@ -345,11 +346,11 @@ const Appointment = () => {
       {/* Divider */}
       <hr className="w-full max-w-lg my-6 border-gray-300 opacity-40" />
 
-{/* Instant Contact Section */}
+ {/* Instant Contact Section */}
 <div className="text-center mb-6">
   <button
     onClick={toggleContactInfo}
-    className="bg-[#343434] text-white font-semibold py-1 px-3 rounded-lg hover:bg-[#D9B592] transition duration-200"
+    className="bg-[#343434] text-white  py-1 px-4 rounded-full hover:bg-[#D9B592] transition duration-200"
     aria-label={showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
   >
     {showContactInfo ? "Hide Contact Info" : "Show Contact Info"}
@@ -357,26 +358,26 @@ const Appointment = () => {
 
   {showContactInfo && (
     <p
-      className="mt-4 text-gray-600 transition-opacity duration-300 opacity-0 transform translate-x-4 ease-in-out flex items-center gap-4"
+      className="mt-4 text-gray-600 transition-all duration-500 opacity-0 transform ease-in-out flex items-center gap-4"
       style={{
         opacity: showContactInfo ? 1 : 0,
-        transform: showContactInfo ? 'translateX(0)' : 'translateX(10px)',
+        transform: showContactInfo ? 'translateY(0)' : 'translateY(-20px)',
       }}
     >
       <span className="flex items-center gap-2">
         <FiMail className="text-blue-500" /> {/* Mail icon */}
         <a
           href="mailto:info@solversilver.com"
-          className="text-blue-500 hover:underline"
+          className="text-gray-700 hover:underline"
         >
           info@solversilver.com
         </a>
       </span>
       <span className="flex items-center gap-2">
-        <FiPhone className="text-blue-500" /> {/* Phone icon */}
+        <FaWhatsapp className="text-green-500" /> {/* WhatsApp icon */}
         <a
           href="https://wa.me/8801759565304"
-          className="text-blue-500 hover:underline"
+          className="text-gray-700 hover:underline"
         >
           +8801759565304
         </a>

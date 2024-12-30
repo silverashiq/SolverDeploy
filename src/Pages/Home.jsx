@@ -47,27 +47,29 @@ function Home() {
   <div className="lg:w-1/2 px-4 lg:px-16 text-center lg:text-left">
     <h1 className="font-sans font-medium text-[16pt] sm:text-[18pt] md:text-[22pt] lg:text-[27pt] leading-normal text-[#f3f3f3] mb-4">
       Looking for a Talented Designer/Developer Specializing in{" "}
-      <span className="font-bold uppercase text-[#D9B592]">Graphics</span> and{" "}
+      <span className="font-bold uppercase text-[#D9B592]">Graphic</span> and{" "}
       <span className="font-bold uppercase text-[#D9B592]">Website</span> Design?
     </h1>
     <span className="w-[150px] sm:w-[200px] lg:w-[220px] h-[2px] block my-4 mx-auto lg:mx-0 bg-[#D9B592]"></span>
     <p className="text-[#b8b8b8] text-base sm:text-lg mb-6">
-      With over 5 years of experience as a Graphics Designer and Full-Stack Web Developer, I craft innovative, high-quality designs and responsive websites tailored to your needs. <br /> Let’s collaborate to turn your vision into a powerful digital experience.
+      With over 5 years of experience as a Graphic Designer and Full-Stack Web Developer, I craft innovative, high-quality designs and responsive websites tailored to your needs. <br /> Let’s collaborate to turn your vision into a powerful digital experience.
     </p>
     <div className="flex flex-col sm:flex-row sm:space-y-0 space-y-4 justify-center lg:justify-start gap-0 md:gap-6 mx-auto lg:mx-0">
-      <Link
-        to="/contact"
-        className="py-3 px-8 bg-white font-bold rounded-md text-center text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
-      >
-        Request a Quote
-      </Link>
-      <Link
-        to="/appointment"
-        className="py-3 px-8 bg-white font-bold rounded-md text-center text-[#343434] hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
-      >
-        Book an Appointment
-      </Link>
-    </div>
+  <Link
+    to="/contact"
+    className="py-3 px-8 bg-white font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-colors sm:duration-300 sm:hover:px-20 transition-colors duration-300"
+  >
+    Request a Quote
+  </Link>
+  <Link
+    to="/appointment"
+    className="py-3 px-8 bg-white font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-colors sm:duration-300 sm:hover:px-20 transition-colors duration-300 "
+  >
+    Book an Appointment
+  </Link>
+</div>
+
+
   </div>
 
   <div className="lg:w-1/2 px-4 lg:px-16 animate__animated animate__fadeInRight mt-6 lg:mt-0">
@@ -126,18 +128,18 @@ function Home() {
         </div>
 
          {/* More */}
-         <div className=" text-white pt-14 pb-14 md:pb-14 lg:pb-1 text-center px-6 lg:px-0">
+         <div className=" text-white pt-2 md:pt-14 pb-14 md:pb-14 lg:pb-1 text-center px-6 lg:px-0">
           
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
                     <Link
                       to="/services"
-                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md text-lg hover:bg-[#343434] transition"
+                      className="px-6 py-2  bg-[#464646] text-[#e9e8e8] font-semibold rounded-full shadow-md  hover:bg-[#D9B592] hover:text-[#343434]   transition-colors duration-300"
                     >
                       View all Services
                     </Link>
                     <Link
                       to="/portfolio"
-                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md text-lg hover:bg-[#343434] transition"
+                      className="px-6 py-2  bg-[#464646] text-[#e9e8e8] rounded-full font-semibold shadow-md  hover:bg-[#D9B592] hover:text-[#343434]   transition-colors duration-300"
                     >
                       Explore Portfolio
                     </Link>
@@ -181,7 +183,7 @@ function Home() {
                   Creative and Technical Expertise
                 </h3>
                 <p className="text-[#343434]">
-                  As a Graphics Designer and Full-Stack Web Developer, I combine
+                  As a Graphic Designer and Full-Stack Web Developer, I combine
                   visual creativity with technical proficiency, ensuring designs
                   are beautiful and functional.
                 </p>
@@ -264,10 +266,10 @@ function Home() {
 
 function ServiceCard({ image, title, description, alt }) {
   return (
-    <div className="flex flex-col justify-between items-center text-center hover:scale-105 transition-transform duration-300 max-w-[400px] lg:max-w-[600px] min-h-[500px] bg-white rounded-3xl">
+    <div className="flex flex-col justify-between items-center text-center hover:scale-105 transition-transform duration-300 max-w-[400px] lg:max-w-[600px] min-h-[500px] rounded-3xl">
       <div className="w-full aspect-[720/526]">
       <img
-  className="rounded-tl-3xl rounded-tr-3xl shadow-md w-full h-full object-cover"
+  className="rounded-3xl shadow-md w-full h-full object-cover"
   src={image}
   alt={alt}
   loading="lazy"

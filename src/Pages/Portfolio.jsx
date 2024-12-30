@@ -28,19 +28,19 @@ const Portfolio = () => {
           <div className="flex space-x-4 mb-6">
             <button
               className={`px-6 py-2 text-lg font-medium ${
-                activeFilter === "website" ? "bg-[#D9B592] text-white" : "bg-gray-200 text-gray-800"
-              } rounded-lg`}
+                activeFilter === "website" ? "bg-[#D9B592] text-white" : "bg-[#343434] text-white hover:bg-[#D9B592] transition-colors duration-300"
+              } rounded-full`}
               onClick={() => setActiveFilter("website")}
             >
               Website Design
             </button>
             <button
               className={`px-6 py-2 text-lg font-medium ${
-                activeFilter === "graphics" ? "bg-[#D9B592] text-white" : "bg-gray-200 text-gray-800"
-              } rounded-lg`}
+                activeFilter === "graphics" ? "bg-[#D9B592] text-white" : "bg-[#343434] text-white hover:bg-[#D9B592] transition-colors duration-300"
+              } rounded-full`}
               onClick={() => setActiveFilter("graphics")}
             >
-              Graphics Design
+              Graphic Design
             </button>
           </div>
 

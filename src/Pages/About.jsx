@@ -40,12 +40,12 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
           <div className="bg-white shadow-lg rounded-lg p-6">
               <a href="/graphics">
-              <h3 className="text-xl font-semibold text-slate-700 mb-4 text-center py-2 px-4 bg-gray-100 rounded-lg">
+              <h3 className="text-xl font-semibold text-slate-700 mb-4 text-center py-2 px-4 bg-gray-100 rounded-lg hover:font-bold">
               Graphic Design
             </h3>
               </a>
             <p className="leading-relaxed text-sm text-gray-700 text-justify">
-              As a graphics designer, I bring a refined eye for detail, with
+              As a graphic designer, I bring a refined eye for detail, with
               expertise in visual hierarchy, color theory, and typography. My
               designs are tailored to reflect a brand's identity and values with
               a sleek, professional touch. With expertise in Adobe Illustrator
@@ -59,7 +59,7 @@ const About = () => {
 
           <div className="bg-white shadow-lg rounded-lg p-6">
               <a href="/web">
-              <h3 className="text-xl font-semibold text-slate-700 mb-4 text-center py-2 px-4 bg-gray-100 rounded-lg">
+              <h3 className="text-xl font-semibold text-slate-700 mb-4 text-center py-2 px-4 bg-gray-100 rounded-lg hover:font-bold">
               Web Development
             </h3>
               </a>
@@ -104,7 +104,7 @@ const About = () => {
               title: "Let's Work Together!",
               description: "Have a project in mind? Feel free to reach out.",
               link: "/contact",
-              buttonText: "Contact Me",
+              buttonText: "Request a Quote",
             },
           ].map((item, index) => (
             <div
@@ -115,7 +115,7 @@ const About = () => {
               <p className="text-sm mb-4">{item.description}</p>
               <a
                 href={item.link}
-                className="bg-[#D9B592] font-semibold text-white px-4 py-2 rounded-lg shadow-md hover:bg-[#343434] hover:text-[#D9B592] transition-colors duration-300"
+                className="bg-[#D9B592] font-semibold text-white px-6 py-2 rounded-full shadow-md hover:bg-[#343434]  transition-colors duration-300"
               >
                 {item.buttonText}
               </a>

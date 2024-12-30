@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaCalendarAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaBehance, FaDribbble, FaPinterest, FaWhatsapp, FaCalendarAlt } from 'react-icons/fa';
+
 
 function Footer() {
   const [showContactInfo, setShowContactInfo] = useState(false); // State for contact info visibility
@@ -50,26 +51,33 @@ function Footer() {
 
             <h3 className="text-lg mb-2">Follow Us</h3>
             <div className="flex space-x-4 mb-4">
-              <a href="#" className="text-[#D9B592] hover:text-white transition duration-200">
-                <FaFacebookF size={20} />
-              </a>
-              <a href="#" className="text-[#D9B592] hover:text-white transition duration-200">
-                <FaTwitter size={20} />
-              </a>
-              <a href="#" className="text-[#D9B592] hover:text-white transition duration-200">
-                <FaInstagram size={20} />
-              </a>
-              <a href="#" className="text-[#D9B592] hover:text-white transition duration-200">
-                <FaLinkedinIn size={20} />
-              </a>
-            </div>
+  <a href="https://www.facebook.com/solversilver.co" className="text-[#D9B592] hover:text-white transition duration-200">
+    <FaFacebookF size={20} />
+  </a>
+  <a href="https://www.instagram.com/solversilver" className="text-[#D9B592] hover:text-white transition duration-200">
+    <FaInstagram size={22} />
+  </a>
+  <a href="https://www.behance.net/solversilver" className="text-[#D9B592] hover:text-white transition duration-200">
+    <FaBehance size={22} />
+  </a>
+  <a href="https://dribbble.com/solversilver" className="text-[#D9B592] hover:text-white transition duration-200">
+    <FaDribbble size={22} />
+  </a>
+  <a href="https://www.pinterest.com/solversilver" className="text-[#D9B592] hover:text-white transition duration-200">
+    <FaPinterest size={22} />
+  </a>
+  <a href="https://wa.me/8801759565304" className="text-[#D9B592] hover:text-white transition duration-200">
+    <FaWhatsapp size={24} />
+  </a>
+</div>
+
 
             {/* Instant Contact Button */}
             <button
               onClick={toggleContactInfo}
-              className="bg-[#4a4a4a] text-[#D9B592] font-semibold py-2 px-4 rounded-lg hover:bg-[#5c5b5b] transition duration-200"
+              className="bg-[#4a4a4a] text-[#D9B592]  py-2 px-6 rounded-full hover:bg-[#5c5b5b] transition duration-200"
             >
-              {showContactInfo ? 'Hide Contact Info' : 'Contact Info'}
+              {showContactInfo ? 'Hide Contact Info' : 'Show Contact Info'}
             </button>
 
             {showContactInfo && (

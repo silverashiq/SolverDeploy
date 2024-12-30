@@ -150,7 +150,7 @@ const Tshirt = () => {
   <Link
     to="/portfolio/graphics"
     target="_blank"  // This ensures the link opens in a new tab
-    className="inline-block bg-[#D9B592] text-white px-6 py-3 rounded-md font-semibold text-lg transition duration-300 hover:bg-[#343434]"
+    className="inline-block bg-[#D9B592] text-white px-6 py-2 rounded-full font-semibold text-lg transition-colors duration-300 hover:bg-[#343434]"
   >
     Explore Now
   </Link>
@@ -167,13 +167,13 @@ const Tshirt = () => {
           <div className="flex justify-center space-x-4">
                     <Link
                       to="/contact"
-                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-[#343434] transition"
+                      className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
                     >
                       Request a Quote
                     </Link>
                     <Link
                       to="/appointment"
-                      className="px-4 py-2  bg-white text-[#D9B592] font-semibold rounded-md shadow-md hover:bg-[#343434] transition"
+                      className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
                     >
                       Book an Appointment
                     </Link>
