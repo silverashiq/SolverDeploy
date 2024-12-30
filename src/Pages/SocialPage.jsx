@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const SocialPage = () => {
   const socialSlides = [
-
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732813505/Social_Media_Design_8_uhu853.jpg",
       alt: "Dynamic social media design to boost online presence",
@@ -66,7 +65,6 @@ const SocialPage = () => {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1734619139/Social_Media_Design_11_xrcrks.jpg",
       alt: "Elegant social media design for professional branding",
     },
-    
   ];
 
   return (
@@ -81,7 +79,8 @@ const SocialPage = () => {
               Social Media Design
             </h1>
             <p className="text-lg text-[#525252]">
-              Create a strong online presence with custom, eye-catching social & digital media designs tailored to your brand.
+              Create a strong online presence with custom, eye-catching social &
+              digital media designs tailored to your brand.
             </p>
           </div>
         </div>
@@ -111,7 +110,8 @@ const SocialPage = () => {
               </li>
             </ul>
             <p className="mt-6 text-lg text-[#525252] italic text-center">
-              * Custom packages can be created based on your specific needs and budget.
+              * Custom packages can be created based on your specific needs and
+              budget.
             </p>
           </div>
         </section>
@@ -146,13 +146,17 @@ const SocialPage = () => {
 
         {/* Explore Full Graphics Portfolio Section */}
         <section className="py-12 px-6 lg:px-0 bg-[#f9f8f6] text-center ">
-          <h2 className="text-3xl font-bold text-gray-700 mb-4">Explore My Graphics Portfolio</h2>
+          <h2 className="text-3xl font-bold text-gray-700 mb-4">
+            Explore My Graphics Portfolio
+          </h2>
           <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
-            Dive into my complete collection of designs, from logos to creative graphics, and explore the visual stories I've created for brands and individuals.
+            Dive into my complete collection of designs, from logos to creative
+            graphics, and explore the visual stories I've created for brands and
+            individuals.
           </p>
           <Link
             to="/portfolio/graphics"
-            target="_blank"  // This ensures the link opens in a new tab
+            target="_blank" // This ensures the link opens in a new tab
             className="inline-block bg-[#D9B592] text-white px-6 py-2 rounded-full font-semibold text-lg transition-colors duration-300 hover:bg-[#343434]"
           >
             Explore Now
@@ -168,19 +172,19 @@ const SocialPage = () => {
             Let's create designs that boost your engagement and grow your brand.
           </p>
           <div className="flex justify-center space-x-4">
-                    <Link
-                      to="/contact"
-                      className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
-                    >
-                      Request a Quote
-                    </Link>
-                    <Link
-                      to="/appointment"
-                      className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
-                    >
-                      Book an Appointment
-                    </Link>
-                    </div>
+            <Link
+              to="/contact"
+              className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
+            >
+              Request a Quote
+            </Link>
+            <Link
+              to="/appointment"
+              className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
+            >
+              Book an Appointment
+            </Link>
+          </div>
         </div>
       </div>
     </div>

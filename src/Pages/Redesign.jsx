@@ -44,37 +44,36 @@ const Redesign = () => {
           </div>
         </div>
       </section>
-{/* Benefits Section */}
-<section className="bg-white py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
-  <div className="max-w-3xl mx-auto text-center">
-    <h2 className="text-3xl font-bold text-gray-700 mb-6">
-      Why Redesign Your Website?
-    </h2>
-    <ul className="list-inside list-disc space-y-4 text-lg text-[#525252]">
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Outdated websites lose visitors and credibility</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Fresh designs boost conversions and user trust</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Improved SEO and faster load times</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Enhanced mobile responsiveness for all users</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Modern features and sleek layouts</p>
-      </li>
-    </ul>
-  </div>
-</section>
-
+      {/* Benefits Section */}
+      <section className="bg-white py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-700 mb-6">
+            Why Redesign Your Website?
+          </h2>
+          <ul className="list-inside list-disc space-y-4 text-lg text-[#525252]">
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Outdated websites lose visitors and credibility</p>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Fresh designs boost conversions and user trust</p>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Improved SEO and faster load times</p>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Enhanced mobile responsiveness for all users</p>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-[#D9B592] text-2xl">•</span>
+              <p>Modern features and sleek layouts</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <WebsiteShowcase />
 
@@ -87,19 +86,19 @@ const Redesign = () => {
           Get a website that works for your audience and meets modern standards.
         </p>
         <div className="flex justify-center space-x-4">
-                            <Link
-                              to="/contact"
-                              className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
-                            >
-                              Request a Quote
-                            </Link>
-                            <Link
-                              to="/appointment"
-                              className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
-                            >
-                              Book an Appointment
-                            </Link>
-                            </div>
+          <Link
+            to="/contact"
+            className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
+          >
+            Request a Quote
+          </Link>
+          <Link
+            to="/appointment"
+            className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
+          >
+            Book an Appointment
+          </Link>
+        </div>
       </section>
     </div>
   );

@@ -2,59 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* src/index.css or src/App.css */
 html {
-    scroll-behavior: smooth;
-  }
-  
+  scroll-behavior: smooth;
+}
 
-  .menu-link {
-    position: relative;
-  }
-  
-  .menu-link::after {
-    content: '';
-    display: block;
-    height: 1px; /* Adjust thickness here */
-    background-color: #D9B592; /* Bar color */
-    width: 0;
-    transition: width 0.3s; /* Animation duration */
-    position: absolute;
-    top: -53px; /* Move the bar above the text */
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .menu-link:hover::after {
-    width: 100%; /* Full width on hover */
-  }
-  
-  /* Keep the hover bar visible when hovering over the dropdown */
-  .dropdown:hover .menu-link::after {
-    width: 100%; /* Maintain full width when hovering */
-  }
-  
+.menu-link {
+  position: relative;
+}
+
+.menu-link::after {
+  content: "";
+  display: block;
+  height: 1px; /* Adjust thickness here */
+  background-color: #d9b592; /* Bar color */
+  width: 0;
+  transition: width 0.3s; /* Animation duration */
+  position: absolute;
+  top: -53px; /* Move the bar above the text */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-link:hover::after {
+  width: 100%; /* Full width on hover */
+}
+
+/* Keep the hover bar visible when hovering over the dropdown */
+.dropdown:hover .menu-link::after {
+  width: 100%; /* Maintain full width when hovering */
+}
 
 /* Custom styles for Swiper navigation arrows */
-.swiper-button-next, .swiper-button-prev {
-  color: #D9B592; /* Change to your preferred color */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d9b592; /* Change to your preferred color */
   font-size: 24px; /* Adjust the size as needed */
 }
 
 /* Hover color change */
-.swiper-button-next:hover, .swiper-button-prev:hover {
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
   color: #fff; /* Hover color */
 }
 
 /* Optional: Adjust the size of the arrow buttons */
-.swiper-button-next, .swiper-button-prev {
-  width: 40px;  /* Width of the arrow container */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px; /* Width of the arrow container */
   height: 40px; /* Height of the arrow container */
 }
 
-
-html, body {
-  overflow-x: hidden;  /* Prevent horizontal scrolling */
-  overflow-y: auto;    /* Allow vertical scrolling */
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
 }

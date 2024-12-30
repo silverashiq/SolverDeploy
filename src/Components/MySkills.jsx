@@ -138,13 +138,13 @@ const MySkills = () => {
   return (
     <section className="text-center mb-8 mx-2 md:mx-0 lg:mx-32">
       <h3 className="font-sans font-semibold text-3xl sm:text-4xl text-gray-700 text-center mt-0 lg:mt-5 ">
-      My Expertise
+        My Expertise
       </h3>
-      <div className='flex justify-center'>
-  <span className='w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]'></span>
-</div>
+      <div className="flex justify-center">
+        <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
+      </div>
       <p className="text-[#343434] text-lg sm:text-xl font-light">
-      Expert in design and development, delivering innovative solutions.
+        Expert in design and development, delivering innovative solutions.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
         {skills.map((skill) => (

@@ -1,90 +1,118 @@
-import React, { useState } from 'react';
-import { FaSearch, FaLink, FaTimes } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaSearch, FaLink, FaTimes } from "react-icons/fa";
 
 const websites = [
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734548323/14_a1f5nk.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734548323/14_a1f5nk.jpg",
     url: "https://ecommerce-gym.webflow.io/",
     alt: "Ecommerce Gym Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734548323/14_a1f5nk.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734548323/14_a1f5nk.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/12_wfwqcp.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/12_wfwqcp.jpg",
     url: "https://www.evoplan.solversilver.com/",
     alt: "EvoPlan Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/12_wfwqcp.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/12_wfwqcp.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734548323/13_gynzhl.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734548323/13_gynzhl.jpg",
     url: "https://www.obeliskinsurance.com/",
     alt: "Obelisk Insurance Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734548323/13_gynzhl.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734548323/13_gynzhl.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543654/3_gl7ajg.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543654/3_gl7ajg.jpg",
     url: "https://www.lukavulicevic.com/",
     alt: "Luka Vulicevic Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543654/3_gl7ajg.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543654/3_gl7ajg.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543662/5_fygi58.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543662/5_fygi58.jpg",
     url: "https://www.getadelante.com/",
     alt: "Get Adelante Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543662/5_fygi58.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543662/5_fygi58.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/8_ydy9pv.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/8_ydy9pv.jpg",
     url: "https://www.plugeek.solversilver.com/",
     alt: "PluGeek Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/8_ydy9pv.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/8_ydy9pv.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543654/4_viacdp.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543654/4_viacdp.jpg",
     url: "https://smallship.webflow.io/",
     alt: "Smallship Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543654/4_viacdp.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543654/4_viacdp.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543703/6_fb2wch.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543703/6_fb2wch.jpg",
     url: "https://www.skyther.solversilver.com/",
     alt: "Skyther Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543703/6_fb2wch.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543703/6_fb2wch.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543654/1_wxgily.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543654/1_wxgily.jpg",
     url: "https://www.chosencollective.org/",
     alt: "Choosen Collective Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543654/1_wxgily.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543654/1_wxgily.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543655/2_ex98zv.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734543655/2_ex98zv.jpg",
     url: "https://www.heroicmarketer.com/",
     alt: "Heroic Marketer Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543655/2_ex98zv.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734543655/2_ex98zv.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/11_cipmqc.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/11_cipmqc.jpg",
     url: "https://www.seosem.solversilver.com/",
     alt: "SEOSEM Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/11_cipmqc.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/11_cipmqc.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/10_qbdmlm.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/10_qbdmlm.jpg",
     url: "https://www.markfix.solversilver.com/",
     alt: "MarkFix Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/10_qbdmlm.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/10_qbdmlm.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/7_ly9qvh.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/7_ly9qvh.jpg",
     url: "https://www.anymov.solversilver.com/",
     alt: "Anymov Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/7_ly9qvh.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/7_ly9qvh.jpg",
   },
   {
-    image: "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/9_zv0yfx.jpg",
+    image:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/w_600,dpr_auto/q_auto/v1734544209/9_zv0yfx.jpg",
     url: "https://www.taskify.solversilver.com/",
     alt: "Taskify Website",
-    previewUrl: "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/9_zv0yfx.jpg"
+    previewUrl:
+      "https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1734544209/9_zv0yfx.jpg",
   },
 ];
 
@@ -157,7 +185,10 @@ const WebsiteShowcase = () => {
 
       {/* Modal for Enlarged Image */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 z-50" onClick={handleModalClose}>
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 z-50"
+          onClick={handleModalClose}
+        >
           <div
             className="relative w-full h-full flex items-center justify-center"
             onClick={(e) => e.stopPropagation()} // Prevent modal close when clicking inside the image

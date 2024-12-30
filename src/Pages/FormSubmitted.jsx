@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaWhatsapp } from 'react-icons/fa'; // Import WhatsApp icon from React Icons
-import { FaCheckCircle } from 'react-icons/fa'; // Import check icon from React Icons
+import { FaWhatsapp } from "react-icons/fa"; // Import WhatsApp icon from React Icons
+import { FaCheckCircle } from "react-icons/fa"; // Import check icon from React Icons
 
 const FormSubmitted = () => {
   return (
@@ -15,12 +15,15 @@ const FormSubmitted = () => {
         </div>
 
         {/* Success Message */}
-        <h1 className="text-3xl font-semibold text-[#343434]">Contact Form Successfully Submitted!</h1>
+        <h1 className="text-3xl font-semibold text-[#343434]">
+          Contact Form Successfully Submitted!
+        </h1>
 
         {/* Explanation */}
         <p className="text-lg text-[#343434]">
-          Thank you for reaching out! Your request has been successfully submitted. 
-          Please check your inbox (or spam folder) for an automated confirmation email.
+          Thank you for reaching out! Your request has been successfully
+          submitted. Please check your inbox (or spam folder) for an automated
+          confirmation email.
         </p>
 
         {/* Additional Information */}
@@ -34,8 +37,8 @@ const FormSubmitted = () => {
               If your project is urgent, feel free to reach me on WhatsApp:
               <br />
               {/* WhatsApp Link with Icon */}
-              <a 
-                href="https://wa.me/8801759565304" 
+              <a
+                href="https://wa.me/8801759565304"
                 className="flex items-center text-green-500 hover:opacity-70 bg-[#343434] px-4 py-1 my-1 rounded-full inline-flex shadow-sm  justify-center "
               >
                 <FaWhatsapp className="w-5 h-5 mr-2 text-green-500" />
@@ -47,7 +50,7 @@ const FormSubmitted = () => {
 
         {/* Jump Links in the Same Line */}
         <div className="mt-6 flex justify-center space-x-6">
-        <Link
+          <Link
             to="/"
             className="text-[#D9B592] hover:text-[#343434] underline text-md"
           >
@@ -65,7 +68,6 @@ const FormSubmitted = () => {
           >
             Explore Portfolio
           </Link>
-          
         </div>
       </div>
     </div>

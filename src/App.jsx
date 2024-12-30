@@ -1,34 +1,33 @@
 // src/App.jsx
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Layout from './Layout/Layout';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Services from './Pages/Services';
-import Graphics from './Pages/Graphics';
-import Portfolio from './Pages/Portfolio';
-import Web from './Pages/Web';
-import Contact from './Pages/Contact';
-import NotFound from './Pages/NotFound';
-import Terms from './Pages/Terms';
-import Policy from './Pages/Policy';
-import Appointment from './Pages/Appointment';
-import Logos from './Pages/Logos';
-import BrandGuidelines from './Pages/BrandGuidelines ';
-import Brochure from './Pages/Brochure';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import Graphics from "./Pages/Graphics";
+import Portfolio from "./Pages/Portfolio";
+import Web from "./Pages/Web";
+import Contact from "./Pages/Contact";
+import NotFound from "./Pages/NotFound";
+import Terms from "./Pages/Terms";
+import Policy from "./Pages/Policy";
+import Appointment from "./Pages/Appointment";
+import Logos from "./Pages/Logos";
+import BrandGuidelines from "./Pages/BrandGuidelines ";
+import Brochure from "./Pages/Brochure";
 
-import Packaging from './Pages/Packaging';
-import Tshirt from './Pages/Tshirt';
-import SocialPage from './Pages/SocialPage';
-import Landing from './Pages/Landing';
-import Business from './Pages/Business';
-import Redesign from './Pages/Redesign';
-import Ecommerce from './Pages/Ecommerce';
-import WebApp from './Pages/WebApp';
-import FullStack from './Pages/FullStack';
-import FormSubmitted from './Pages/FormSubmitted';
-import FormSubmittedApp from './Pages/FormSubmittedApp';
-
+import Packaging from "./Pages/Packaging";
+import Tshirt from "./Pages/Tshirt";
+import SocialPage from "./Pages/SocialPage";
+import Landing from "./Pages/Landing";
+import Business from "./Pages/Business";
+import Redesign from "./Pages/Redesign";
+import Ecommerce from "./Pages/Ecommerce";
+import WebApp from "./Pages/WebApp";
+import FullStack from "./Pages/FullStack";
+import FormSubmitted from "./Pages/FormSubmitted";
+import FormSubmittedApp from "./Pages/FormSubmittedApp";
 
 function App() {
   return (
@@ -39,8 +38,10 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="graphics" element={<Graphics />} />
         {/* Route for portfolio with dynamic category */}
-        <Route path="portfolio" element={<Portfolio />} /> {/* Default portfolio page */}
-        <Route path="portfolio/:category" element={<Portfolio />} /> {/* Portfolio with category */}
+        <Route path="portfolio" element={<Portfolio />} />{" "}
+        {/* Default portfolio page */}
+        <Route path="portfolio/:category" element={<Portfolio />} />{" "}
+        {/* Portfolio with category */}
         <Route path="web" element={<Web />} />
         <Route path="contact" element={<Contact />} />
         <Route path="appointment" element={<Appointment />} />

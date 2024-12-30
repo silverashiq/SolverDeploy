@@ -86,19 +86,19 @@ const Ecommerce = () => {
           maximize sales.
         </p>
         <div className="flex justify-center space-x-4">
-                            <Link
-                              to="/contact"
-                              className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
-                            >
-                              Request a Quote
-                            </Link>
-                            <Link
-                              to="/appointment"
-                              className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
-                            >
-                              Book an Appointment
-                            </Link>
-                            </div>
+          <Link
+            to="/contact"
+            className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
+          >
+            Request a Quote
+          </Link>
+          <Link
+            to="/appointment"
+            className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
+          >
+            Book an Appointment
+          </Link>
+        </div>
       </section>
     </div>
   );

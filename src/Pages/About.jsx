@@ -12,9 +12,7 @@ const About = () => {
             src="https://res.cloudinary.com/dntx46fvh/image/upload/w_900/dpr_auto/q_auto/v1730043799/SolverSilver_Luxury_Logo_Design_Mockup_muvuuw.jpg"
             alt="SolverSilver branding"
           />
-          <h2 className="text-4xl font-bold text-gray-700">
-            About Me
-          </h2>
+          <h2 className="text-4xl font-bold text-gray-700">About Me</h2>
           <div className="flex justify-center">
             <span className="w-[200px] h-[2px] block my-8 bg-[#D9B592]"></span>
           </div>
@@ -39,11 +37,11 @@ const About = () => {
         {/* Graphics and Web Development Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
           <div className="bg-white shadow-lg rounded-lg p-6">
-              <a href="/graphics">
+            <a href="/graphics">
               <h3 className="text-xl font-semibold text-slate-700 mb-4 text-center py-2 px-4 bg-gray-100 rounded-lg hover:font-bold">
-              Graphic Design
-            </h3>
-              </a>
+                Graphic Design
+              </h3>
+            </a>
             <p className="leading-relaxed text-sm text-gray-700 text-justify">
               As a graphic designer, I bring a refined eye for detail, with
               expertise in visual hierarchy, color theory, and typography. My
@@ -58,11 +56,11 @@ const About = () => {
           </div>
 
           <div className="bg-white shadow-lg rounded-lg p-6">
-              <a href="/web">
+            <a href="/web">
               <h3 className="text-xl font-semibold text-slate-700 mb-4 text-center py-2 px-4 bg-gray-100 rounded-lg hover:font-bold">
-              Web Development
-            </h3>
-              </a>
+                Web Development
+              </h3>
+            </a>
             <p className="leading-relaxed text-sm text-gray-700 text-justify">
               My passion lies in crafting interactive and dynamic web
               applications, combining cutting-edge development practices with

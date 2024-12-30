@@ -49,7 +49,6 @@ const Logos = () => {
       alt: "Luxury modern minimalist elegant creative professional Logo design",
     },
 
-
     {
       url: "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1732118428/MKI_3d_Mockup_sbnx7j.jpg",
       alt: "Luxury modern minimalist elegant creative professional Logo design",
@@ -117,57 +116,61 @@ const Logos = () => {
           </div>
         </div>
 
-{/* Client Requirements Section */}
-<section className="bg-[#f9f8f6] py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
-  <h2 className="text-3xl font-bold text-gray-700 mb-6 text-center">
-    Requirements
-  </h2>
-  <div className="max-w-3xl mx-auto">
-    <ul className="list-inside list-disc space-y-4 text-lg text-[#525252]">
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Brief description of your brand/business</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Logo Title</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Slogan (if any)</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Icon Preference (any specific shape, object, symbol, initial letters, etc.)</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Color Preference</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Sample Designs (if any)</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Logo style you prefer (minimalist, luxury, etc.)</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Any additional notes or ideas you may have</p>
-      </li>
-      <li className="flex items-start space-x-3">
-        <span className="text-[#D9B592] text-2xl">•</span>
-        <p>Budget (if any)</p>
-      </li>
-    </ul>
-    <p className="mt-6 text-lg text-[#525252] italic text-center">
-      * The cost of the project will depend on the number of concept designs to choose from, the deadline for submission, and the requirements for the logo.
-      Custom packages can be created based on your specific budget if necessary.
-    </p>
-  </div>
-</section>
-
+        {/* Client Requirements Section */}
+        <section className="bg-[#f9f8f6] py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
+          <h2 className="text-3xl font-bold text-gray-700 mb-6 text-center">
+            Requirements
+          </h2>
+          <div className="max-w-3xl mx-auto">
+            <ul className="list-inside list-disc space-y-4 text-lg text-[#525252]">
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>Brief description of your brand/business</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>Logo Title</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>Slogan (if any)</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>
+                  Icon Preference (any specific shape, object, symbol, initial
+                  letters, etc.)
+                </p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>Color Preference</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>Sample Designs (if any)</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>Logo style you prefer (minimalist, luxury, etc.)</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>Any additional notes or ideas you may have</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-[#D9B592] text-2xl">•</span>
+                <p>Budget (if any)</p>
+              </li>
+            </ul>
+            <p className="mt-6 text-lg text-[#525252] italic text-center">
+              * The cost of the project will depend on the number of concept
+              designs to choose from, the deadline for submission, and the
+              requirements for the logo. Custom packages can be created based on
+              your specific budget if necessary.
+            </p>
+          </div>
+        </section>
 
         {/* You will get */}
         <section className="bg-[#f9f8f6] shadow-md rounded-xl py-12 px-6 md:px-12 lg:px-20 mx-4 lg:mx-32 mb-12">
@@ -185,8 +188,6 @@ const Logos = () => {
               "Unlimited revisions until satisfaction",
               "Reliable and quick communication",
               "After sale-services",
-
-
             ].map((point, index) => (
               <div
                 key={index}
@@ -202,7 +203,7 @@ const Logos = () => {
         {/* Logo Styles */}
         <section className="text-center mb-16 px-6 lg:px-32">
           <h2 className="text-3xl font-bold text-gray-700 mb-8">
-          Logo Styles I provide
+            Logo Styles I provide
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
@@ -225,13 +226,17 @@ const Logos = () => {
 
         {/* Explore Full Graphics Portfolio Section */}
         <section className="py-12 px-6 lg:px-0 bg-[#f9f8f6] text-center ">
-          <h2 className="text-3xl font-bold text-gray-700 mb-4">Explore My Graphics Portfolio</h2>
+          <h2 className="text-3xl font-bold text-gray-700 mb-4">
+            Explore My Graphics Portfolio
+          </h2>
           <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
-            Dive into my complete collection of designs, from logos to creative graphics, and explore the visual stories I've created for brands and individuals.
+            Dive into my complete collection of designs, from logos to creative
+            graphics, and explore the visual stories I've created for brands and
+            individuals.
           </p>
           <Link
             to="/portfolio/graphics"
-            target="_blank"  // This ensures the link opens in a new tab
+            target="_blank" // This ensures the link opens in a new tab
             className="inline-block bg-[#D9B592] text-white px-6 py-2 rounded-full font-semibold text-lg transition-colors duration-300 hover:bg-[#343434]"
           >
             Explore Now
@@ -247,19 +252,19 @@ const Logos = () => {
             Let’s craft a logo and identity that speaks for your brand.
           </p>
           <div className="flex justify-center space-x-4">
-                    <Link
-                      to="/contact"
-                      className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300 "
-                    >
-                      Request a Quote
-                    </Link>
-                    <Link
-                      to="/appointment"
-                      className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
-                    >
-                      Book an Appointment
-                    </Link>
-                    </div>
+            <Link
+              to="/contact"
+              className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300 "
+            >
+              Request a Quote
+            </Link>
+            <Link
+              to="/appointment"
+              className="px-6 py-2  bg-white text-[#D9B592] font-semibold rounded-full shadow-md hover:bg-[#343434] transition-colors duration-300"
+            >
+              Book an Appointment
+            </Link>
+          </div>
         </div>
       </div>
     </div>

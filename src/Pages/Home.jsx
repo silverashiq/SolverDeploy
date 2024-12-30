@@ -40,50 +40,70 @@ function Home() {
   return (
     <>
       {/* Hero Section 1 */}
-      <section  
-  className="flex flex-col lg:flex-row items-center w-full gap-5 lg:gap-10 py-10 md:py-10 lg:py-32 bg-cover bg-center px-4 md:px-10 lg:px-24"
-  style={{ backgroundImage: "url('https://res.cloudinary.com/dntx46fvh/image/upload/dpr_auto/q_auto/v1734711533/Asset_4_2_aegzbo.png')" }}
->
-  <div className="lg:w-1/2 px-4 lg:px-16 text-center lg:text-left">
-    <h1 className="font-sans font-medium text-[16pt] sm:text-[18pt] md:text-[22pt] lg:text-[27pt] leading-normal text-[#f3f3f3] mb-4">
-      Looking for a Talented Designer/Developer Specializing in{" "}
-      <span className="font-bold uppercase text-[#D9B592]">Graphic</span> and{" "}
-      <span className="font-bold uppercase text-[#D9B592]">Website</span> Design?
-    </h1>
-    <span className="w-[150px] sm:w-[200px] lg:w-[220px] h-[2px] block my-4 mx-auto lg:mx-0 bg-[#D9B592]"></span>
-    <p className="text-[#b8b8b8] text-base sm:text-lg mb-6">
-      With over 5 years of experience as a Graphic Designer and Full-Stack Web Developer, I craft innovative, high-quality designs and responsive websites tailored to your needs. <br /> Let’s collaborate to turn your vision into a powerful digital experience.
-    </p>
-    <div className="flex flex-col sm:flex-row sm:space-y-0 space-y-4 justify-center lg:justify-start gap-0 md:gap-6 mx-auto lg:mx-0">
-  <Link
-    to="/contact"
-    className="py-3 px-8 bg-white font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-colors sm:duration-300 sm:hover:px-20 transition-colors duration-300"
-  >
-    Request a Quote
-  </Link>
-  <Link
-    to="/appointment"
-    className="py-3 px-8 bg-white font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-colors sm:duration-300 sm:hover:px-20 transition-colors duration-300 "
-  >
-    Book an Appointment
-  </Link>
-</div>
+      <section
+        className="flex flex-col lg:flex-row items-center justify-center w-full gap-5 py-10 md:py-10 lg:py-32 bg-cover bg-center px-4 md:px-24  "
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/dntx46fvh/image/upload/dpr_auto/q_auto/v1734711533/Asset_4_2_aegzbo.png')",
+        }}
+      >
+        {/* Left Content */}
+        <div
+          className="lg:w-1/2 px-4 text-center lg:text-left shrink-content"
+          style={{
+            flex: "1 1 50%",
+          }}
+        >
+          <h1 className="font-sans font-medium text-[16pt] sm:text-[18pt] md:text-[20pt] lg:text-[24pt] xl:text-[27pt] leading-normal text-[#f3f3f3] mb-4">
+            Looking for a Skilled Designer/Developer Specializing in{" "}
+            <br />
+            <span className="font-bold uppercase text-[#D9B592]">
+              Graphic
+            </span>{" "}
+            and{" "}
+            <span className="font-bold uppercase text-[#D9B592]">Website</span>{" "}
+            Design?
+          </h1>
+          <span className="w-[150px] sm:w-[200px] lg:w-[220px] h-[2px] block my-4 mx-auto lg:mx-0 bg-[#D9B592]"></span>
+          <p className="text-[#b8b8b8] text-base sm:text-lg lg:text-base xl:text-lg mb-6 ">
+            With over 5 years of experience as a Graphic Designer and Full-Stack
+            Web Developer,
+            <br /> I craft innovative, high-quality designs and responsive
+            websites tailored to your needs. <br /> Let’s collaborate to turn
+            your vision into a powerful digital experience.
+          </p>
+          <div className="flex flex-col sm:flex-row sm:space-y-0 space-y-4 justify-center lg:justify-start gap-4 ">
+            <Link
+              to="/contact"
+              className="py-2 px-6 bg-white  text-[13pt] font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-colors sm:duration-300 sm:hover:px-14"
+            >
+              Request a Quote
+            </Link>
+            <Link
+              to="/appointment"
+              className="py-2 px-6 bg-white  text-[13pt] font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-colors sm:duration-300 sm:hover:px-14"
+            >
+              Book an Appointment
+            </Link>
+          </div>
+        </div>
 
-
-  </div>
-
-  <div className="lg:w-1/2 px-4 lg:px-16 animate__animated animate__fadeInRight mt-6 lg:mt-0">
-    <img
-      className="w-full h-auto rounded-3xl shadow-lg "
-      src="https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1733607813/SolverSilver_klttwk.jpg"
-      alt="SolverSilver Luxury Logo Design Mockup"
-      width="700"
-      height="500"
-    />
-  </div>
-</section>
-
-
+        {/* Right Image */}
+        <div
+          className="lg:w-1/2  flex justify-around animate__animated animate__fadeInRight mt-6 lg:mt-0 "
+          style={{
+            flex: "1 1 50%",
+          }}
+        >
+          <img
+            className="max-w-[800px] w-full h-auto rounded-3xl shadow-lg object-contain"
+            src="https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1733607813/SolverSilver_klttwk.jpg"
+            alt="SolverSilver Luxury Logo Design Mockup"
+            width="700"
+            height="500"
+          />
+        </div>
+      </section>
 
       {/* Hero Section 2 */}
       <section className="flex flex-col bg-[#e9e8e8] py-10 px-0 md:px-6 lg:px-20 lg:py-24">
@@ -127,26 +147,24 @@ function Home() {
           </Link>
         </div>
 
-         {/* More */}
-         <div className=" text-white pt-2 md:pt-14 pb-14 md:pb-14 lg:pb-1 text-center px-6 lg:px-0">
-          
+        {/* More */}
+        <div className=" text-white pt-2 md:pt-14 pb-14 md:pb-14 lg:pb-1 text-center px-6 lg:px-0">
           <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
-                    <Link
-                      to="/services"
-                      className="px-6 py-2  bg-[#464646] text-[#e9e8e8] font-semibold rounded-full shadow-md  hover:bg-[#D9B592] hover:text-[#343434]   transition-colors duration-300"
-                    >
-                      View all Services
-                    </Link>
-                    <Link
-                      to="/portfolio"
-                      className="px-6 py-2  bg-[#464646] text-[#e9e8e8] rounded-full font-semibold shadow-md  hover:bg-[#D9B592] hover:text-[#343434]   transition-colors duration-300"
-                    >
-                      Explore Portfolio
-                    </Link>
-                    </div>
+            <Link
+              to="/services"
+              className="px-6 py-2  bg-[#464646] text-[#e9e8e8] font-semibold rounded-full shadow-md  hover:bg-[#D9B592] hover:text-[#343434]   transition-colors duration-300"
+            >
+              View all Services
+            </Link>
+            <Link
+              to="/portfolio"
+              className="px-6 py-2  bg-[#464646] text-[#e9e8e8] rounded-full font-semibold shadow-md  hover:bg-[#D9B592] hover:text-[#343434]   transition-colors duration-300"
+            >
+              Explore Portfolio
+            </Link>
+          </div>
         </div>
       </section>
-
 
       {/* Stats Section */}
       <div>
@@ -268,12 +286,12 @@ function ServiceCard({ image, title, description, alt }) {
   return (
     <div className="flex flex-col justify-between items-center text-center hover:scale-105 transition-transform duration-300 max-w-[400px] lg:max-w-[600px] min-h-[500px] rounded-3xl">
       <div className="w-full aspect-[720/526]">
-      <img
-  className="rounded-3xl shadow-md w-full h-full object-cover"
-  src={image}
-  alt={alt}
-  loading="lazy"
-/>
+        <img
+          className="rounded-3xl shadow-md w-full h-full object-cover"
+          src={image}
+          alt={alt}
+          loading="lazy"
+        />
       </div>
       <div className="flex flex-col flex-grow items-center py-4">
         <h4 className="text-xl sm:text-2xl text-[#D9B592] font-semibold mb-3">
