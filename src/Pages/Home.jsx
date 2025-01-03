@@ -72,20 +72,21 @@ function Home() {
             websites tailored to your needs. <br /> Let’s collaborate to turn
             your vision into a powerful digital experience.
           </p>
-          <div className="flex flex-col sm:flex-row sm:space-y-0 space-y-4 justify-center lg:justify-start gap-4 ">
-            <Link
-              to="/contact"
-              className="py-2 px-6 bg-white  text-[13pt] font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-colors sm:duration-300 sm:hover:px-14"
-            >
-              Request a Quote
-            </Link>
-            <Link
-              to="/appointment"
-              className="py-2 px-6 bg-white  text-[13pt] font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-colors sm:duration-300 sm:hover:px-14"
-            >
-              Book an Appointment
-            </Link>
-          </div>
+          <div className="flex flex-col sm:flex-row sm:space-y-0 space-y-4 justify-center lg:justify-start gap-4">
+  <Link
+    to="/contact"
+    className="py-2 px-6 bg-white text-[13pt] font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-all sm:duration-500 sm:ease-in-out sm:hover:px-10"
+  >
+    Request a Quote
+  </Link>
+  <Link
+    to="/appointment"
+    className="py-2 px-6 bg-white text-[13pt] font-semibold rounded-full text-center text-[#343434] sm:hover:bg-[#D9B592] sm:hover:text-[#343434] sm:transition-all sm:duration-500 sm:ease-in-out sm:hover:px-10"
+  >
+    Book an Appointment
+  </Link>
+</div>
+
         </div>
 
         {/* Right Image */}
@@ -190,9 +191,11 @@ function Home() {
 
         {/* Right Side Text */}
         <div className="w-full lg:w-2/3 space-y-6 lg:space-y-8 lg:pl-8 px-0 md:px-8 lg:px-0">
-          <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-12 text-center lg:text-start">
+          <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-10 text-center lg:text-start">
             Why Choose Me?
           </h2>
+
+          <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <FaPaintBrush className="text-4xl text-[#D9B592]" />
