@@ -22,7 +22,7 @@ const FormSubmitted = () => {
         {/* Explanation */}
         <p className="text-lg text-[#343434]">
           Thank you for reaching out! Your request has been successfully
-          submitted. Please check your inbox (or spam folder) for an automated
+          submitted. Please check your inbox (or spam folder) for a
           confirmation email.
         </p>
 

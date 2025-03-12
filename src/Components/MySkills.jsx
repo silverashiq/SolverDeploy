@@ -7,6 +7,9 @@ import {
   FaNodeJs,
   FaGithub,
   FaWordpress,
+  FaLaptopCode,
+  FaShoppingCart,
+  FaBullhorn,
 } from "react-icons/fa";
 import {
   SiAdobeillustrator,
@@ -15,6 +18,9 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiExpress,
+  SiShopify,
+  SiNextdotjs,
+  SiLaravel,
 } from "react-icons/si";
 
 // Skill Bar Component
@@ -25,7 +31,7 @@ const SkillBar = ({ skill }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
-        setFillWidth(skill.level * 10); // Convert skill level to percentage
+        setFillWidth(skill.level * 10);
         observer.disconnect();
       }
     });
@@ -43,10 +49,9 @@ const SkillBar = ({ skill }) => {
 
   return (
     <div ref={skillRef} className="flex items-center space-x-4">
-      <div className="text-4xl text-[#343434]">{skill.icon}</div>
+      <div className="text-3xl text-[#343434]">{skill.icon}</div>
       <div className="w-full">
-        <h4 className="font-semibold text-[#343434] text-lg">{skill.name}</h4>
-        <p className="text-sm mb-2">{skill.description}</p>
+        <h4 className="font-semibold text-[#343434] text-md">{skill.name}</h4>
         <div className="w-full bg-gray-300 rounded-full h-2 overflow-hidden">
           <div
             className="bg-[#D9B592] h-2 rounded-full transition-all duration-1000 ease-in-out"
@@ -61,92 +66,32 @@ const SkillBar = ({ skill }) => {
 // Skills Section Component
 const MySkills = () => {
   const skills = [
-    {
-      name: "Adobe Illustrator",
-      icon: <SiAdobeillustrator />,
-      level: 9.75,
-      description: "Expert in Adobe Suite and creative design.",
-    },
-    {
-      name: "Adobe Photoshop",
-      icon: <SiAdobe />,
-      level: 9,
-      description: "Proficient in photo editing and manipulation.",
-    },
-    {
-      name: "HTML",
-      icon: <FaHtml5 />,
-      level: 9,
-      description: "Strong understanding of semantic HTML.",
-    },
-    {
-      name: "CSS",
-      icon: <FaCss3Alt />,
-      level: 8,
-      description: "Expert in CSS and responsive design.",
-    },
-    {
-      name: "Tailwind CSS",
-      icon: <SiTailwindcss />,
-      level: 9,
-      description: "Proficient in utility-first CSS framework.",
-    },
-    {
-      name: "JavaScript",
-      icon: <SiJavascript />,
-      level: 8,
-      description: "Experienced in JavaScript ES6+.",
-    },
-    {
-      name: "React",
-      icon: <FaReact />,
-      level: 9,
-      description: "Skilled in building dynamic React applications.",
-    },
-    {
-      name: "Node.js",
-      icon: <FaNodeJs />,
-      level: 9,
-      description: "Understanding of server-side JavaScript.",
-    },
-    {
-      name: "Express.js",
-      icon: <SiExpress />,
-      level: 8,
-      description: "Experienced in building REST APIs.",
-    },
-    {
-      name: "MongoDB",
-      icon: <SiMongodb />,
-      level: 8,
-      description: "Proficient in NoSQL database management.",
-    },
-    {
-      name: "Wordpress & other CMS",
-      icon: <FaWordpress />,
-      level: 8.5,
-      description:
-        "Experienced in creating/managing CMS-based websites and plugins.",
-    },
-    {
-      name: "GitHub",
-      icon: <FaGithub />,
-      level: 9,
-      description: "Skilled in developing and managing projects on GitHub.",
-    },
+    { name: "Graphic & Branding Design", icon: <SiAdobeillustrator />, level: 9.5 },
+    { name: "UI/UX & Web Design", icon: <SiAdobe />, level: 9 },
+    { name: "Full-Stack Web Development", icon: <FaLaptopCode />, level: 9 },
+    { name: "E-Commerce Solutions", icon: <FaShoppingCart />, level: 9 },
+    { name: "Custom Web Development", icon: <SiNextdotjs />, level: 9 },
+    { name: "WordPress & CMS Development", icon: <FaWordpress />, level: 8.5 },
+    { name: "SEO & Digital Marketing", icon: <FaBullhorn />, level: 8.5 },
+    { name: "Frontend Technologies", icon: <FaReact />, level: 9 },
+    { name: "Backend Technologies", icon: <FaNodeJs />, level: 9 },
+    { name: "Database Management", icon: <SiMongodb />, level: 8.5 },
+    { name: "JavaScript & Frameworks", icon: <SiJavascript />, level: 9 },
+    { name: "Version Control & Deployment", icon: <FaGithub />, level: 9.5 },
   ];
+
   return (
-    <section className="text-center mb-8 mx-2 md:mx-0 lg:mx-32">
-      <h3 className="font-sans font-semibold text-3xl sm:text-4xl text-gray-700 text-center mt-0 lg:mt-5 ">
-        My Expertise
+    <section className="text-center mb-6 mx-2 md:mx-0 lg:mx-24">
+      <h3 className="font-sans font-semibold text-2xl sm:text-3xl text-gray-700 text-center mt-0 lg:mt-4">
+        Our Expertise
       </h3>
       <div className="flex justify-center">
-        <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
+        <span className="w-[150px] h-[2px] block mt-4 mb-4 bg-[#D9B592]"></span>
       </div>
-      <p className="text-[#343434] text-lg sm:text-xl font-light">
-        Expert in design and development, delivering innovative solutions.
+      <p className="text-[#343434] text-md sm:text-lg font-light">
+        Providing innovative design, development, and marketing solutions.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
         {skills.map((skill) => (
           <SkillBar key={skill.name} skill={skill} />
         ))}

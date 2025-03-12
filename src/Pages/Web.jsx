@@ -8,7 +8,7 @@ function Website() {
       description:
         "A clean, conversion-focused landing page with clear CTAs, responsive design, and engaging visuals.",
       imageUrl:
-        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733608692/landing-page-design-modern-responsive_hdwifs.png",
+        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1741808999/landing_s4szeg.jpg",
       link: "/landing",
     },
     {
@@ -17,7 +17,7 @@ function Website() {
       description:
         "A professional, user-friendly business website with responsive design and clear navigation.",
       imageUrl:
-        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733608693/business-website-design-professional-responsive_q2tlxw.png",
+        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1741809362/business_sm3ecd.jpg",
       link: "/business",
     },
     {
@@ -26,7 +26,7 @@ function Website() {
       description:
         "A modern, responsive website redesign with enhanced usability and optimized performance.",
       imageUrl:
-        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733608693/full-website-redesign-modern-responsive_xvj5cd.png",
+        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1741808999/Redo_h5paq1.jpg",
       link: "/redo",
     },
     {
@@ -35,7 +35,7 @@ function Website() {
       description:
         "High-converting, sleek, responsive e-commerce website with easy navigation and secure checkout.",
       imageUrl:
-        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733608693/ecommerce-website-design-modern-responsive_baotvu.png",
+        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1741808998/ecom_sncenp.jpg",
       link: "/ecommerce",
     },
     {
@@ -44,7 +44,7 @@ function Website() {
       description:
         "A robust, user-friendly web application with seamless functionality and intuitive design.",
       imageUrl:
-        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733608692/web-application-development-modern-secure_etjmkx.png",
+        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1741808999/webapp_pktemz.jpg",
       link: "/app",
     },
     {
@@ -53,7 +53,7 @@ function Website() {
       description:
         "Full-stack applications built using MongoDB, Express.js, React, and Node.js.",
       imageUrl:
-        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1733608693/full-stack-development-mern-modern_h2mwu7.png",
+        "https://res.cloudinary.com/dntx46fvh/image/upload/w_500/dpr_auto/q_auto/v1741808999/fullstacl_fobd8z.jpg",
       link: "/stack",
     },
     // Add more projects as needed

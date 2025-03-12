@@ -52,7 +52,7 @@ const FullStack = () => {
       <section className="bg-white py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-700 mb-6">
-            Why Choose Full-Stack Solutions?
+            Why Choose our Full-Stack Solutions?
           </h2>
           <ul className="list-inside list-disc space-y-4 text-lg text-[#525252]">
             <li className="flex items-start space-x-3">

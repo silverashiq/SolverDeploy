@@ -24,18 +24,18 @@ function Services() {
     {
       id: 3,
       url: "",
-      title: "Digital Marketing",
+      title: "App Development",
       description: "COMING SOON",
       imageUrl:
-        "https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1731597494/3_nyov6m.jpg", // Replace with actual image URL
+        "https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1741810234/App_kwckeo.jpg", // Replace with actual image URL
     },
     {
       id: 4,
       url: "",
-      title: "SEO Services",
+      title: "Digital Marketing and SEO",
       description: "COMING SOON",
       imageUrl:
-        "https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1731597494/3_nyov6m.jpg", // Replace with actual image URL
+        "https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1741810437/SEO_oahath.jpg", // Replace with actual image URL
     },
 
     // Add more services as needed

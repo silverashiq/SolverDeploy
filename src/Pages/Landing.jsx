@@ -53,7 +53,7 @@ const Landing = () => {
       <section className="bg-white py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-700 mb-6">
-            Why Choose My Landing Page Designs?
+            Why Choose Us for your Landing Page Designs?
           </h2>
           <p className="text-gray-700 mb-6">
             I specialize in creating impactful landing pages that help

@@ -69,7 +69,7 @@ function Graphics() {
           <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
         </div>
         <p className="max-w-2xl text-center text-lg text-gray-600 mb-10 px-4">
-          Explore the diverse range of graphic design services I provide. Please
+          Explore the diverse range of graphic design services We provide. Please
           select any sector for further details.
         </p>
 

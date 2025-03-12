@@ -203,7 +203,7 @@ const Logos = () => {
         {/* Logo Styles */}
         <section className="text-center mb-16 px-6 lg:px-32">
           <h2 className="text-3xl font-bold text-gray-700 mb-8">
-            Logo Styles I provide
+            Logo Styles We provide
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
@@ -227,7 +227,7 @@ const Logos = () => {
         {/* Explore Full Graphics Portfolio Section */}
         <section className="py-12 px-6 lg:px-0 bg-[#f9f8f6] text-center ">
           <h2 className="text-3xl font-bold text-gray-700 mb-4">
-            Explore My Graphics Portfolio
+            Explore Our Graphics Portfolio
           </h2>
           <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
             Dive into my complete collection of designs, from logos to creative

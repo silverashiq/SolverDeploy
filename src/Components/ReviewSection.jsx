@@ -3,12 +3,11 @@ import { Navigation, Autoplay } from "swiper/modules"; // Import necessary modul
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 const reviews = [
   {
     name: "Flixe F.",
     review:
-      "Silver did a great job! He is very creative with a love of detail. Brought his own ideas into this project and gave me different variations where I could choose from, his kind of style and way to work are great. I definitely recommend him to you, who is reading this. Thanks!",
+      "The team did a fantastic job! They are highly creative with great attention to detail. They brought fresh ideas into this project and provided multiple variations to choose from. Their expertise and workflow are outstanding. Highly recommend!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734455123/1b_gxqopy.jpg",
     country: "Germany",
@@ -16,7 +15,7 @@ const reviews = [
   {
     name: "Emmer Leyl",
     review:
-      "Silver is exceptional with her designs as always! This is the third time that I've worked with him and he never fails to impress with his beautiful and professional artwork.",
+      "Exceptional work as always! This is my third project with them, and they continue to impress with their beautiful, professional designs and seamless execution.",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734454791/1_ylyhyg.jpg",
     country: "UK",
@@ -24,7 +23,7 @@ const reviews = [
   {
     name: "Treg Ammage",
     review:
-      "I keep coming back and I'm always excited at the timing, the deliverables, and logos. Thank you for always taking the time to understand what I need and make it look beautiful in a speedy amount of time. Thank you",
+      "I keep coming back, and every time, they exceed my expectations. The timing, the deliverables, and the attention to detail are always perfect. They truly understand my needs and turn them into something beautiful in record time!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734455425/1c_zzvskq.jpg",
     country: "USA",
@@ -32,7 +31,7 @@ const reviews = [
   {
     name: "Sara R.",
     review:
-      "This is the third time I come back to Silver , he is very professional and his designs are fantastic. I highly recommend it.",
+      "This is the third time I’ve worked with them, and they always deliver fantastic results. Very professional and easy to work with. Highly recommend!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734456088/2_vycw1y.jpg",
     country: "Spain",
@@ -40,7 +39,7 @@ const reviews = [
   {
     name: "Teenapro",
     review:
-      "Always a pleasure to work with Silver - a professional service and exceptional work. Thank you",
+      "Always a pleasure to work with – professional service and exceptional work. Quick, efficient, and very easy to communicate with. Thank you!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734456307/2-1_mleuod.jpg",
     country: "UK",
@@ -48,7 +47,7 @@ const reviews = [
   {
     name: "Dbodzin",
     review:
-      "Great experience working with this seller. He was quick to produce results and make changes as well. Highly recommended.",
+      "Great experience! The team was quick to deliver and very accommodating with changes. Highly recommended for quality work and professionalism.",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734456452/2-2_j51lyl.jpg",
     country: "USA",
@@ -56,7 +55,7 @@ const reviews = [
   {
     name: "Ala Chelle",
     review:
-      "I am thoroughly impressed with the final product! The entire process was smooth, quick and efficient. I would highly recommend for your first time as this was my first time and I was blown away.",
+      "I am thoroughly impressed with the final product! The entire process was smooth, quick, and efficient. As a first-time customer, I wasn’t sure what to expect, but they exceeded my expectations. Highly recommend!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734457826/2-3_snuxgv.jpg",
     country: "United Kingdom",
@@ -64,7 +63,7 @@ const reviews = [
   {
     name: "Isabella John",
     review:
-      "Having Silver take on such a project was a delight. He delivered results immediately with outstanding creativity. Excellent service and communication throughout the entire process. He provide above and beyond service as he promised. I would highly recommend him.",
+      "An absolute delight to work with. The results were delivered quickly and with outstanding creativity. Communication was great throughout the entire process, and they went above and beyond to ensure everything was perfect. Highly recommend!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734458053/2a_jz3ikp.jpg",
     country: "United Kingdom",
@@ -72,7 +71,7 @@ const reviews = [
   {
     name: "Lecinda",
     review:
-      "The best of the best! Communication from start to end was fast and efficient. Extremely professional and very patient. The design was exactly what I wanted. Thank you!",
+      "The best of the best! Fast and efficient communication, extremely professional, and very patient. The design was exactly what I envisioned. Thank you!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734458220/2b_ocvajp.jpg",
     country: "Australia",
@@ -80,7 +79,7 @@ const reviews = [
   {
     name: "Katy B.",
     review:
-      "Absolutely wonderful experience- I have no idea how he has the energy to be so on top of ALL communications! We went back and forth with designs, fonts, you name it. He provides exceptional service and delivers an exceptional product.",
+      "Absolutely wonderful experience! Super responsive, incredibly patient, and truly cares about delivering the best results. I went back and forth with different designs, and they always took the time to perfect every detail. Exceptional service!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734458478/2c_rsisqz.jpg",
     country: "USA",
@@ -88,7 +87,7 @@ const reviews = [
   {
     name: "Diana Varas",
     review:
-      "Silver was very attentive and fully complied my request. I would work with him again without hesitation. Hire him and look no further! Excellent.",
+      "Very attentive and completely delivered on my request. I would work with them again in a heartbeat. If you're looking for quality and reliability, look no further!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734458678/2d_fmrl2e.jpg",
     country: "Ecuador",
@@ -96,7 +95,7 @@ const reviews = [
   {
     name: "Charles Simon",
     review:
-      "As usual, Silver was fantastic in all aspects. Quality of work is impressive, very pro-active and quick to reply, and always seeks the best path to a successful project. I can't recommend her enough!",
+      "Fantastic in all aspects. The quality of work is impressive, very proactive, and quick to reply. They always seek the best way to ensure a successful project. Highly recommended!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459061/82_cktny1.jpg",
     country: "Hong Kong",
@@ -104,7 +103,7 @@ const reviews = [
   {
     name: "Miss Dawn T.",
     review:
-      "Always a pleasure working with this seller. So helpful. Repeat custom from me all the time. Highly recommend.",
+      "Always a pleasure working with them. Super helpful and always delivers top-quality work. I keep coming back for a reason. Highly recommend!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459095/30_awsm0g.jpg",
     country: "UK",
@@ -112,7 +111,7 @@ const reviews = [
   {
     name: "Mk Amelia",
     review:
-      "It was amazing working with Silver! That was my second project designed by Silver. Understood my vision and my direction and she exceeded my expectations. Great communication! I would definitely recommend Silver.",
+      "Amazing experience! This was my second project with them, and they truly understood my vision. Exceeded my expectations once again. Great communication and top-notch design!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459159/11_r6fqaz.jpg",
     country: "USA",
@@ -120,7 +119,7 @@ const reviews = [
   {
     name: "Edward K.",
     review:
-      "Silver provided quality design - very happy with the outcome. Communicates in a pleasant manner, revisions attended to, work delivered in timely way.",
+      "Top-quality design work! Everything was handled professionally, communication was smooth, and the project was delivered on time. Very happy with the outcome!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459201/20_fpop94.jpg",
     country: "Australia",
@@ -128,7 +127,7 @@ const reviews = [
   {
     name: "Jordan Knibbe",
     review:
-      "Working again with Silver has been a great experience. Very Talented, Highly recommend!",
+      "Working with them again has been a great experience. Incredibly talented and highly recommended!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459243/17_tpm4nr.jpg",
     country: "USA",
@@ -136,7 +135,7 @@ const reviews = [
   {
     name: "Rox Donovan",
     review:
-      "Totally amazing to work with. If you’re on fence, take the plunge. Best decision I’ve made for my business in a while.",
+      "Absolutely amazing to work with. If you're unsure, take the leap—you won’t regret it. Best decision I’ve made for my business in a long time!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459273/31_xusmqz.jpg",
     country: "USA",
@@ -144,7 +143,7 @@ const reviews = [
   {
     name: "Jhonson M.",
     review:
-      "Silver has done multiple projects with us and always does a great job. Very responsive and always able to work with us to help us find our vision. We always appreciate working with him and plan to do more work in the future.",
+      "We've worked on multiple projects together, and they always do a fantastic job. Very responsive and always willing to make adjustments to fit our vision. Looking forward to future collaborations!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459312/53_onkfkf.jpg",
     country: "USA",
@@ -152,7 +151,7 @@ const reviews = [
   {
     name: "Rene Wang",
     review:
-      "The BEST designer I've worked with. Silver is professional with a great sense of style. He understands my needs and instructions and can create designs in the look and style I'm looking for. He is patient with all of my revision requests. He's a great communicator. I would totally work with him again!",
+      "One of the best teams I've worked with! They have an amazing sense of style and truly understand my vision. Very patient with revisions and a pleasure to work with. Highly recommended!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459474/86_fjzkni.jpg",
     country: "Canada",
@@ -160,12 +159,13 @@ const reviews = [
   {
     name: "Malcolm William",
     review:
-      "Excellent service! I purchased a new package for a different need immediately because of how well this was executed!",
+      "Excellent service! The execution was flawless, and I immediately purchased another package because of how well they handled everything!",
     avatar:
       "https://res.cloudinary.com/dntx46fvh/image/upload/v1734459541/28_stobry.jpg",
     country: "USA",
   },
 ];
+
 
 const ReviewSection = () => {
   return (
@@ -180,7 +180,7 @@ const ReviewSection = () => {
               <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
             </div>
             <p className="text-gray-100 text-lg sm:text-xl font-light mb-14">
-              Hear from our happy clients about their experiences with my
+              Hear from our happy clients about their experiences with our
               services.
             </p>
           </div>

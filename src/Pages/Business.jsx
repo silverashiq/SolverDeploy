@@ -52,7 +52,7 @@ const Business = () => {
       {/* Benefits Section */}
       <section className="bg-white py-12 px-6 lg:px-32 mb-12 rounded-xl shadow-lg">
         <h2 className="text-3xl font-bold text-gray-700 mb-6 text-center">
-          Why Choose My Business Website Design?
+          Why Choose Us for your Business Website Design?
         </h2>
         <div className="max-w-3xl mx-auto">
           <ul className="list-inside list-disc space-y-4 text-lg text-[#525252]">

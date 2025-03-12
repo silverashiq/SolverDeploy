@@ -31,7 +31,7 @@ function Footer() {
           {/* Logo and Description */}
           <div className="text-center md:text-left">
             <h2 className="text-2xl tracking-wide mb-2">SolverSilver</h2>
-            <p className="text-sm">Your creative design partner.</p>
+            <p className="text-sm"> Business Solutions</p>
           </div>
 
           {/* Links Section */}

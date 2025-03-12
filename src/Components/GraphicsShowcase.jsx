@@ -823,7 +823,7 @@ const GraphicsShowcase = () => {
   return (
     <section className="py-16 px-8 lg:px-20 bg-[#f8f8f8]">
       <h2 className="text-3xl sm:text-4xl text-center font-semibold text-[#343434] mb-10">
-        Explore My Graphics Showcase
+        Explore Our Graphics Showcase
       </h2>
 
       {/* Filters */}

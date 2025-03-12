@@ -40,7 +40,7 @@ function StatsSection() {
           <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
         </div>
         <p className="text-[#343434] text-lg sm:text-xl font-light mb-24">
-          Here’s a snapshot of my successful collaborations. The numbers speak
+          Here’s a snapshot of our successful collaborations. The numbers speak
           for themselves.
         </p>
       </div>
@@ -85,8 +85,8 @@ function StatsSection() {
         <p className="bg-[#f1f1f1] inline-block py-4 px-8 rounded-lg shadow-md">
           <FaCheckCircle className="inline-block text-green-500 mr-3 text-xl" />
           <span>
-            "I assure you that all the statistics provided are accurate and
-            verifiable. I am happy to provide supporting evidence upon request."
+            "We assure you that all the statistics provided are accurate and
+            verifiable. We are happy to provide supporting evidence upon request."
           </span>
         </p>
       </div>

@@ -55,22 +55,22 @@ function Home() {
           }}
         >
           <h1 className="font-sans font-medium text-[16pt] sm:text-[18pt] md:text-[20pt] lg:text-[24pt] xl:text-[27pt] leading-normal text-[#f3f3f3] mb-4">
-            Looking for a Skilled Designer/Developer Specializing in{" "}
+          Looking for a Top-Tier Agency Specializing in{" "}
             <br />
             <span className="font-bold uppercase text-[#D9B592]">
-              Graphic
+            Graphic Design,
             </span>{" "}
-            and{" "}
-            <span className="font-bold uppercase text-[#D9B592]">Website</span>{" "}
-            Design?
+            <span className="font-bold uppercase text-[#D9B592]">
+            Web Development
+            </span>{" "}
+            &{" "}
+            <span className="font-bold uppercase text-[#D9B592]">Digital Marketing?</span>{" "}
+            
           </h1>
           <span className="w-[150px] sm:w-[200px] lg:w-[220px] h-[2px] block my-4 mx-auto lg:mx-0 bg-[#D9B592]"></span>
           <p className="text-[#b8b8b8] text-base sm:text-lg lg:text-base xl:text-lg mb-6 ">
-            With over 5 years of experience as a Graphic Designer and Full-Stack
-            Web Developer,
-            <br /> I craft innovative, high-quality designs and responsive
-            websites tailored to your needs. <br /> Let’s collaborate to turn
-            your vision into a powerful digital experience.
+          We craft innovative designs, high-performing websites, and marketing strategies tailored to your business.
+Let’s bring your vision to life with a powerful digital experience!
           </p>
           <div className="flex flex-col sm:flex-row sm:space-y-0 space-y-4 justify-center lg:justify-start gap-4">
   <Link
@@ -98,10 +98,10 @@ function Home() {
         >
           <img
             className="max-w-[800px] w-full h-auto rounded-3xl shadow-lg object-contain"
-            src="https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1733607813/SolverSilver_klttwk.jpg"
+            src="https://res.cloudinary.com/dntx46fvh/image/upload/w_700/dpr_auto/q_auto/v1741803738/SolverSilver_xqpa3z.jpg"
             alt="SolverSilver Luxury Logo Design Mockup"
             width="700"
-            height="500"
+            height="500" mn
           />
         </div>
       </section>
@@ -124,7 +124,7 @@ function Home() {
             <ServiceCard
               image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1733607471/SolverSilver_Luxury_Logo_Design_rgouqz.png"
               title="Logo Design & Branding"
-              description="Create a distinctive logo that reflects your brand's identity. My logo designs are tailored to capture your brand’s essence, ensuring recognition and a strong visual presence"
+              description="Create a distinctive logo that reflects your brand's identity. Our logo designs are tailored to capture your brand’s essence, ensuring recognition and a strong visual presence"
               alt="Business Professional Logo Design, Custom Logo, Visual Identity, Graphic Design, Branding Solutions, Corporate Identity, Logo Development"
             />
           </Link>
@@ -133,7 +133,7 @@ function Home() {
             <ServiceCard
               image="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730043798/Brochure_Flyer_Trifold_Design_ho0dic.jpg"
               title="Digital & Print Media Design"
-              description="Create impactful brochures and print media designs that effectively communicate your message. My designs will stand out and capture attention in digital and physical formats."
+              description="Create impactful brochures and print media designs that effectively communicate your message. Our designs will stand out and capture attention in digital and physical formats."
               alt="Print Media like Brochure Flyers Brochures Stationery Books Magazines Catalogs Annual reports Proposals Billboards Posters Bifold Trifold Magazine Booklet Packaging"
             />
           </Link>
@@ -172,107 +172,109 @@ function Home() {
         <StatsSection />
       </div>
 
-      {/* Why Choose Me Section */}
-      <section
-        ref={sectionRef}
-        className="max-w-[1400px] mx-auto px-4 lg:px-10 py-12 md:py-20 lg:py-28 bg-white text-[#343434] flex flex-col lg:flex-row items-start lg:items-center gap-8"
-      >
-        {/* Left Side Image */}
-        <div className="w-full lg:w-1/3 flex justify-center lg:justify-start sm:mx-6 md:mx-8">
-          <img
-            className="w-full lg:w-[90%] md:w-[80%] h-auto px-10 lg:px-0"
-            src="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1730997963/Pc_table_cql0vl.png"
-            alt="Workstation setup"
-            width="800"
-            height="600"
-            loading="lazy" // Lazy load image
-          />
-        </div>
+      {/* Why Choose Our Agency Section */}
+<section
+  ref={sectionRef}
+  className="max-w-[1400px] mx-auto px-4 lg:px-10 py-12 md:py-20 lg:py-28 bg-white text-[#343434] flex flex-col lg:flex-row items-start lg:items-center gap-8"
+>
+  {/* Left Side Image */}
+  <div className="w-full lg:w-1/3 flex justify-center lg:justify-start sm:mx-6 md:mx-8">
+    <img
+      className="w-full lg:w-[90%] md:w-[80%] h-auto px-10 lg:px-0"
+      src="https://res.cloudinary.com/dntx46fvh/image/upload/q_auto/v1741807307/Choose_gqa7kr.png"
+      alt="Workstation setup"
+      width="800"
+      height="600"
+      loading="lazy"
+    />
+  </div>
 
-        {/* Right Side Text */}
-        <div className="w-full lg:w-2/3 space-y-6 lg:space-y-8 lg:pl-8 px-0 md:px-8 lg:px-0">
-          <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-10 text-center lg:text-start">
-            Why Choose Me?
-          </h2>
+  {/* Right Side Text */}
+  <div className="w-full lg:w-2/3 space-y-6 lg:space-y-8 lg:pl-8 px-0 md:px-8 lg:px-0">
+    <h2 className="font-sans font-semibold text-3xl sm:text-4xl text-[#343434] mb-10 text-center lg:text-start">
+    Why Partner with Our Agency?
+    </h2>
 
-          <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <FaPaintBrush className="text-4xl text-[#D9B592]" />
-              <div>
-                <h3 className="font-semibold text-[#343434] text-lg mb-1">
-                  Creative and Technical Expertise
-                </h3>
-                <p className="text-[#343434]">
-                  As a Graphic Designer and Full-Stack Web Developer, I combine
-                  visual creativity with technical proficiency, ensuring designs
-                  are beautiful and functional.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <FaLink className="text-4xl text-[#D9B592]" />
-              <div>
-                <h3 className="font-semibold text-[#343434] text-lg mb-1">
-                  End-to-End Development
-                </h3>
-                <p className="text-[#343434]">
-                  With experience in front-end and back-end development, I
-                  create cohesive digital experiences optimized for performance.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <FaRegClipboard className="text-4xl text-[#D9B592]" />
-              <div>
-                <h3 className="font-semibold text-[#343434] text-lg mb-1">
-                  Client-Centered Approach
-                </h3>
-                <p className="text-[#343434]">
-                  I prioritize understanding each client’s vision, aligning my
-                  work with their brand identity and goals.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <FaSearch className="text-3xl text-[#D9B592]" />
-              <div>
-                <h3 className="font-semibold text-[#343434] text-lg mb-1">
-                  Quality and Attention to Detail
-                </h3>
-                <p className="text-[#343434]">
-                  My commitment to high standards is reflected in every project,
-                  focusing on design, coding, and functionality.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <FaClock className="text-3xl text-[#D9B592]" />
-              <div>
-                <h3 className="font-semibold text-[#343434] text-lg mb-1">
-                  Timely Delivery
-                </h3>
-                <p className="text-[#343434]">
-                  I respect timelines and deliver punctually, making me a
-                  reliable partner for projects of any scale.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <FaInfinity className="text-3xl text-[#D9B592]" />
-              <div>
-                <h3 className="font-semibold text-[#343434] text-lg mb-1">
-                  Unlimited Revisions
-                </h3>
-                <p className="text-[#343434]">
-                  I will revise and make any tweaks or modifications until the
-                  design is finalized, and offer after-sale service as well.
-                </p>
-              </div>
-            </div>
-          </div>
+    <div className="flex justify-center md:justify-start">
+  <span className="w-[200px] h-[2px] block mt-[35px] mb-[25px] bg-[#D9B592]"></span>
+</div>
+
+    <div className="space-y-6">
+      <div className="flex items-start gap-4">
+        <FaPaintBrush className="text-4xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Creative & Strategic Excellence
+          </h3>
+          <p className="text-[#343434]">
+            Our expert team blends **stunning design** with **powerful branding** to create high-impact visuals and digital experiences.
+          </p>
         </div>
-      </section>
+      </div>
+
+      <div className="flex items-start gap-4">
+        <FaLink className="text-4xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Full-Service Digital Solutions
+          </h3>
+          <p className="text-[#343434]">
+            From **branding and web development** to **digital marketing**, we provide a one-stop solution to grow your business.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-start gap-4">
+        <FaRegClipboard className="text-4xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Client-Centered Approach
+          </h3>
+          <p className="text-[#343434]">
+            We take time to understand your brand, audience, and goals, crafting **custom solutions** that drive real results.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-start gap-4">
+        <FaSearch className="text-3xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Quality & Innovation
+          </h3>
+          <p className="text-[#343434]">
+            Our commitment to **high standards and innovative solutions** ensures your brand stands out in a competitive market.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-start gap-4">
+        <FaClock className="text-3xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Reliable & On-Time Delivery
+          </h3>
+          <p className="text-[#343434]">
+            We respect deadlines and **ensure timely project completion** without compromising on quality.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-start gap-4">
+        <FaInfinity className="text-3xl text-[#D9B592]" />
+        <div>
+          <h3 className="font-semibold text-[#343434] text-lg mb-1">
+            Unlimited Revisions & Support
+          </h3>
+          <p className="text-[#343434]">
+            We offer **unlimited revisions** and **post-project support**, ensuring your long-term success.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Skills Section */}
       <div className="py-10 md:py-20 px-10 md:px-40 bg-[#faf7f7]">
